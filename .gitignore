@@ -1,0 +1,25 @@
+__pycache__/
+*.py[cod]
+outputs/
+work/
+*.pt
+*.pth
+*.ckpt
+.pytest_cache/
+
+# Local environments, editor caches and authentication material are not source.
+.venv/
+venv/
+.idea/
+.vscode/
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+.DS_Store
+Thumbs.db
+
+# Author-owned research plans stay; externally authored reference PDF stays local.
+references/research/1-223081.pdf

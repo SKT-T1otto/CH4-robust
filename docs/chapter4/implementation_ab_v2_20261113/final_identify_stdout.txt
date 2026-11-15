@@ -1,0 +1,22 @@
+{
+  "output": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-CH4-IntervalRobust\\work\\ch4\\ab_v2_final_20261115_identify_001",
+  "groups": {
+    "s0t0": {
+      "joint_box_coverage": 0.875,
+      "prediction_calls": 89760
+    },
+    "s1t0": {
+      "joint_box_coverage": 0.90625,
+      "prediction_calls": 25440
+    },
+    "s0t1": {
+      "joint_box_coverage": 0.53125,
+      "prediction_calls": 96000
+    },
+    "s1t1": {
+      "joint_box_coverage": 0.40625,
+      "prediction_calls": 69600
+    }
+  },
+  "performance_passed": false
+}

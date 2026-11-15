@@ -1,0 +1,88 @@
+{
+  "source": {
+    "schema": "auv.ch4.source_identity.v1",
+    "sha256": "3eefd3ecf9e2c34446e12dbd0c61ded022e6b14ecb5e31af6f70dd7d142e0e00",
+    "version": 4,
+    "frozen_parent_sha256": "8714ad799c4455221adf03f328ec7e39e3977759c3580c4cf6fa7b99d2efee3e",
+    "inherited_source_checks_passed": false,
+    "original_sirsa_reproduced": false,
+    "performance_passed": false
+  },
+  "client_date": "2026-11-13",
+  "resumed_model_optimizer_replay_rng_identical": true,
+  "resumed_physical_trace_identical": true,
+  "evaluation_updates": 0,
+  "seed_change_rejected": true,
+  "rejection_error": "ValueError: evaluation changed frozen contract: seed",
+  "resumed_summary_matches_external_summary": true,
+  "runs": {
+    "train": {
+      "episodes": 2,
+      "total_physical_steps": 32,
+      "physical_steps_executed_this_run": 32,
+      "total_updates": 4,
+      "updates_executed_this_run": 4,
+      "risk_supported_updates": 0,
+      "success_rate": 0.0,
+      "joint_coverage": 0.65625,
+      "interval_valid_rate": 0.53125,
+      "recovery_event_count": 0,
+      "recovery_unrecovered_rate": null
+    },
+    "evaluate": {
+      "episodes": 2,
+      "total_physical_steps": 32,
+      "physical_steps_executed_this_run": 32,
+      "total_updates": 0,
+      "updates_executed_this_run": 0,
+      "risk_supported_updates": 0,
+      "success_rate": 0.0,
+      "joint_coverage": 0.9375,
+      "interval_valid_rate": 0.0625,
+      "recovery_event_count": 2,
+      "recovery_unrecovered_rate": 1.0
+    },
+    "resume": {
+      "episodes": 2,
+      "total_physical_steps": 32,
+      "physical_steps_executed_this_run": 16,
+      "total_updates": 4,
+      "updates_executed_this_run": 1,
+      "risk_supported_updates": 0,
+      "success_rate": 0.0,
+      "joint_coverage": 0.65625,
+      "interval_valid_rate": 0.53125,
+      "recovery_event_count": 0,
+      "recovery_unrecovered_rate": null
+    },
+    "heldout": {
+      "episodes": 1,
+      "total_physical_steps": 16,
+      "physical_steps_executed_this_run": 16,
+      "total_updates": 0,
+      "updates_executed_this_run": 0,
+      "risk_supported_updates": 0,
+      "success_rate": 0.0,
+      "joint_coverage": 0.0,
+      "interval_valid_rate": 0.0625,
+      "recovery_event_count": 1,
+      "recovery_unrecovered_rate": 1.0
+    },
+    "nominal": {
+      "episodes": 1,
+      "total_physical_steps": 16,
+      "physical_steps_executed_this_run": 16,
+      "total_updates": 0,
+      "updates_executed_this_run": 0,
+      "risk_supported_updates": 0,
+      "success_rate": 0.0,
+      "joint_coverage": 1.0,
+      "interval_valid_rate": 0.0,
+      "recovery_event_count": 0,
+      "recovery_unrecovered_rate": null
+    }
+  },
+  "only_new_mechanism_checkpoints_loaded": true,
+  "long_training_started": false,
+  "git_writes": false
+}

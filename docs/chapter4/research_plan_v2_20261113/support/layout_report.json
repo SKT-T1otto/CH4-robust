@@ -1,0 +1,348 @@
+{
+  "pages": 34,
+  "pdf": "output\\pdf\\CH4_SIRSA_AB_详细研究方案_20261113_v2.pdf",
+  "pdf_sha256": "378fa5dc6793ed31dfc29cd29011dc8a4db6bdfd5d87613b88368fac8d2b3cb9",
+  "text_checks_passed": true,
+  "embedded_fonts": [
+    "Microsoft YaHei",
+    "Microsoft YaHei Bold"
+  ],
+  "page_fits": [
+    {
+      "page": 1,
+      "title": "第四章详细研究方案",
+      "scale": 1,
+      "body_height": 401.1,
+      "available_height": 671.89,
+      "bottom": 318.79,
+      "overflow": false
+    },
+    {
+      "page": 2,
+      "title": "01  阅读导航与状态标记",
+      "scale": 1,
+      "body_height": 387.6,
+      "available_height": 671.89,
+      "bottom": 332.29,
+      "overflow": false
+    },
+    {
+      "page": 3,
+      "title": "02  相对v1的关键决策",
+      "scale": 1,
+      "body_height": 438.5,
+      "available_height": 671.89,
+      "bottom": 281.39,
+      "overflow": false
+    },
+    {
+      "page": 4,
+      "title": "03  当前代码与证据基线",
+      "scale": 1,
+      "body_height": 452.9,
+      "available_height": 671.89,
+      "bottom": 266.99,
+      "overflow": false
+    },
+    {
+      "page": 5,
+      "title": "04  文献基础与改进边界",
+      "scale": 1,
+      "body_height": 454.5,
+      "available_height": 671.89,
+      "bottom": 265.39,
+      "overflow": false
+    },
+    {
+      "page": 6,
+      "title": "05  研究问题、假设与可证伪条件",
+      "scale": 1,
+      "body_height": 388.9,
+      "available_height": 671.89,
+      "bottom": 330.99,
+      "overflow": false
+    },
+    {
+      "page": 7,
+      "title": "06  公共任务、信息与动作合同",
+      "scale": 1,
+      "body_height": 358.7,
+      "available_height": 671.89,
+      "bottom": 361.19,
+      "overflow": false
+    },
+    {
+      "page": 8,
+      "title": "07  参数收敛与主实验物理域",
+      "scale": 1,
+      "body_height": 430.7,
+      "available_height": 671.89,
+      "bottom": 289.19,
+      "overflow": false
+    },
+    {
+      "page": 9,
+      "title": "08  可辨识性：必须先承认哪些无法区分",
+      "scale": 1,
+      "body_height": 351.3,
+      "available_height": 671.89,
+      "bottom": 368.59,
+      "overflow": false
+    },
+    {
+      "page": 10,
+      "title": "09  执行时序与事实转移",
+      "scale": 1,
+      "body_height": 368.0,
+      "available_height": 671.89,
+      "bottom": 351.89,
+      "overflow": false
+    },
+    {
+      "page": 11,
+      "title": "10  模块A：条件化共享与个体集合",
+      "scale": 1,
+      "body_height": 317.6,
+      "available_height": 671.89,
+      "bottom": 402.29,
+      "overflow": false
+    },
+    {
+      "page": 12,
+      "title": "11  模块A：候选组织、更新与计算预算",
+      "scale": 1,
+      "body_height": 305.6,
+      "available_height": 671.89,
+      "bottom": 414.29,
+      "overflow": false
+    },
+    {
+      "page": 13,
+      "title": "12  模块B：命令时序一致的条件更新",
+      "scale": 1,
+      "body_height": 310.0,
+      "available_height": 671.89,
+      "bottom": 409.89,
+      "overflow": false
+    },
+    {
+      "page": 14,
+      "title": "13  有效样本、容差与变化恢复",
+      "scale": 1,
+      "body_height": 393.1,
+      "available_height": 671.89,
+      "bottom": 326.79,
+      "overflow": false
+    },
+    {
+      "page": 15,
+      "title": "14  v2集合与历史schema",
+      "scale": 1,
+      "body_height": 430.4,
+      "available_height": 671.89,
+      "bottom": 289.49,
+      "overflow": false
+    },
+    {
+      "page": 16,
+      "title": "15  Actor与Critic的信息输入",
+      "scale": 1,
+      "body_height": 429.0,
+      "available_height": 671.89,
+      "bottom": 290.89,
+      "overflow": false
+    },
+    {
+      "page": 17,
+      "title": "16  承接SIRSA的团队SAC与事实回放",
+      "scale": 1,
+      "body_height": 342.8,
+      "available_height": 671.89,
+      "bottom": 377.09,
+      "overflow": false
+    },
+    {
+      "page": 18,
+      "title": "17  一致场景、采样测度与风险支持",
+      "scale": 1,
+      "body_height": 378.4,
+      "available_height": 671.89,
+      "bottom": 341.49,
+      "overflow": false
+    },
+    {
+      "page": 19,
+      "title": "18  代码调整清单：物理、参数与估计",
+      "scale": 1,
+      "body_height": 438.5,
+      "available_height": 671.89,
+      "bottom": 281.39,
+      "overflow": false
+    },
+    {
+      "page": 20,
+      "title": "19  代码调整清单：学习、回放与运行",
+      "scale": 1,
+      "body_height": 438.3,
+      "available_height": 671.89,
+      "bottom": 281.59,
+      "overflow": false
+    },
+    {
+      "page": 21,
+      "title": "20  拟议配置与候选预算",
+      "scale": 1,
+      "body_height": 418.4,
+      "available_height": 671.89,
+      "bottom": 301.49,
+      "overflow": false
+    },
+    {
+      "page": 22,
+      "title": "21  三类方法身份与主对照",
+      "scale": 1,
+      "body_height": 416.8,
+      "available_height": 671.89,
+      "bottom": 303.09,
+      "overflow": false
+    },
+    {
+      "page": 23,
+      "title": "22  核心消融：共享×时序的2×2设计",
+      "scale": 1,
+      "body_height": 427.3,
+      "available_height": 671.89,
+      "bottom": 292.59,
+      "overflow": false
+    },
+    {
+      "page": 24,
+      "title": "23  次级消融：宽度、低尾与策略记忆",
+      "scale": 1,
+      "body_height": 449.9,
+      "available_height": 671.89,
+      "bottom": 269.99,
+      "overflow": false
+    },
+    {
+      "page": 25,
+      "title": "24  第一层实验：相同轨迹上的辨识对比",
+      "scale": 1,
+      "body_height": 354.2,
+      "available_height": 671.89,
+      "bottom": 365.69,
+      "overflow": false
+    },
+    {
+      "page": 26,
+      "title": "25  第二层实验：闭环任务与扰动协议",
+      "scale": 1,
+      "body_height": 438.1,
+      "available_height": 671.89,
+      "bottom": 281.79,
+      "overflow": false
+    },
+    {
+      "page": 27,
+      "title": "26  指标、统计与恢复口径",
+      "scale": 1,
+      "body_height": 510.2,
+      "available_height": 671.89,
+      "bottom": 209.69,
+      "overflow": false
+    },
+    {
+      "page": 28,
+      "title": "27  G0-G5研发与验收顺序",
+      "scale": 1,
+      "body_height": 448.1,
+      "available_height": 671.89,
+      "bottom": 271.79,
+      "overflow": false
+    },
+    {
+      "page": 29,
+      "title": "28  必要机制检查与错误用例",
+      "scale": 1,
+      "body_height": 384.9,
+      "available_height": 671.89,
+      "bottom": 334.99,
+      "overflow": false
+    },
+    {
+      "page": 30,
+      "title": "29  运行命令：现有入口与未来模板分开",
+      "scale": 1,
+      "body_height": 469.6,
+      "available_height": 671.89,
+      "bottom": 250.29,
+      "overflow": false
+    },
+    {
+      "page": 31,
+      "title": "30  风险、限制与可接受的论文主张",
+      "scale": 1,
+      "body_height": 422.4,
+      "available_height": 671.89,
+      "bottom": 297.49,
+      "overflow": false
+    },
+    {
+      "page": 32,
+      "title": "31  论文章节组织与创新点写法",
+      "scale": 1,
+      "body_height": 406.4,
+      "available_height": 671.89,
+      "bottom": 313.49,
+      "overflow": false
+    },
+    {
+      "page": 33,
+      "title": "32  直接参考文献与原文定位",
+      "scale": 1,
+      "body_height": 459.6,
+      "available_height": 671.89,
+      "bottom": 260.29,
+      "overflow": false
+    },
+    {
+      "page": 34,
+      "title": "33  交付、追踪与下一步实施清单",
+      "scale": 1,
+      "body_height": 391.7,
+      "available_height": 671.89,
+      "bottom": 328.19,
+      "overflow": false
+    }
+  ],
+  "visual_review_status": "PASSED",
+  "note": "Render every page before final delivery.",
+  "rendered_pages": 34,
+  "contact_sheets": [
+    "renders/contact_01.jpg",
+    "renders/contact_02.jpg",
+    "renders/contact_03.jpg",
+    "renders/contact_04.jpg",
+    "renders/contact_05.jpg",
+    "renders/contact_06.jpg"
+  ],
+  "bounding_box_outliers": [],
+  "hyperlinks": 8,
+  "bounding_box_check_passed": true,
+  "renderer_warnings": [
+    "Unused fallback-font messages for Symbol and ArialUnicode; embedded YaHei is visually checked."
+  ],
+  "visual_review_method": "All 34 pages inspected in six contact sheets; full-resolution selected pages also inspected. Changed page 30 rerendered and rechecked.",
+  "full_resolution_pages": [
+    1,
+    11,
+    16,
+    18,
+    19,
+    23,
+    27,
+    30,
+    33
+  ],
+  "reviewed_pdf_sha256": "378fa5dc6793ed31dfc29cd29011dc8a4db6bdfd5d87613b88368fac8d2b3cb9"
+}

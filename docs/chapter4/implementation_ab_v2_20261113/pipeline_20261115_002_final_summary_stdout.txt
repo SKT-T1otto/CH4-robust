@@ -1,0 +1,207 @@
+{
+  "output": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-CH4-IntervalRobust\\work\\ch4\\ab_v2_final_v9_20261115_summary_001",
+  "groups": {
+    "ab_full:dev:N0:piecewise:in_domain": {
+      "episodes": 2,
+      "success_rate": 0.0,
+      "success_wilson_95": [
+        0.0,
+        0.6576280471103807
+      ],
+      "collision_rate": 0.0,
+      "mean_return": 0.08272839630080853,
+      "lower_return_tail_mean": 0.0644884538196493,
+      "alpha_report": 0.25,
+      "joint_box_coverage": 0.5625,
+      "valid_rate": 0.625,
+      "conditional_joint_support": 0.0,
+      "conditional_support_episodes": 2,
+      "per_dimension_coverage": [
+        [
+          0.625,
+          1.0,
+          0.6875,
+          0.875,
+          0.8125,
+          0.96875
+        ],
+        [
+          0.625,
+          1.0,
+          0.96875,
+          0.875,
+          1.0,
+          1.0
+        ],
+        [
+          0.625,
+          0.875,
+          0.96875,
+          0.875,
+          0.96875,
+          0.96875
+        ],
+        [
+          0.625,
+          1.0,
+          0.9375,
+          0.75,
+          1.0,
+          0.96875
+        ]
+      ],
+      "mean_width": [
+        [
+          0.09912500000000005,
+          0.3306774195862148,
+          0.22008319949817612,
+          0.04032809136797666,
+          0.23347852399143118,
+          0.78125
+        ],
+        [
+          0.09912500000000005,
+          0.32501981981522743,
+          0.23077661850209202,
+          0.041420608949254506,
+          0.22858075955708684,
+          0.90625
+        ],
+        [
+          0.09912500000000005,
+          0.30452319158854335,
+          0.2269324522397208,
+          0.041666023902657154,
+          0.23696468811599647,
+          0.9375
+        ],
+        [
+          0.09912500000000005,
+          0.33464532526420265,
+          0.23357542945223614,
+          0.0428361163388765,
+          0.2428486156019296,
+          1.125
+        ]
+      ],
+      "intervention_rate": 0.0,
+      "wall_seconds": 22.798648600000206,
+      "estimation_seconds": 0.2343774999994821,
+      "prediction_error": 0.029812191844272043,
+      "recovery_events": 2,
+      "recovery_unrecovered_rate": 1.0,
+      "recovery_conditional_mean": null,
+      "recovery_endpoints": {
+        "administrative_end": 2
+      },
+      "per_training_seed_mean": {
+        "7291": 0.08272839630080853
+      },
+      "independent_training_seeds": 1,
+      "training_seed_uncertainty_established": false,
+      "performance_passed": false,
+      "paired_nominal_scene_count": 2,
+      "paired_nominal_return_delta": -0.021055562523542903
+    },
+    "ab_full:dev:N0:nominal:in_domain": {
+      "episodes": 2,
+      "success_rate": 0.0,
+      "success_wilson_95": [
+        0.0,
+        0.6576280471103807
+      ],
+      "collision_rate": 0.0,
+      "mean_return": 0.10378395882435143,
+      "lower_return_tail_mean": 0.09325092285871506,
+      "alpha_report": 0.25,
+      "joint_box_coverage": 0.40625,
+      "valid_rate": 0.5,
+      "conditional_joint_support": 0.0,
+      "conditional_support_episodes": 2,
+      "per_dimension_coverage": [
+        [
+          0.84375,
+          1.0,
+          0.90625,
+          1.0,
+          0.71875,
+          1.0
+        ],
+        [
+          0.84375,
+          1.0,
+          1.0,
+          1.0,
+          0.75,
+          1.0
+        ],
+        [
+          0.84375,
+          1.0,
+          1.0,
+          1.0,
+          0.75,
+          1.0
+        ],
+        [
+          0.84375,
+          1.0,
+          1.0,
+          1.0,
+          0.90625,
+          1.0
+        ]
+      ],
+      "mean_width": [
+        [
+          0.10054687500000004,
+          0.3333174101283758,
+          0.21401043364107866,
+          0.04279016607088202,
+          0.22160606380487322,
+          0.96875
+        ],
+        [
+          0.10054687500000004,
+          0.336430990498109,
+          0.22818931178576546,
+          0.043317829745202666,
+          0.2385379051980145,
+          1.25
+        ],
+        [
+          0.10054687500000004,
+          0.3295484109690916,
+          0.23811681458942482,
+          0.04299384719409256,
+          0.24267625923899755,
+          1.3125
+        ],
+        [
+          0.10054687500000004,
+          0.340239746683477,
+          0.24539825592023468,
+          0.04457152249067553,
+          0.2427626984657175,
+          1.75
+        ]
+      ],
+      "intervention_rate": 0.0,
+      "wall_seconds": 21.26037310000038,
+      "estimation_seconds": 0.22134800000321775,
+      "prediction_error": 0.039920315528225135,
+      "recovery_events": 0,
+      "recovery_unrecovered_rate": null,
+      "recovery_conditional_mean": null,
+      "recovery_endpoints": {},
+      "per_training_seed_mean": {
+        "7291": 0.10378395882435143
+      },
+      "independent_training_seeds": 1,
+      "training_seed_uncertainty_established": false,
+      "performance_passed": false,
+      "paired_nominal_scene_count": 0,
+      "paired_nominal_return_delta": null
+    }
+  }
+}

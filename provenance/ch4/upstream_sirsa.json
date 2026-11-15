@@ -1,0 +1,68 @@
+{
+  "schema": "auv.ch4.upstream.sirsa.v1",
+  "repository": "https://github.com/anxie/sirsa",
+  "commit": "ed550ca2611468bb45154b735ee89ecd611d23a2",
+  "tree": "ed550ca2611468bb45154b735ee89ecd611d23a2",
+  "paper": "https://proceedings.mlr.press/v162/xie22c.html",
+  "license": {
+    "declared_in_setup_py": "MIT",
+    "standalone_license_file_present": false,
+    "redistribution_review": "REVIEW_REQUIRED",
+    "implementation": "New PyTorch code derived from the method; no upstream source copied into runtime."
+  },
+  "reviewed_files": [
+    {
+      "path": "README.md",
+      "git_blob_sha1": "7ce4ed135843fd378471a58a81efef14f6f62e9a",
+      "bytes": 1119
+    },
+    {
+      "path": "environment.yml",
+      "git_blob_sha1": "3155bb129cc1a541107c00b78a6720a4f1a632c1",
+      "bytes": 235
+    },
+    {
+      "path": "examples/development/variants.py",
+      "git_blob_sha1": "2a667de9a0caca1eb433953b87f5c2b11f55bbf9",
+      "bytes": 14492
+    },
+    {
+      "path": "requirements.txt",
+      "git_blob_sha1": "b02d96f68442d71a423ecb216a5a0595872e68c7",
+      "bytes": 1948
+    },
+    {
+      "path": "setup.py",
+      "git_blob_sha1": "93fe50fd85b3c7afbc8578d3b6ed913c8b11567b",
+      "bytes": 1042
+    },
+    {
+      "path": "softlearning/algorithms/sac.py",
+      "git_blob_sha1": "a8ab174d034d849e028c876ff2fe7ca9b2b62258",
+      "bytes": 22210
+    },
+    {
+      "path": "softlearning/environments/gym/robust/reacher.py",
+      "git_blob_sha1": "02e47b3cf59fc579dadc809cfca1c1cb828ad6f0",
+      "bytes": 6909
+    },
+    {
+      "path": "softlearning/policies/gaussian_policy.py",
+      "git_blob_sha1": "f6f9c1ddc82a73874ce48507d9f7a49e9bb20f5f",
+      "bytes": 8176
+    }
+  ],
+  "mechanism_notes": {
+    "original_implementation": "TensorFlow/softlearning single-agent",
+    "original_paper_set": "L1-ball terminology; center and scale inputs",
+    "official_code_sampling": "Independent coordinate-uniform samples between center-radius and center+radius in SAC tail objective",
+    "estimator": "History-conditioned residual context ensemble; supervised context loss; ensemble mean and std",
+    "adaptations": [
+      "Independent PyTorch centralized joint-action twin critic and four stochastic actors",
+      "Empirical structured box hull and explicit delay/lag hypotheses",
+      "Shared physical field consistency and support-gated sampled tail utility"
+    ]
+  },
+  "original_reproduction_passed": false,
+  "native_dependency_installation_performed": false
+}

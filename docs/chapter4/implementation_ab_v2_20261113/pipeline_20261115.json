@@ -1,0 +1,127 @@
+{
+  "passed": false,
+  "steps": [
+    {
+      "name": "final_train",
+      "args": [
+        "D:\\anaconda\\anaconda\\envs\\AUV\\python.exe",
+        "-B",
+        "ch4_cli.py",
+        "train",
+        "--config",
+        "configs/ch4/experiment_ab_v2.json",
+        "--execute",
+        "--mechanism",
+        "--protocol",
+        "piecewise",
+        "--output",
+        "work/ch4/ab_v2_final_20261115_train_001"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "final_eval",
+      "args": [
+        "D:\\anaconda\\anaconda\\envs\\AUV\\python.exe",
+        "-B",
+        "ch4_cli.py",
+        "evaluate",
+        "--config",
+        "configs/ch4/experiment_ab_v2.json",
+        "--execute",
+        "--mechanism",
+        "--protocol",
+        "piecewise",
+        "--split",
+        "dev",
+        "--weights",
+        "work/ch4/ab_v2_final_20261115_train_001/checkpoint_00002.pt",
+        "--output",
+        "work/ch4/ab_v2_final_20261115_eval_001"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "final_resume",
+      "args": [
+        "D:\\anaconda\\anaconda\\envs\\AUV\\python.exe",
+        "-B",
+        "ch4_cli.py",
+        "train",
+        "--config",
+        "configs/ch4/experiment_ab_v2.json",
+        "--execute",
+        "--mechanism",
+        "--protocol",
+        "piecewise",
+        "--resume",
+        "work/ch4/ab_v2_final_20261115_train_001/checkpoint_00001.pt",
+        "--output",
+        "work/ch4/ab_v2_final_20261115_resume_001"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "final_nominal_eval",
+      "args": [
+        "D:\\anaconda\\anaconda\\envs\\AUV\\python.exe",
+        "-B",
+        "ch4_cli.py",
+        "evaluate",
+        "--config",
+        "configs/ch4/experiment_ab_v2.json",
+        "--execute",
+        "--mechanism",
+        "--protocol",
+        "nominal",
+        "--split",
+        "dev",
+        "--weights",
+        "work/ch4/ab_v2_final_20261115_train_001/checkpoint_00002.pt",
+        "--output",
+        "work/ch4/ab_v2_final_20261115_nominal_001"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "final_summary",
+      "args": [
+        "D:\\anaconda\\anaconda\\envs\\AUV\\python.exe",
+        "-B",
+        "ch4_cli.py",
+        "summarize",
+        "--config",
+        "configs/ch4/experiment_ab_v2.json",
+        "--execute",
+        "--inputs",
+        "work/ch4/ab_v2_final_20261115_eval_001",
+        "work/ch4/ab_v2_final_20261115_nominal_001",
+        "--output",
+        "work/ch4/ab_v2_final_20261115_summary_001"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "final_identify",
+      "args": [
+        "D:\\anaconda\\anaconda\\envs\\AUV\\python.exe",
+        "-B",
+        "ch4_cli.py",
+        "identify",
+        "--config",
+        "configs/ch4/experiment_ab_v2.json",
+        "--execute",
+        "--mechanism",
+        "--protocol",
+        "piecewise",
+        "--split",
+        "calib",
+        "--output",
+        "work/ch4/ab_v2_final_20261115_identify_001"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "error": "AssertionError()",
+  "performance_passed": false
+}

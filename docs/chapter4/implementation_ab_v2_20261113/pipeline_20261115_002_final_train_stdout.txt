@@ -1,0 +1,120 @@
+{
+  "output": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-CH4-IntervalRobust\\work\\ch4\\ab_v2_final_v9_20261115_train_001",
+  "episodes": 2,
+  "success_rate": 0.0,
+  "success_wilson_95": [
+    0.0,
+    0.6576280471103807
+  ],
+  "collision_rate": 0.0,
+  "mean_return": 0.1806010974542005,
+  "lower_return_tail_mean": 0.09246006235480309,
+  "alpha_report": 0.25,
+  "joint_box_coverage": 0.625,
+  "valid_rate": 0.453125,
+  "conditional_joint_support": 0.0,
+  "conditional_support_episodes": 2,
+  "per_dimension_coverage": [
+    [
+      0.8125,
+      0.90625,
+      0.875,
+      0.84375,
+      1.0,
+      0.96875
+    ],
+    [
+      0.8125,
+      1.0,
+      0.84375,
+      0.9375,
+      0.9375,
+      1.0
+    ],
+    [
+      0.8125,
+      0.78125,
+      1.0,
+      1.0,
+      1.0,
+      0.96875
+    ],
+    [
+      0.8125,
+      0.9375,
+      0.96875,
+      1.0,
+      1.0,
+      1.0
+    ]
+  ],
+  "mean_width": [
+    [
+      0.10562500000000005,
+      0.3268061752754905,
+      0.23440907448800596,
+      0.04395119361064832,
+      0.22365487928515213,
+      1.34375
+    ],
+    [
+      0.10562500000000005,
+      0.33513906782795055,
+      0.23476012926504733,
+      0.04223766663094593,
+      0.2349431308462966,
+      1.28125
+    ],
+    [
+      0.10562500000000005,
+      0.32868526974949464,
+      0.2333264459688029,
+      0.043693692765793296,
+      0.2328049053507214,
+      1.28125
+    ],
+    [
+      0.10562500000000005,
+      0.33035945425858043,
+      0.22706846292235328,
+      0.04284476993417221,
+      0.2279156698487317,
+      0.65625
+    ]
+  ],
+  "intervention_rate": 0.0,
+  "wall_seconds": 13.145462499999894,
+  "estimation_seconds": 0.2415616999996928,
+  "prediction_error": 0.040072957217661034,
+  "recovery_events": 2,
+  "recovery_unrecovered_rate": 0.5,
+  "recovery_conditional_mean": 5.0,
+  "recovery_endpoints": {
+    "recovered": 1,
+    "administrative_end": 1
+  },
+  "per_training_seed_mean": {
+    "7291": 0.1806010974542005
+  },
+  "independent_training_seeds": 1,
+  "training_seed_uncertainty_established": false,
+  "performance_passed": false,
+  "source": {
+    "schema": "auv.ch4.source_identity.v1",
+    "sha256": "3717440d3ba78762e599b01e56fa6d4f5f4d34510d09b65bbbb44c6efa37d447",
+    "version": 9,
+    "frozen_parent_sha256": "8714ad799c4455221adf03f328ec7e39e3977759c3580c4cf6fa7b99d2efee3e",
+    "inherited_source_checks_passed": false,
+    "original_sirsa_reproduced": false,
+    "performance_passed": false
+  },
+  "total_physical_steps": 32,
+  "physical_steps_executed_this_run": 32,
+  "inherited_steps": 0,
+  "total_updates": 4,
+  "updates_executed_this_run": 4,
+  "risk_supported_rows": 0,
+  "risk_fallback_rows": 16,
+  "mechanism": true,
+  "original_sirsa_reproduced": false
+}

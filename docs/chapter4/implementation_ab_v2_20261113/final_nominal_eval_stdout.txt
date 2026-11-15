@@ -1,0 +1,117 @@
+{
+  "output": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-CH4-IntervalRobust\\work\\ch4\\ab_v2_final_20261115_nominal_001",
+  "episodes": 2,
+  "success_rate": 0.0,
+  "success_wilson_95": [
+    0.0,
+    0.6576280471103807
+  ],
+  "collision_rate": 0.0,
+  "mean_return": 0.10378395882435143,
+  "lower_return_tail_mean": 0.09325092285871506,
+  "alpha_report": 0.25,
+  "joint_box_coverage": 0.40625,
+  "valid_rate": 0.5,
+  "conditional_joint_support": 0.0,
+  "conditional_support_episodes": 2,
+  "per_dimension_coverage": [
+    [
+      0.84375,
+      1.0,
+      0.90625,
+      1.0,
+      0.71875,
+      1.0
+    ],
+    [
+      0.84375,
+      1.0,
+      1.0,
+      1.0,
+      0.75,
+      1.0
+    ],
+    [
+      0.84375,
+      1.0,
+      1.0,
+      1.0,
+      0.75,
+      1.0
+    ],
+    [
+      0.84375,
+      1.0,
+      1.0,
+      1.0,
+      0.90625,
+      1.0
+    ]
+  ],
+  "mean_width": [
+    [
+      0.10054687500000004,
+      0.3333174101283758,
+      0.21401043364107866,
+      0.04279016607088202,
+      0.22160606380487322,
+      0.96875
+    ],
+    [
+      0.10054687500000004,
+      0.336430990498109,
+      0.22818931178576546,
+      0.043317829745202666,
+      0.2385379051980145,
+      1.25
+    ],
+    [
+      0.10054687500000004,
+      0.3295484109690916,
+      0.23811681458942482,
+      0.04299384719409256,
+      0.24267625923899755,
+      1.3125
+    ],
+    [
+      0.10054687500000004,
+      0.340239746683477,
+      0.24539825592023468,
+      0.04457152249067553,
+      0.2427626984657175,
+      1.75
+    ]
+  ],
+  "intervention_rate": 0.0,
+  "wall_seconds": 20.87755109999989,
+  "estimation_seconds": 0.13725440000030176,
+  "prediction_error": 0.039920315528225135,
+  "recovery_events": 0,
+  "recovery_unrecovered_rate": null,
+  "recovery_conditional_mean": null,
+  "recovery_endpoints": {},
+  "per_training_seed_mean": {
+    "7291": 0.10378395882435143
+  },
+  "independent_training_seeds": 1,
+  "training_seed_uncertainty_established": false,
+  "performance_passed": false,
+  "source": {
+    "schema": "auv.ch4.source_identity.v1",
+    "sha256": "aac0dfde1ff5571f95be20e9a874d0b2a8924dae213e092e80917a18d16d5db8",
+    "version": 8,
+    "frozen_parent_sha256": "8714ad799c4455221adf03f328ec7e39e3977759c3580c4cf6fa7b99d2efee3e",
+    "inherited_source_checks_passed": false,
+    "original_sirsa_reproduced": false,
+    "performance_passed": false
+  },
+  "total_physical_steps": 32,
+  "physical_steps_executed_this_run": 32,
+  "inherited_steps": 0,
+  "total_updates": 0,
+  "updates_executed_this_run": 0,
+  "risk_supported_rows": 0,
+  "risk_fallback_rows": 0,
+  "mechanism": true,
+  "original_sirsa_reproduced": false
+}

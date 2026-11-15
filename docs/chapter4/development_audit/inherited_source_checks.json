@@ -1,0 +1,10 @@
+{
+  "path_option_identity": {
+    "exit_code": 0,
+    "error": null
+  },
+  "independent_source_verifier": {
+    "exit_code": 1,
+    "error": "ValueError: pure-MARL source manifest/inventory mismatch"
+  }
+}

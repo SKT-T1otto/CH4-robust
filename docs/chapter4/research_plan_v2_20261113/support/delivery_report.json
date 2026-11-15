@@ -1,0 +1,41 @@
+{
+  "completed_utc": "2026-11-13T10:43:20.618696+00:00",
+  "document_version": "2.0",
+  "pages": 34,
+  "pdf": "output\\pdf\\CH4_SIRSA_AB_详细研究方案_20261113_v2.pdf",
+  "pdf_sha256": "378fa5dc6793ed31dfc29cd29011dc8a4db6bdfd5d87613b88368fac8d2b3cb9",
+  "text_and_structure_passed": true,
+  "geometry_and_visual_review_passed": true,
+  "all_terminal_commands_completed_at_finalization": true,
+  "content_review_corrections": [
+    "N=32/64/128 consistent with alpha=0.25 and min_tail=8",
+    "Tri-state history status distinguishes padding from ineligible observed samples",
+    "Conditional joint support distinguished from 21D marginal-box coverage",
+    "All-query risk gate; unsupported candidates are not silently removed from the sampling measure",
+    "Recovery administrative censoring distinguished from collision/failure competing events",
+    "SIRSA original-vs-local PDF page numbers distinguished",
+    "Future verify template carries the v2 config"
+  ],
+  "runtime_algorithm_changes": false,
+  "training_started": false,
+  "historical_models_loaded": false,
+  "github_writes": false,
+  "original_pdf_overwritten": false,
+  "existing_files_compared": 3248,
+  "legacy_CH3_CH4_CH5_files_compared": 790,
+  "original_ch4_project_files_compared": 1720,
+  "active_protected_subtree_files_compared": 738,
+  "active_subtrees": [
+    "core",
+    "chapter3_bser",
+    "configs",
+    "checks",
+    "tools",
+    "scripts",
+    "provenance"
+  ],
+  "protected_unchanged": true,
+  "created_scope": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-CH4-IntervalRobust\\docs\\chapter4\\research_plan_v2_20261113",
+  "v2_implementation_status": "PROPOSED_NOT_IMPLEMENTED",
+  "performance_status": "REVIEW_REQUIRED"
+}

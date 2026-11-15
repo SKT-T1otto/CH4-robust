@@ -1,0 +1,42 @@
+{
+  "schema": "auv.ch4.interval_robust.v1",
+  "reference_config": "configs/b2.json",
+  "seed": 7291,
+  "max_steps": 400,
+  "episodes": 100,
+  "checkpoint_interval": 10,
+  "evaluation_episodes": 10,
+  "splits": {"train": 1729100, "dev": 2729100, "test": 3729100},
+  "method": "full",
+  "domain": "in_domain",
+  "domains": {
+    "in_domain": null,
+    "heldout_flow": [[0.28,0.36],[-0.025,0.025],[0.85,1.2],[-0.02,0.025],[0.85,1.1],[0.9,1.05],[0,0.25],[0,2],[0,0.02]],
+    "heldout_response": [[0.15,0.28],[-0.025,0.025],[1.2,1.35],[-0.02,0.025],[0.7,0.85],[0.8,0.9],[0.25,0.35],[3,3],[0,0.02]]
+  },
+  "disturbance": {
+    "protocol": "episode",
+    "bounds": [[0.15,0.28],[-0.025,0.025],[0.85,1.2],[-0.02,0.025],[0.85,1.1],[0.9,1.05],[0.0,0.25],[0,2],[0.0,0.02]],
+    "change_steps": [100,200,300],
+    "drift_rate": [0.0002,0.0001,0.0003,0.0001,0.0002,0.0001,0.0002,0,0.00005]
+  },
+  "estimation": {"history": 5, "particles": 256, "minimum_particles": 8, "velocity_tolerance": 0.04, "hull_padding": 0.05, "ensemble": 4, "hidden": 64},
+  "sac": {"hidden": 128, "batch_size": 64, "replay_size": 20000, "warmup_steps": 256, "update_frequency": 4, "gamma": 0.95, "tau": 0.005, "lr": 0.0003, "initial_temperature": 0.1},
+  "risk": {"alpha": 0.25, "samples": 16, "minimum_tail_samples": 2, "minimum_contexts": 8, "support_radius": 0.45},
+  "protection": {"mode": "off", "samples": 8, "horizon": 10, "clearance": 0.4, "hit_padding": 0.15},
+  "recovery": {"window": 5, "speed_error": 0.25},
+  "acceptance": {"nominal_success_threshold": null, "status": "REVIEW_REQUIRED", "performance_passed": false},
+  "methods": {
+    "nominal": {"estimator": "fixed", "input": "none", "shared": true, "risk": false, "phase": true, "learn": false},
+    "uniform_dr": {"estimator": "fixed", "input": "none", "shared": true, "risk": false, "phase": true, "learn": true},
+    "point": {"estimator": "ensemble", "input": "point", "shared": false, "risk": false, "phase": true, "learn": true},
+    "fixed_set": {"estimator": "fixed", "input": "interval", "shared": true, "risk": true, "phase": true, "learn": true},
+    "sirsa_naive": {"estimator": "ensemble", "input": "interval", "shared": false, "risk": true, "phase": true, "learn": true},
+    "full": {"estimator": "history_set", "input": "interval", "shared": true, "risk": true, "phase": true, "learn": true},
+    "a_off": {"estimator": "history_set", "input": "interval", "shared": false, "risk": true, "phase": true, "learn": true},
+    "b_off": {"estimator": "ensemble", "input": "interval", "shared": true, "risk": true, "phase": true, "learn": true},
+    "c_off": {"estimator": "history_set", "input": "interval", "shared": true, "risk": true, "risk_alpha": 1.0, "phase": true, "learn": true},
+    "phase_off": {"estimator": "history_set", "input": "interval", "shared": true, "risk": true, "phase": false, "learn": true},
+    "fixed_width": {"estimator": "history_set", "input": "fixed_width", "shared": true, "risk": true, "phase": true, "learn": true}
+  }
+}

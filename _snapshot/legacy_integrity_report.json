@@ -1,0 +1,22 @@
+{
+  "method": "Full recursive inventory with SHA256 of every file, before and after; includes checkpoints/results/git/caches.",
+  "repositories": {
+    "CH3": {
+      "files": 369,
+      "bytes": 2133039295,
+      "unchanged": true
+    },
+    "CH4": {
+      "files": 103,
+      "bytes": 216010748,
+      "unchanged": true
+    },
+    "CH5": {
+      "files": 318,
+      "bytes": 488774083,
+      "unchanged": true
+    }
+  },
+  "changed_files": [],
+  "passed": true
+}

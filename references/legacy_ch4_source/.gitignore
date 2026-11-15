@@ -1,0 +1,6 @@
+data/chapter4_final/**
+!data/chapter4_final/.gitkeep
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/

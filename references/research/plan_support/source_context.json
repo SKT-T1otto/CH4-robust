@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-12",
+  "source_files": {
+    "AGENTS.md": "eb76e2a60ff35938f27276caf82ecf8c1d13cd4b453ab66217e0d759384b45c2",
+    "docs/1-223081.pdf": "d2f986c1e0bf799a3d036662c3708ee15cb645e4797323f9bd8bd6fbd026888f",
+    "AUV-Thesis-Active/configs/b2.json": "41e46d4d9ae35f7808d3bb82ae859f83117580013f8c2e69d93f4b83203dce48",
+    "AUV-Thesis-Active/core/env/uav_env.py": "3b6bc79ae5d6f8fe2823a4ba3ccd8471d8b207c1e52478749ba5f9e53bda5e37",
+    "AUV-Thesis-Active/chapter3_bser/safe_rl/control.py": "6458002209d12cc6cfda537bcefeff6d54ea15007bbceed294b5a39a15fb7ce0",
+    "AUV-Thesis-Active/chapter3_bser/safe_rl/runtime.py": "8b450ed3faa2e27fbee94665b69fb1a762b61b1239440d27b99618b7057235be",
+    "AUV-Thesis-Active/chapter3_bser/path_option/runtime.py": "c4f77c86729c196c3d7779c88ef58249b8146285fce71ceedb3b75215ff29709",
+    "AUV-Thesis-Active/chapter3_bser/path_option/learner.py": "cc73b792bdfb2dcf4c061a1dbe6a8f44d1c5fa8d981078391e45bb4eaaeee112",
+    "AUV-Thesis-Active/docs/PATH_OPTION_V1.md": "518b1749f5a85a9da701d26679850c2805c835eed54f0d815ebe6dffbca20778",
+    "CH4/registry/rbe_disturbance.py": "ff1c5115cd65c23ed4d548a06c7984d5e8c9f2e8e65485dbfc50f12265ba05b2",
+    "CH4/utils/reb_model.py": "e8e5ede2af7e09548a9ed3791201cf2842d8659c6a9e71dd460eabe1f3ff5be6",
+    "CH4/utils/rbe_metrics.py": "bf6330ceece496f36b86a1e686d280002aa521cc42cefe9407c1ead497e84f43"
+  },
+  "head": "18ea616ae256d2bc93f1bd640fe6bd46b5af8180",
+  "existing_tracked_changes": "M chapter3_bser/learning/provenance.py\n M tools/verify_source.py",
+  "research_status": "proposal_only_no_algorithm_implementation",
+  "references": {
+    "R1": [
+      "Xie et al. Robust Policy Learning over Multiple Uncertainty Sets. ICML, 2022.",
+      "https://proceedings.mlr.press/v162/xie22c.html"
+    ],
+    "R2": [
+      "SIRSA official implementation: anxie/sirsa.",
+      "https://github.com/anxie/sirsa"
+    ],
+    "R3": [
+      "Zouitine et al. Time-Constrained Robust MDPs. NeurIPS, 2024.",
+      "https://proceedings.nips.cc/paper_files/paper/2024/hash/3ec4f1d5759d6d3d340a66638a52944b-Abstract-Conference.html"
+    ],
+    "R4": [
+      "Tanabe et al. Max-Min Off-Policy Actor-Critic Method Focusing on Worst-Case Robustness to Model Misspecification. NeurIPS, 2022; revised preprint, 2023.",
+      "https://arxiv.org/abs/2211.03413"
+    ],
+    "R5": [
+      "Kumar et al. RMA: Rapid Motor Adaptation for Legged Robots. RSS, 2021.",
+      "https://arxiv.org/abs/2107.04034"
+    ],
+    "R6": [
+      "Gu et al. Robust Gymnasium: A Unified Modular Benchmark for Robust Reinforcement Learning. 2025.",
+      "https://arxiv.org/abs/2502.19652"
+    ],
+    "R7": [
+      "Thananjeyan et al. Recovery RL: Safe Reinforcement Learning with Learned Recovery Zones. RA-L / ICRA, 2021.",
+      "https://arxiv.org/abs/2010.15920"
+    ],
+    "R8": [
+      "Aboudonia and Lygeros. Adaptive Learning-based Model Predictive Control for Uncertain Interconnected Systems: A Set Membership Identification Approach. Preprint, 2024.",
+      "https://arxiv.org/abs/2404.16514"
+    ],
+    "R9": [
+      "Ding et al. Make Your AUV Adaptive: An Environment-Aware Reinforcement Learning Framework For Underwater Tasks. Preprint, 2025.",
+      "https://arxiv.org/abs/2506.15082"
+    ],
+    "R10": [
+      "Tunçay et al. Fast Policy Learning for 6-DOF Position Control of Underwater Vehicles. Preprint, 2025; revised 2026.",
+      "https://arxiv.org/abs/2512.13359"
+    ],
+    "R11": [
+      "Le et al. Input-Constrained Active Disturbance Rejection Control for AUVs. Preprint, October 2026.",
+      "https://arxiv.org/abs/2610.17498"
+    ]
+  }
+}

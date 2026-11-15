@@ -1,0 +1,87 @@
+{
+  "started_at": "2026-11-12T22:22:58.725393+08:00",
+  "finished_at": "2026-11-12T22:23:52.407873+08:00",
+  "source": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active",
+  "destination": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-CH4-IntervalRobust",
+  "source_confirmed": true,
+  "source_head": "18ea616ae256d2bc93f1bd640fe6bd46b5af8180",
+  "source_worktree_copied_including_uncommitted_files": true,
+  "active_files": 1355,
+  "copied_files": 1417,
+  "copied_bytes": 167812790,
+  "legacy_reference_files": 57,
+  "source_selected_files_unchanged": true,
+  "source_changed_files": [],
+  "source_git_unchanged": true,
+  "copy_hash_errors": [],
+  "shared_hardlinks_or_symlinks": [],
+  "syntax_files_checked": 308,
+  "syntax_errors": [],
+  "source_probes": {
+    "root_is_local": {
+      "source": {
+        "exit_code": 0,
+        "stdout": "{\"root\": \"E:\\\\gym\\\\code\\\\WORKSPACE\\\\AUV-Thesis-Active\"}\n",
+        "stderr": "",
+        "result": {
+          "root": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active"
+        }
+      },
+      "copy": {
+        "exit_code": 0,
+        "stdout": "{\"root\": \"E:\\\\gym\\\\code\\\\WORKSPACE\\\\AUV-Thesis-CH4-IntervalRobust\"}\n",
+        "stderr": "",
+        "result": {
+          "root": "E:\\gym\\code\\WORKSPACE\\AUV-Thesis-CH4-IntervalRobust"
+        }
+      },
+      "equivalent_after_relocation": true
+    },
+    "path_option_identity": {
+      "source": {
+        "exit_code": 1,
+        "stdout": "",
+        "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\chapter3_bser\\path_option\\source.py\", line 45, in identity\n    raise ValueError('source differs from reviewed path-option manifest: '+name)\nValueError: source differs from reviewed path-option manifest: chapter3_bser/learning/provenance.py\n"
+      },
+      "copy": {
+        "exit_code": 1,
+        "stdout": "",
+        "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"E:\\gym\\code\\WORKSPACE\\AUV-Thesis-CH4-IntervalRobust\\chapter3_bser\\path_option\\source.py\", line 45, in identity\n    raise ValueError('source differs from reviewed path-option manifest: '+name)\nValueError: source differs from reviewed path-option manifest: chapter3_bser/learning/provenance.py\n"
+      },
+      "equivalent_after_relocation": true
+    },
+    "independent_source_verifier": {
+      "source": {
+        "exit_code": 1,
+        "stdout": "",
+        "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\tools\\verify_source.py\", line 16, in verify\n    return verify_pure_marl(root)\n           ^^^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\gym\\code\\WORKSPACE\\AUV-Thesis-Active\\tools\\verify_pure_marl.py\", line 135, in verify\n    raise ValueError('pure-MARL source manifest/inventory mismatch')\nValueError: pure-MARL source manifest/inventory mismatch\n"
+      },
+      "copy": {
+        "exit_code": 1,
+        "stdout": "",
+        "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"E:\\gym\\code\\WORKSPACE\\AUV-Thesis-CH4-IntervalRobust\\tools\\verify_source.py\", line 16, in verify\n    return verify_pure_marl(root)\n           ^^^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\gym\\code\\WORKSPACE\\AUV-Thesis-CH4-IntervalRobust\\tools\\verify_pure_marl.py\", line 135, in verify\n    raise ValueError('pure-MARL source manifest/inventory mismatch')\nValueError: pure-MARL source manifest/inventory mismatch\n"
+      },
+      "equivalent_after_relocation": true
+    }
+  },
+  "manifest_closure": {
+    "provenance/path_option_manifest_v5.json": {
+      "file_count": 350,
+      "missing": []
+    },
+    "provenance/pure_marl_revision3_manifest.json": {
+      "file_count": 414,
+      "missing": []
+    }
+  },
+  "legacy_unchanged": true,
+  "training_started": false,
+  "packages_installed": false,
+  "algorithm_semantics_changed": false,
+  "checkpoint_or_results_modified": false,
+  "git_commit_or_push": false,
+  "is_complete_result_or_checkpoint_backup": false,
+  "ch3_final_acceptance_claimed": false,
+  "ch4_implementation_or_performance_claimed": false,
+  "snapshot_passed": true
+}

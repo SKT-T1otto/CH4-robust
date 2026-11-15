@@ -1,0 +1,428 @@
+{
+  "pages": 30,
+  "expected_pages": 30,
+  "page_count_passed": true,
+  "heading_checks": [
+    {
+      "page": 2,
+      "title": "本文件如何使用",
+      "matched": true
+    },
+    {
+      "page": 3,
+      "title": "阅读导航与决策路径",
+      "matched": true
+    },
+    {
+      "page": 4,
+      "title": "项目现状：可继承什么",
+      "matched": true
+    },
+    {
+      "page": 5,
+      "title": "参考学位论文：三章如何组织贡献",
+      "matched": true
+    },
+    {
+      "page": 6,
+      "title": "研究基础：选择 SIRSA，收敛旧计划",
+      "matched": true
+    },
+    {
+      "page": 7,
+      "title": "问题定义与冻结边界",
+      "matched": true
+    },
+    {
+      "page": 8,
+      "title": "参数清单：先核对物理含义",
+      "matched": true
+    },
+    {
+      "page": 9,
+      "title": "区间表示：范围、信息与相关性",
+      "matched": true
+    },
+    {
+      "page": 10,
+      "title": "区间可靠性与覆盖：不把尺度当保证",
+      "matched": true
+    },
+    {
+      "page": 11,
+      "title": "时间协议：参数怎样变化",
+      "matched": true
+    },
+    {
+      "page": 12,
+      "title": "信息与动作合同：先消除歧义",
+      "matched": true
+    },
+    {
+      "page": 13,
+      "title": "总体架构：保留一个清楚的闭环",
+      "matched": true
+    },
+    {
+      "page": 14,
+      "title": "模块 A：共享与个体集合",
+      "matched": true
+    },
+    {
+      "page": 15,
+      "title": "模块 B：与动作时序一致的更新",
+      "matched": true
+    },
+    {
+      "page": 16,
+      "title": "模块 C：一致场景下的团队风险学习",
+      "matched": true
+    },
+    {
+      "page": 17,
+      "title": "学习器与第三章接口怎么衔接",
+      "matched": true
+    },
+    {
+      "page": 18,
+      "title": "训练流程草案与回放字段",
+      "matched": true
+    },
+    {
+      "page": 19,
+      "title": "可执行性检查：控制和安全一起适应",
+      "matched": true
+    },
+    {
+      "page": 20,
+      "title": "旧 CH4 资产：复用与重写边界",
+      "matched": true
+    },
+    {
+      "page": 21,
+      "title": "仓库组织与第三章并行工作",
+      "matched": true
+    },
+    {
+      "page": 22,
+      "title": "比较方法与可归因的消融",
+      "matched": true
+    },
+    {
+      "page": 23,
+      "title": "场景、扰动与数据划分",
+      "matched": true
+    },
+    {
+      "page": 24,
+      "title": "指标与失败定义",
+      "matched": true
+    },
+    {
+      "page": 25,
+      "title": "阶段门槛与实施顺序",
+      "matched": true
+    },
+    {
+      "page": 26,
+      "title": "预算、复杂度与范围控制",
+      "matched": true
+    },
+    {
+      "page": 27,
+      "title": "贡献、理论与论文章节草案",
+      "matched": true
+    },
+    {
+      "page": 28,
+      "title": "待决事项与下一轮工作说明",
+      "matched": true
+    },
+    {
+      "page": 29,
+      "title": "本地证据目录与交付核验",
+      "matched": true
+    },
+    {
+      "page": 30,
+      "title": "参考文献与版本说明",
+      "matched": true
+    }
+  ],
+  "footer_checks": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "link_annotations": 20,
+  "out_of_page_content": [],
+  "no_replacement_characters": true,
+  "page_statistics": [
+    {
+      "page": 1,
+      "characters": 385,
+      "lines": 21,
+      "footer": true
+    },
+    {
+      "page": 2,
+      "characters": 592,
+      "lines": 33,
+      "footer": true
+    },
+    {
+      "page": 3,
+      "characters": 542,
+      "lines": 43,
+      "footer": true
+    },
+    {
+      "page": 4,
+      "characters": 733,
+      "lines": 37,
+      "footer": true
+    },
+    {
+      "page": 5,
+      "characters": 697,
+      "lines": 34,
+      "footer": true
+    },
+    {
+      "page": 6,
+      "characters": 693,
+      "lines": 36,
+      "footer": true
+    },
+    {
+      "page": 7,
+      "characters": 714,
+      "lines": 34,
+      "footer": true
+    },
+    {
+      "page": 8,
+      "characters": 707,
+      "lines": 53,
+      "footer": true
+    },
+    {
+      "page": 9,
+      "characters": 620,
+      "lines": 33,
+      "footer": true
+    },
+    {
+      "page": 10,
+      "characters": 622,
+      "lines": 33,
+      "footer": true
+    },
+    {
+      "page": 11,
+      "characters": 650,
+      "lines": 33,
+      "footer": true
+    },
+    {
+      "page": 12,
+      "characters": 533,
+      "lines": 34,
+      "footer": true
+    },
+    {
+      "page": 13,
+      "characters": 547,
+      "lines": 36,
+      "footer": true
+    },
+    {
+      "page": 14,
+      "characters": 655,
+      "lines": 23,
+      "footer": true
+    },
+    {
+      "page": 15,
+      "characters": 597,
+      "lines": 32,
+      "footer": true
+    },
+    {
+      "page": 16,
+      "characters": 810,
+      "lines": 24,
+      "footer": true
+    },
+    {
+      "page": 17,
+      "characters": 720,
+      "lines": 36,
+      "footer": true
+    },
+    {
+      "page": 18,
+      "characters": 626,
+      "lines": 30,
+      "footer": true
+    },
+    {
+      "page": 19,
+      "characters": 640,
+      "lines": 33,
+      "footer": true
+    },
+    {
+      "page": 20,
+      "characters": 655,
+      "lines": 38,
+      "footer": true
+    },
+    {
+      "page": 21,
+      "characters": 753,
+      "lines": 25,
+      "footer": true
+    },
+    {
+      "page": 22,
+      "characters": 619,
+      "lines": 38,
+      "footer": true
+    },
+    {
+      "page": 23,
+      "characters": 594,
+      "lines": 35,
+      "footer": true
+    },
+    {
+      "page": 24,
+      "characters": 604,
+      "lines": 36,
+      "footer": true
+    },
+    {
+      "page": 25,
+      "characters": 582,
+      "lines": 33,
+      "footer": true
+    },
+    {
+      "page": 26,
+      "characters": 666,
+      "lines": 36,
+      "footer": true
+    },
+    {
+      "page": 27,
+      "characters": 609,
+      "lines": 29,
+      "footer": true
+    },
+    {
+      "page": 28,
+      "characters": 631,
+      "lines": 37,
+      "footer": true
+    },
+    {
+      "page": 29,
+      "characters": 1284,
+      "lines": 37,
+      "footer": true
+    },
+    {
+      "page": 30,
+      "characters": 1862,
+      "lines": 34,
+      "footer": true
+    }
+  ],
+  "visual_review": "passed",
+  "algorithms_implemented": false,
+  "training_started": false,
+  "structural_passed": true,
+  "visual_review_scope": {
+    "all_pages_checked_via_contact_sheets": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "final_changed_pages_checked_full_size": [
+      2,
+      6,
+      7,
+      14,
+      16
+    ],
+    "checks": [
+      "Chinese fonts and symbols",
+      "table wrapping",
+      "page numbering",
+      "diagram alignment",
+      "references",
+      "no overflow or clipping"
+    ]
+  },
+  "source_files_unchanged": true,
+  "legacy_integrity_passed": true,
+  "pdf_bytes": 638868,
+  "pdf_sha256": "cc1a79608959bbf8a35998592ca1e1150df28fce5bd13753bd7c0549de69debe",
+  "created_files_ledger": "created_files.json",
+  "all_checks_passed": true
+}

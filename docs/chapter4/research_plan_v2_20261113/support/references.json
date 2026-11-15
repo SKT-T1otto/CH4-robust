@@ -1,0 +1,323 @@
+[
+  {
+    "number": 1,
+    "id": "arxiv:2202.07013",
+    "title": "Robust Policy Learning over Multiple Uncertainty Sets",
+    "authors": [
+      "Annie Xie",
+      "Shagun Sodhani",
+      "Chelsea Finn",
+      "Joelle Pineau",
+      "Amy Zhang"
+    ],
+    "first_year": 2022,
+    "publication_year": 2022,
+    "first_published": "2022-02-14T20:06:28Z",
+    "updated": "2022-03-04T07:17:18Z",
+    "year_basis": "arXiv first submission timestamp; publication year only when independently verified; ICML 2022 verified at https://proceedings.mlr.press/v162/xie22c.html",
+    "landing_url": "https://arxiv.org/abs/2202.07013",
+    "pdf_url": "https://arxiv.org/pdf/2202.07013",
+    "alternate_pdf_urls": [
+      "https://export.arxiv.org/pdf/2202.07013"
+    ],
+    "chapter": "CH4",
+    "relevance_zh": "SIRSA主文：多不确定集合上的鲁棒策略与在线自适应；第四章直接基础。",
+    "tags": [
+      "SIRSA",
+      "uncertainty_sets"
+    ],
+    "kind": "recent",
+    "abstract": "Reinforcement learning (RL) agents need to be robust to variations in safety-critical environments. While system identification methods provide a way to infer the variation from online experience, they can fail in settings where fast identification is not possible. Another dominant approach is robust RL which produces a policy that can handle worst-case scenarios, but these methods are generally designed to achieve robustness to a single uncertainty set that must be specified at train time. Towards a more general solution, we formulate the multi-set robustness problem to learn a policy robust to different perturbation sets. We then design an algorithm that enjoys the benefits of both system identification and robust RL: it reduces uncertainty where possible given a few interactions, but can still act robustly with respect to the remaining uncertainty. On a diverse set of control tasks, our approach demonstrates improved worst-case performance on new environments compared to prior methods based on system identification and on robust RL alone.",
+    "doi": "",
+    "journal_ref": "",
+    "status": "downloaded",
+    "local_path": "CH4_Dynamics_Robust_RL/2022_arxiv_2202.07013_Robust_Policy_Learning_over_Multiple_Uncertainty_Sets.pdf",
+    "bytes": 1955720,
+    "sha256": "c95370b925c40abc531eed7c250590949a5e232631e1f18dccc3eb14f4ec9497",
+    "resolved_pdf_url": "https://arxiv.org/pdf/2202.07013",
+    "content_type": "",
+    "download_errors": [],
+    "publication_venue": "ICML 2022",
+    "publication_source_url": "https://proceedings.mlr.press/v162/xie22c.html",
+    "collected_on": "2026-11-13"
+  },
+  {
+    "number": 2,
+    "id": "arxiv:1702.02453",
+    "title": "Preparing for the Unknown: Learning a Universal Policy with Online System Identification",
+    "authors": [
+      "Wenhao Yu",
+      "Jie Tan",
+      "C. Karen Liu",
+      "Greg Turk"
+    ],
+    "first_year": 2017,
+    "publication_year": 2017,
+    "first_published": "2017-02-08T14:53:45Z",
+    "updated": "2017-05-15T13:37:58Z",
+    "year_basis": "arXiv first submission timestamp; publication year only when independently verified; RSS 2017 verified at https://www.roboticsproceedings.org/rss13/p48.html",
+    "landing_url": "https://arxiv.org/abs/1702.02453",
+    "pdf_url": "https://arxiv.org/pdf/1702.02453",
+    "alternate_pdf_urls": [
+      "https://export.arxiv.org/pdf/1702.02453"
+    ],
+    "chapter": "CH4",
+    "relevance_zh": "在线系统辨识与通用策略耦合的早期方法；对照点估计和集合条件化。",
+    "tags": [
+      "UPOSI",
+      "system_identification"
+    ],
+    "kind": "classic",
+    "abstract": "We present a new method of learning control policies that successfully operate under unknown dynamic models. We create such policies by leveraging a large number of training examples that are generated using a physical simulator. Our system is made of two components: a Universal Policy (UP) and a function for Online System Identification (OSI). We describe our control policy as universal because it is trained over a wide array of dynamic models. These variations in the dynamic model may include differences in mass and inertia of the robots' components, variable friction coefficients, or unknown mass of an object to be manipulated. By training the Universal Policy with this variation, the control policy is prepared for a wider array of possible conditions when executed in an unknown environment. The second part of our system uses the recent state and action history of the system to predict the dynamics model parameters mu. The value of mu from the Online System Identification is then provided as input to the control policy (along with the system state). Together, UP-OSI is a robust control policy that can be used across a wide range of dynamic models, and that is also responsive to sudden changes in the environment. We have evaluated the performance of this system on a variety of tasks, including the problem of cart-pole swing-up, the double inverted pendulum, locomotion of a hopper, and block-throwing of a manipulator. UP-OSI is effective at these tasks across a wide range of dynamic models. Moreover, when tested with dynamic models outside of the training range, UP-OSI outperforms the Universal Policy alone, even when UP is given the actual value of the model dynamics. In addition to the benefits of creating more robust controllers, UP-OSI also holds out promise of narrowing the Reality Gap between simulated and real physical systems.",
+    "doi": "",
+    "journal_ref": "",
+    "status": "downloaded",
+    "local_path": "CH4_Dynamics_Robust_RL/2017_arxiv_1702.02453_Preparing_for_the_Unknown_Learning_a_Universal_Policy_with_Online_System_Identification.pdf",
+    "bytes": 1012357,
+    "sha256": "f4abcaa147175a471b6fa217758aecd80d42df11f6f19b70a7dfba66021d24ca",
+    "resolved_pdf_url": "https://arxiv.org/pdf/1702.02453",
+    "content_type": "",
+    "download_errors": [],
+    "publication_venue": "RSS 2017",
+    "publication_source_url": "https://www.roboticsproceedings.org/rss13/p48.html",
+    "collected_on": "2026-11-13"
+  },
+  {
+    "number": 3,
+    "id": "arxiv:2107.04034",
+    "title": "RMA: Rapid Motor Adaptation for Legged Robots",
+    "authors": [
+      "Ashish Kumar",
+      "Zipeng Fu",
+      "Deepak Pathak",
+      "Jitendra Malik"
+    ],
+    "first_year": 2021,
+    "publication_year": 2021,
+    "first_published": "2021-07-08T17:59:59Z",
+    "updated": "2021-07-08T17:59:59Z",
+    "year_basis": "arXiv first submission timestamp; publication year only when independently verified; RSS 2021 verified at https://www.roboticsproceedings.org/rss17/p011.html",
+    "landing_url": "https://arxiv.org/abs/2107.04034",
+    "pdf_url": "https://arxiv.org/pdf/2107.04034",
+    "alternate_pdf_urls": [
+      "https://export.arxiv.org/pdf/2107.04034"
+    ],
+    "chapter": "CH4",
+    "relevance_zh": "快速运动适配通过历史编码推断潜在动力学；对照在线辨识和特权训练。",
+    "tags": [
+      "RMA",
+      "online_adaptation"
+    ],
+    "kind": "classic",
+    "abstract": "Successful real-world deployment of legged robots would require them to adapt in real-time to unseen scenarios like changing terrains, changing payloads, wear and tear. This paper presents Rapid Motor Adaptation (RMA) algorithm to solve this problem of real-time online adaptation in quadruped robots. RMA consists of two components: a base policy and an adaptation module. The combination of these components enables the robot to adapt to novel situations in fractions of a second. RMA is trained completely in simulation without using any domain knowledge like reference trajectories or predefined foot trajectory generators and is deployed on the A1 robot without any fine-tuning. We train RMA on a varied terrain generator using bioenergetics-inspired rewards and deploy it on a variety of difficult terrains including rocky, slippery, deformable surfaces in environments with grass, long vegetation, concrete, pebbles, stairs, sand, etc. RMA shows state-of-the-art performance across diverse real-world as well as simulation experiments. Video results at https://ashish-kmr.github.io/rma-legged-robots/",
+    "doi": "",
+    "journal_ref": "",
+    "status": "downloaded",
+    "local_path": "CH4_Dynamics_Robust_RL/2021_arxiv_2107.04034_RMA_Rapid_Motor_Adaptation_for_Legged_Robots.pdf",
+    "bytes": 16534863,
+    "sha256": "d8660da881851756287efab24d85f5c629ba97878f70297eb429a8e8a9a57846",
+    "resolved_pdf_url": "https://arxiv.org/pdf/2107.04034",
+    "content_type": "",
+    "download_errors": [],
+    "publication_venue": "RSS 2021",
+    "publication_source_url": "https://www.roboticsproceedings.org/rss17/p011.html",
+    "collected_on": "2026-11-13"
+  },
+  {
+    "number": 4,
+    "id": "arxiv:1610.01283",
+    "title": "EPOpt: Learning Robust Neural Network Policies Using Model Ensembles",
+    "authors": [
+      "Aravind Rajeswaran",
+      "Sarvjeet Ghotra",
+      "Balaraman Ravindran",
+      "Sergey Levine"
+    ],
+    "first_year": 2016,
+    "publication_year": 2017,
+    "first_published": "2016-10-05T06:51:58Z",
+    "updated": "2017-03-03T19:58:56Z",
+    "year_basis": "arXiv first submission timestamp; publication year only when independently verified; ICLR 2017 verified at https://arxiv.org/abs/1610.01283",
+    "landing_url": "https://arxiv.org/abs/1610.01283",
+    "pdf_url": "https://arxiv.org/pdf/1610.01283",
+    "alternate_pdf_urls": [
+      "https://export.arxiv.org/pdf/1610.01283"
+    ],
+    "chapter": "CH4",
+    "relevance_zh": "EPOpt通过模型集合的低回报尾部训练鲁棒策略；直接比较CVaR式域随机化。",
+    "tags": [
+      "EPOpt",
+      "CVaR",
+      "domain_randomization"
+    ],
+    "kind": "classic",
+    "abstract": "Sample complexity and safety are major challenges when learning policies with reinforcement learning for real-world tasks, especially when the policies are represented using rich function approximators like deep neural networks. Model-based methods where the real-world target domain is approximated using a simulated source domain provide an avenue to tackle the above challenges by augmenting real data with simulated data. However, discrepancies between the simulated source domain and the target domain pose a challenge for simulated training. We introduce the EPOpt algorithm, which uses an ensemble of simulated source domains and a form of adversarial training to learn policies that are robust and generalize to a broad range of possible target domains, including unmodeled effects. Further, the probability distribution over source domains in the ensemble can be adapted using data from target domain and approximate Bayesian methods, to progressively make it a better approximation. Thus, learning on a model ensemble, along with source domain adaptation, provides the benefit of both robustness and learning/adaptation.",
+    "doi": "",
+    "journal_ref": "",
+    "status": "downloaded",
+    "local_path": "CH4_Dynamics_Robust_RL/2016_arxiv_1610.01283_EPOpt_Learning_Robust_Neural_Network_Policies_Using_Model_Ensembles.pdf",
+    "bytes": 701792,
+    "sha256": "bf4cccbc91b940bd90efca22f2c26bd59f9b3beb3d9b08cdbc4fd7ee0b7b7050",
+    "resolved_pdf_url": "https://arxiv.org/pdf/1610.01283",
+    "content_type": "",
+    "download_errors": [],
+    "publication_venue": "ICLR 2017",
+    "publication_source_url": "https://arxiv.org/abs/1610.01283",
+    "collected_on": "2026-11-13"
+  },
+  {
+    "number": 5,
+    "id": "pmlr:v306/wikman26a",
+    "title": "Adaptive Reinforcement Learning for Unobservable Random Delays",
+    "authors": [
+      "John Wikman",
+      "Alexandre Proutiere",
+      "David Broman"
+    ],
+    "first_year": 2025,
+    "publication_year": 2026,
+    "year_basis": "arXiv first submission 2025-06-17T11:11:37Z; official PMLR publication 2026",
+    "landing_url": "https://proceedings.mlr.press/v306/wikman26a.html",
+    "pdf_url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/wikman26a/wikman26a.pdf",
+    "chapter": "CH4",
+    "relevance_zh": "不可观测随机执行延迟下ACDA动态适配；直接关联未知延迟与命令时序。",
+    "tags": [
+      "ACDA",
+      "actuation_delay"
+    ],
+    "kind": "2026_publication",
+    "abstract": "In standard reinforcement learning (RL) settings, the interaction between the agent and the environment is typically modeled as a Markov decision process (MDP), which assumes that the agent observes the system state instantaneously, selects an action without delay, and executes it immediately. In real-world dynamic environments, such as cyber-physical systems, this assumption often breaks down due to delays in the interaction between the agent and the system. These delays can vary stochastically over time and are typically unobservable when deciding on an action. Existing methods deal with this uncertainty conservatively by assuming a known fixed upper bound on the delay, even if the delay is often much lower. In this work, we introduce the interaction layer, a general framework that enables agents to adaptively handle unobservable and time-varying delays. Specifically, the agent generates a matrix of possible future actions, anticipating a horizon of potential delays, to handle both unpredictable delays and lost action packets sent over networks. Building on this framework, we develop a model-based algorithm, Actor-Critic with Delay Adaptation (ACDA), which dynamically adjusts to delay patterns. Our method significantly outperforms state-of-the-art approaches across a wide range of locomotion benchmark environments, including real-world measured delays.",
+    "status": "downloaded",
+    "local_path": "CH4_Dynamics_Robust_RL/2026_pmlr_v306_wikman26a_Adaptive_Reinforcement_Learning_for_Unobservable_Random_Delays.pdf",
+    "bytes": 4928240,
+    "sha256": "c1f7872f23cccc327eeb638029f62f363ece50d794bd74d62a63b19a71c8d5ce",
+    "resolved_pdf_url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/wikman26a/wikman26a.pdf",
+    "content_type": "application/octet-stream",
+    "download_errors": [],
+    "first_published": "2025-06-17T11:11:37Z",
+    "first_version_url": "https://arxiv.org/abs/2506.14411",
+    "publication_venue": "ICML 2026",
+    "collected_on": "2026-11-13"
+  },
+  {
+    "number": 6,
+    "id": "arxiv:2406.08395",
+    "title": "Time-Constrained Robust MDPs",
+    "authors": [
+      "Adil Zouitine",
+      "David Bertoin",
+      "Pierre Clavier",
+      "Matthieu Geist",
+      "Emmanuel Rachelson"
+    ],
+    "first_year": 2024,
+    "publication_year": 2024,
+    "first_published": "2024-06-12T16:45:09Z",
+    "updated": "2024-06-12T16:45:09Z",
+    "year_basis": "arXiv first submission timestamp; publication year only when independently verified; NeurIPS 2024 verified at https://proceedings.neurips.cc/paper_files/paper/2024/hash/3ec4f1d5759d6d3d340a66638a52944b-Abstract-Conference.html",
+    "landing_url": "https://arxiv.org/abs/2406.08395",
+    "pdf_url": "https://arxiv.org/pdf/2406.08395",
+    "alternate_pdf_urls": [
+      "https://export.arxiv.org/pdf/2406.08395"
+    ],
+    "chapter": "CH4",
+    "relevance_zh": "时间约束鲁棒MDP保留扰动的时间相关性；直接支撑漂移与突变协议边界。",
+    "tags": [
+      "TC_RMDP",
+      "temporal_uncertainty"
+    ],
+    "kind": "recent",
+    "abstract": "Robust reinforcement learning is essential for deploying reinforcement learning algorithms in real-world scenarios where environmental uncertainty predominates. Traditional robust reinforcement learning often depends on rectangularity assumptions, where adverse probability measures of outcome states are assumed to be independent across different states and actions. This assumption, rarely fulfilled in practice, leads to overly conservative policies. To address this problem, we introduce a new time-constrained robust MDP (TC-RMDP) formulation that considers multifactorial, correlated, and time-dependent disturbances, thus more accurately reflecting real-world dynamics. This formulation goes beyond the conventional rectangularity paradigm, offering new perspectives and expanding the analytical framework for robust RL. We propose three distinct algorithms, each using varying levels of environmental information, and evaluate them extensively on continuous control benchmarks. Our results demonstrate that these algorithms yield an efficient tradeoff between performance and robustness, outperforming traditional deep robust RL methods in time-constrained environments while preserving robustness in classical benchmarks. This study revisits the prevailing assumptions in robust RL and opens new avenues for developing more practical and realistic RL applications.",
+    "doi": "",
+    "journal_ref": "",
+    "status": "downloaded",
+    "local_path": "CH4_Dynamics_Robust_RL/2024_arxiv_2406.08395_Time-Constrained_Robust_MDPs.pdf",
+    "bytes": 15934975,
+    "sha256": "84cd94ab2ed3be6317c55da89776a3cd314fd776dbe5901bfb16bc30d0f0578d",
+    "resolved_pdf_url": "https://arxiv.org/pdf/2406.08395",
+    "content_type": "",
+    "download_errors": [],
+    "publication_venue": "NeurIPS 2024",
+    "publication_source_url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/3ec4f1d5759d6d3d340a66638a52944b-Abstract-Conference.html",
+    "collected_on": "2026-11-13"
+  },
+  {
+    "number": 7,
+    "id": "arxiv:2610.10905",
+    "title": "Informationally Decoupled Trajectory Design for Sim-to-Real System Identification",
+    "authors": [
+      "Sangwoo Shin",
+      "Ashvin Anilkumar",
+      "Ryan Gao",
+      "Josiah P. Hanna"
+    ],
+    "first_year": 2026,
+    "publication_year": null,
+    "first_published": "2026-10-07T21:02:51Z",
+    "updated": "2026-10-27T14:32:39Z",
+    "year_basis": "arXiv first submission timestamp; publication year only when independently verified",
+    "landing_url": "https://arxiv.org/abs/2610.10905",
+    "pdf_url": "https://arxiv.org/pdf/2610.10905",
+    "alternate_pdf_urls": [
+      "https://export.arxiv.org/pdf/2610.10905"
+    ],
+    "chapter": "CH4",
+    "relevance_zh": "利用信息解耦轨迹改善多参数可辨识性；适用于共享流场与个体响应混淆的分析。",
+    "tags": [
+      "identifiability",
+      "system_identification"
+    ],
+    "kind": "2026_new",
+    "abstract": "Sampling-based system identification estimates physically meaningful parameters by tuning a simulator to reproduce the target system dynamics, providing an interpretable approach to improving sim-to-real transfer. Yet when the collected trajectories do not distinguish the effects of different parameters, multiple parameter combinations can reproduce those trajectories, leading to unreliable parameter estimates. To address this challenge, we introduce an Informationally Decoupled Trajectory Design framework (IDTD), which formulates the objective for the exploration policy built on the Schur complement score derived from the Fisher information matrix. To faithfully reflect parameter separability in the exploration objective, IDTD normalizes the score against the per-parameter information, selects the most favorable trajectory segment for each parameter, and aggregates the resulting scores logarithmically. The optimized trajectory is therefore composed of complementary intervals, each exposing a distinct subset of parameters whose contribution to the motion over that interval can be attributed unambiguously. Across diverse simulation environments, ranging from a linear-dynamics system to the Go2 quadruped, G1 humanoid, and Crazyflie quadrotor, IDTD reduces the parameter identification error by 39.6% on average relative to the strongest prior active-exploration baseline and attains improved downstream policy transfer. Furthermore, we validate the proposed trajectory design on a real K1 humanoid, demonstrating that the resulting identified parameters accurately capture the real-system dynamics. Code is available at https://github.com/jsw7460/IDTD.",
+    "doi": "",
+    "journal_ref": "",
+    "status": "downloaded",
+    "local_path": "CH4_Dynamics_Robust_RL/2026_arxiv_2610.10905_Informationally_Decoupled_Trajectory_Design_for_Sim-to-Real_System_Identification.pdf",
+    "bytes": 3391761,
+    "sha256": "b12bf0c1dde5f5f207418451054a789aeaa2440020f75adb069435563aca7bb5",
+    "resolved_pdf_url": "https://arxiv.org/pdf/2610.10905",
+    "content_type": "",
+    "download_errors": [],
+    "collected_on": "2026-11-13"
+  },
+  {
+    "number": 8,
+    "id": "arxiv:2611.10938",
+    "title": "BRACE: Belief-guided Residual Adaptive Control for Safe Navigation under Unknown Disturbances",
+    "authors": [
+      "Jaeyoun Choi",
+      "Niklas Schmid",
+      "Oswin So",
+      "Augustinos Saravanos",
+      "Chuchu Fan"
+    ],
+    "first_year": 2026,
+    "publication_year": null,
+    "first_published": "2026-11-07T20:05:20Z",
+    "updated": "2026-11-07T20:05:20Z",
+    "year_basis": "arXiv first submission timestamp; publication year only when independently verified",
+    "landing_url": "https://arxiv.org/abs/2611.10938",
+    "pdf_url": "https://arxiv.org/pdf/2611.10938",
+    "alternate_pdf_urls": [
+      "https://export.arxiv.org/pdf/2611.10938"
+    ],
+    "chapter": "CH4",
+    "relevance_zh": "未知扰动下信念引导残差自适应导航；对照公开历史估计与策略条件化。",
+    "tags": [
+      "belief_adaptation",
+      "unknown_disturbance"
+    ],
+    "kind": "2026_new",
+    "abstract": "Disturbances encountered during autonomous navigation generally vary across space, often discontinuously, as obstacles redirect wind and changing terrain alters traction. Tracking controllers typically assume sufficient control authority to mitigate disturbances and maintain safety; the regime where this assumption fails remains underexplored. We present Belief-guided Residual Adaptive Control (BRACE), a hierarchical reinforcement learning (RL) framework for reach-avoid navigation under unknown, bounded, spatially varying disturbances. BRACE infers a disturbance belief from model prediction errors and uses that to condition a high-level policy that adapts the reference trajectory. The policy combines a nominal and a belief-guided residual term, trained jointly with a likelihood-ratio advantage reweighting heuristic. We evaluate BRACE in three simulated quadcopter environments with abruptly switching wind fields, and validate it on Crazyflie hardware with fan-generated disturbances. Across these settings, BRACE improves reach-avoid performance over model predictive control and RL baselines.",
+    "doi": "",
+    "journal_ref": "",
+    "status": "downloaded",
+    "local_path": "CH4_Dynamics_Robust_RL/2026_arxiv_2611.10938_BRACE_Belief-guided_Residual_Adaptive_Control_for_Safe_Navigation_under_Unknown_Disturba.pdf",
+    "bytes": 7131182,
+    "sha256": "87c19c50740b885fdd3e1cf9b5653a0447a4428009fe7ec6655dbebcfb48f50e",
+    "resolved_pdf_url": "https://arxiv.org/pdf/2611.10938",
+    "content_type": "",
+    "download_errors": [],
+    "collected_on": "2026-11-13"
+  }
+]
