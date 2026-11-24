@@ -50,6 +50,12 @@ class WorkOneTests(unittest.TestCase):
     def test_both_nominal_references(self):
         refs = self.plan["nominal_references"]
         self.assertFalse(refs["native_ch3"]["plant_override"])
+        anchor = refs["native_ch3"]["active_reference_replay"]
+        calibration = self.plan["scene_groups"]["calibration"]
+        index = self.plan["scene_generation"]["replay_index"]
+        self.assertEqual(anchor["development_project"], "AUV-Thesis-Active")
+        self.assertEqual(anchor["calibration_seed"], calibration["start_seed"] + index)
+        self.assertEqual(anchor["physical_fingerprint"], calibration["fingerprints"][index])
         self.assertEqual(refs["relative_water"]["law"], "linear")
         for name, value in {"beta_m_per_s": 0.1, "drag_multiplier": 1, "horizontal_thrust_multiplier": 1,
                             "propulsion_lag": 0.15, "actuator_delay_steps": 0, "estimator_delay_steps": 0}.items():

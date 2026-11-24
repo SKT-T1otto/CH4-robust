@@ -258,6 +258,12 @@ def execute(protocol, checkpoint=None, *, verify_fingerprints=False):
         second = replay(scene, native, ZeroResidualPolicy(), protocol, tap_command=True)
         d2 = compare_replays(first, second)
         d2.update(scenario_seed=scene["scenario_seed"], physical_fingerprint=scenario_fingerprint(scene))
+        anchor = protocol["nominal_references"]["native_ch3"]["active_reference_replay"]
+        d2["registered_active_reference"] = dict(
+            project=anchor["development_project"], worktree_sha256=anchor["worktree_source_sha256"],
+            matches=(anchor["calibration_seed"] == d2["scenario_seed"]
+                     and anchor["physical_fingerprint"] == d2["physical_fingerprint"]
+                     and anchor["trace_sha256"] == d2["trace_sha256"]))
         b2 = evaluate_b2(checkpoint, protocol, native)
     finally:
         torch.set_num_threads(previous_threads)

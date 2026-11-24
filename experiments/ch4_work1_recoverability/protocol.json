@@ -4,6 +4,20 @@
   "scope": "冻结实验设计与原生基线重放。此次仅运行名义校准，不运行失配、确认集或训练。",
   "nominal_references": {
     "native_ch3": {
+      "execution_project": "AUV-Thesis-CH4-IntervalRobust",
+      "active_reference_replay": {
+        "development_project": "AUV-Thesis-Active",
+        "git_base": "52108bbd548391c4b4fedc7f212666df0f508528",
+        "includes_uncommitted_source": true,
+        "worktree_source_sha256": "b9563c0ff0bf6d5a214489a275f20428f14a046c5d14b198395f63a274ddc885",
+        "source_files": 299,
+        "source_hash_definition": "SHA256 of compact sorted-key JSON mapping POSIX relative path to file SHA256 for project_paths.py and .py/.json/.yaml/.yml under core, chapter3_bser and configs",
+        "checked_on": "2026-11-24",
+        "scope": "独立从该日开发工作树的原生 D2 运行本校准场景。此记录只适用于该工作树和此场景。",
+        "calibration_seed": 4236000,
+        "physical_fingerprint": "7ca81c743bd00fab63eca5961d1333c322f95f66d7b5fb13330f1c9a97d591e4",
+        "trace_sha256": "125fe5ae6e5b3b30bf6ff895d457e304cc4de8375a8ce9d2a19badd9e61535ba"
+      },
       "config": "configs/b2.json",
       "policy": "D2 ZeroResidualPolicy",
       "purpose": "用原生环境、原导航先验及原随机流重放基线",
