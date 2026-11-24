@@ -1,0 +1,259 @@
+{
+  "schema": "ch4.recoverability.step1.v1",
+  "date": "2026-11-24",
+  "scope": "冻结实验设计与原生基线重放。此次仅运行名义校准，不运行失配、确认集或训练。",
+  "nominal_references": {
+    "native_ch3": {
+      "config": "configs/b2.json",
+      "policy": "D2 ZeroResidualPolicy",
+      "purpose": "用原生环境、原导航先验及原随机流重放基线",
+      "plant_override": false
+    },
+    "relative_water": {
+      "purpose": "后续同一相对水速模型族的名义对照",
+      "law": "linear",
+      "beta_m_per_s": 0.1,
+      "drag_multiplier": 1.0,
+      "horizontal_thrust_multiplier": 1.0,
+      "extra_vertical_bias_m_per_s2": 0.0,
+      "propulsion_lag": 0.15,
+      "actuator_delay_steps": 0,
+      "estimator_delay_steps": 0,
+      "noise": "N0"
+    }
+  },
+  "future_physical_design": {
+    "common_field": "c(p) = beta * (sin(0.25*y), cos(0.22*x)); beta is component amplitude in m/s",
+    "beta_m_per_s": [0.05, 0.10, 0.15],
+    "per_vehicle_drag_range": [0.85, 1.20],
+    "per_vehicle_horizontal_thrust_range": [0.85, 1.10],
+    "varied_continuous_coordinates": 9,
+    "primary_law": "linear",
+    "sensitivity_law": "linear_quadratic_mix_0.5",
+    "design": "公共流单因素、单艇阻力单因素、单艇推力单因素，再按艇别平衡联合偏移。保留原垂向基础动力学。"
+  },
+  "control": {
+    "agents": 4,
+    "role_order": ["search_fast", "search_balanced", "search_precise", "executor"],
+    "observation_dim": 28,
+    "action_dim": 3,
+    "critic_input_dim": 124,
+    "gamma": 0.95,
+    "dt": 0.2,
+    "residual_scale_search": 0.2,
+    "residual_scale_executor": 0.15,
+    "use_residual_prior": true,
+    "repairs": {"waypoint_arrival": true, "inactive_actor": true, "hold_residual": true},
+    "permission": "沿用每艇原生门控、限幅和航路点先验，失活、不可达或保持时抑制学习残差。队友可见性沿用原通信。"
+  },
+  "task": {
+    "profile": "M20_MOVING_UNKNOWN_MULTI",
+    "max_steps": 400,
+    "failure_penalty_steps": 100,
+    "primary_population": "all paired scenes, including early collisions, timeouts and scenes without a qualifying phase",
+    "primary_phase": "交接完成后执行艇跟踪当前航路点，已收到目标、残差门开放、水平距离在 (0.75, 2.4] m 且正向接近",
+    "secondary_phase": "发现前搜索艇跟踪当前航路点，残差门开放，使用相同接近条件",
+    "window": "以决策前跟踪点确定，每场每层首个符合条件的窗口。各层单列有窗口场景数、开放步数和无窗口场景数。",
+    "approach_rule": {
+      "horizontal_distance_m": "(0.75, 2.4]",
+      "minimum_horizontal_fraction_of_3d_distance": 0.8,
+      "minimum_closing_speed_fraction_of_vehicle_xy_max": 0.25,
+      "reference": "current tracking waypoint; pre-action guidance and local ground velocity"
+    }
+  },
+  "metrics": {
+    "primary": "penalized_completion_steps",
+    "definition": "success: actual completion step; collision or timeout: max_steps + failure_penalty_steps",
+    "direction": "lower_is_better",
+    "secondary": ["success", "obstacle_collision", "timeout", "team_discounted_return"],
+    "paired_effects_steps": {
+      "D": "P_shift(frozen_policy) - P_relative_water_nominal(same_policy)",
+      "G_theta": "P_shift(C_nominal) - P_shift(C_true)",
+      "G_pi": "P_shift(frozen_policy) - P_shift(C_true)"
+    }
+  },
+  "scene_generation": {
+    "method": "One make_scene(dev, 0) per generator_seed (start_seed + zero-based index), with native validation geometry. Use scenario_fingerprint on consumed physical inputs before evaluation role annotations.",
+    "replay_group": "calibration",
+    "replay_index": 0,
+    "confirmation_size_rule": "在读取确认集结果前，用开发场景配对差的标准差 s 取 max(24, ceil((1.96*s/2.5)^2)) 个预留场景，按索引取前缀。需求超过预留量时先扩充并冻结独立场景指纹，或报告精度不足。",
+    "usage": {
+      "legacy_calibration": "旧普查校准，排除于本次新样本",
+      "legacy_regression": "旧 24 个开发场景，仅供回归",
+      "calibration": "原生 D2 重放、可选冻结 B2 名义准入",
+      "development": "后续失配开发及精度估计",
+      "confirmation_reserve": "仅登记物理指纹，本步骤不生成任务结果"
+    }
+  },
+  "scene_groups": {
+    "legacy_calibration": {
+      "start_seed": 2239500,
+      "fingerprints": [
+        "ad166ae5d3733d11a102808d4767d5e39d63bd773c359d5bccac96e29c8f3f3c",
+        "6841e685716d809ed74a2aca6bd03f673bece7942bd2217f6f3b8293be1caac5",
+        "433741cd922a57d788c7defd66dfd5cff5730cbc687799af77ebcac82e2d61af",
+        "314f4ac466ca1ba17d624083f62abfbce40152bfe89148293db2862a4ade78b6",
+        "0a77cc18d9b59a7a367ef4901e12fd849cea0985a77ccf0e4c1d7b0d4d7ecc62",
+        "62ad62c8f6a98242965b2bc96652d5e85fe3e666ffe54bddd35ab50677ae71a5",
+        "6496809a9774dcc54e85d53d4a9b8c0fe13fdbc37bb7b9668c4ba6279b092d2c",
+        "8ec65284d9c6fa54aed02ba55414d51e8624d6c894d2955f44b50f7c75a8aa14"
+      ]
+    },
+    "legacy_regression": {
+      "start_seed": 2739500,
+      "fingerprints": [
+        "91cdf777f0f84aace5a27e54d8ad80d58c8607d097186dc61d0c9f1eca5a1bb9",
+        "f60d1291fdde8c35c5304fde3b560d55b48fc09b1bb4011c338c4195f4fc3cbe",
+        "f6e03c2377721cb2943bed982af2c2f6528b47397a8cbc724424956edb93dd1d",
+        "c26e56b2e52857a9bcf32be9e12d79653d5387bd4c91046644ee69592120b7fe",
+        "961cba08296cd6726673a733c18fa4f80e9b8231818ee69bde23ce3b6de91aca",
+        "7bd98fb60b3de45141233823b225a775316e76089b7e1738ad2088a0cfd094e0",
+        "427de7be39df65f24832db1ed2f9f26e15abb9cec57c6f5fd405c35678e0796a",
+        "71fc6a084548a2c63bc4303dde07f68eb97b38926ed0ec5355687bacbfc4fa42",
+        "2d1920ce40493b38687afef20dea2ee33db0392521a0e2920909fc2480a0a654",
+        "63428901aa1cf675dd26fbc8bc32b7176d7d86c2199f31941319dbacb07137d1",
+        "84a359aae75a3032c9e483016756e27f59238abd7552ba325ddc403be5078c26",
+        "f242fe1efd07d673794a808986e068cfdd04ce52b59618eeeb515bccc2912c22",
+        "2f5f53802d2a5fdc611d994070423b7ed58ac3a8dfd5ccde4ac598dee7a9c61d",
+        "a6c4b9a96d50fbd078319c545f8513167c6377853b5101ab5e5c48d2d324435c",
+        "f1f645d379c22e6ec0c72091d94b6ece0afec7e0aa2b918ad2430bbad5b26892",
+        "46e772c55b5a843c2ef296bc5dd71347aec7e3ade98eb3c26c0c9498e3c00962",
+        "5993e5392ca15b580ae1a2affacf9d824965c590d7bc0114dc535abc0eeff246",
+        "e1ff7da0267822ae47eb9dc7ef7e2c0707390989b0aa24926f49bda2409f7809",
+        "5c45db7ba685bb78b2e715beee0311387e4fb51a646365b63e157b96e57c8382",
+        "71c39560e30ef8a54a5cc4a065281b1fbc9a616e0ddc48c3c503a7498dbd73d4",
+        "3649096dc6826c9dce5f97e0669e222607936ac1b8cca06ba112b031d2d267b6",
+        "d7bd7128c20b513d58025db267981ff27b6bd55669b22d640f70496e81b68e3c",
+        "dc5d5c8e0b94a8b283379ca29e596f2a0bd34839dd4e76605731eb815cda7be4",
+        "984d7ac05a1f733b629405b06f3bd9869274953ddc45f5e3854f282aba4c2272"
+      ]
+    },
+    "calibration": {
+      "start_seed": 4236000,
+      "fingerprints": [
+        "7ca81c743bd00fab63eca5961d1333c322f95f66d7b5fb13330f1c9a97d591e4",
+        "74e4597612da57849e9386fd0a95b2019bb9a92ef3e6e1e372b93dae4489cdcf",
+        "d5859e38ad1615e23984436fdb1e0bc96c9c729028e38e4f44d9538fdccdd7ee",
+        "c223928e648def8479f76f4681fed0cf5dbcb53ffdf0250f25087109dbf68264",
+        "383ae122a352a68126f7eef12b36fe2c8bebc92710473e4f836574bac8e0eac3",
+        "aa513ad3008a84d7596d4131694f00194be82b4da9c101f8cc1e0e96bc0743de",
+        "584143e1d529100ce52e9e254af825b9ffa2464a00f70513ec54e49064b14255",
+        "4cc0828c31a5e7d1e3c3e1c1fc312a2e2966233132543f0b23188870bc28cb6f"
+      ]
+    },
+    "development": {
+      "start_seed": 4336000,
+      "fingerprints": [
+        "d81fd510e0df7ac5a6831fb95968a371640471c478b8034516121d49e1868652",
+        "19613fb2d6d38d9584e3ec9e88bce746ff95a89bd27c4aac8f1c13599b8f38b1",
+        "715543170ab1ad57a70b5cf0a190fe9868c99a66a119b454f579a8fb14c6b3e0",
+        "732dce44dc3e76a688751bbbbb275eb47b7b28c05dfd91bf19a22ad5ea8dae79",
+        "f4e393ef941f500b33d1e0d26c403fa649cb948672afa64fde367ce99680a009",
+        "921637ece0f86f03f710a946f48f569382b074ae268369a652f924c2b5072bd6",
+        "d64279bb9ba537f19564a7489066aec509f6e5ebcb24d7f20b25cb3e1b53e3f7",
+        "f2e641ad497de55315a1d319d494ef673dcfac0b1ebe7c78a7b4b1899e0c32fc",
+        "08a17170fd45cb96f9475712b673e755b5f2c05d0e384cbca7aea1d29e94e9c9",
+        "369f45d6d401dfa314d5b28bed16b53677e30694baf5ee136ffa8885dff3a76d",
+        "c2f3156739c0f4d29591e8b4b26e0f0c4e43844d4bdfe5c27101f23163a2ba61",
+        "ebc482b2d46f312ee93934be621899a5be25a286f8b02e4e791f84766dc8cb2f",
+        "5b7fc39656e4fe299aa2b60932c94d76b86b49c2b639c593eee586730546b6b7",
+        "a425ea0a6f17ebce30c6dad56a1fe3012b73e36cb829652807ea374ba70d8157",
+        "05bda8415f8269ba8545df39e33b659f65c411cff84db852326946803bf12f86",
+        "a2995203bf7ea47421e2f0e0da132c49f07bed1fabbe307dfcef56290ad68c51",
+        "6431fc5c252fa7096f4445ad3cd6a9189fd9629769a36632c18aff0451ff3cbe",
+        "3adfca8b290d155e89b528c25069fce7938bdb741d5fab4a192418eea4cd781a",
+        "6702770438b8852ccee68843362b27f160b49d123a381c14f3a0f7a2ada98307",
+        "3522a8c1f27cb9cdd70bc9a0944cfe4f29b0e29fa14dec28e7552d5274dd7b3f",
+        "a5f38a264722d473307ecd9d4ae1faace41a4c83c5936ef2b0373fd59acbc330",
+        "63a9597d7a5534d1ddea15c822f7433da74e92cec9af7e8001c3e8fa3faecacb",
+        "3d4711b05dda6abc2c3fcddacac49308393a64f353d94b409548b776e3e4fec8",
+        "b72b4fa568eb5e32a83d3802a074e9774256e105c8b1dd64cd98a9fd3c0f807f"
+      ]
+    },
+    "confirmation_reserve": {
+      "start_seed": 4436000,
+      "fingerprints": [
+        "9b44086d52980660a6ae35006f2fa2333277382a5cb2bde52117b2ce2568b689",
+        "9a1beb35e7965af73a8cb3c789bdced6915f1a14ce003188d46bfdcad02677d7",
+        "ffea50866d2b58d2b6ab998fd29223707263b5f4408701278538cebe9ddc3cc8",
+        "0790b9eed0ced60c334698e23ad7fabe4e82b39cdbc246cfc8617e5a10b178d5",
+        "676e249a78c96035a535a6fd67e9c8012cd4eeae8e800c214328df94b1a6f853",
+        "4be4da38e91951c3bee03d0202d609819b1940934429543a4d4f4955199f0f71",
+        "5fedd5363b1d0a0cf4b4289da8cab6ae066683a188362292e96f71d19e8a92ea",
+        "6697594261aad4d2a0fa695067925e6ef68bb5bfce41172235905965936dc066",
+        "96d8b8ff6efe516c48faf8799bc737bc46edb8ac684f86d4cea0b9f5ccb26c96",
+        "fa8259b87341abdea4a99b9df29a1ba4c14c4eb622add59c16a8f84026873f3a",
+        "159204ea525e59aee8b2340cb85148a837abdc6183330f2b7b8f5b7275fa84ac",
+        "547fa396222be6b28c9c3f33a82f6baab43027946d25bb2fa60fd1927eb267f9",
+        "272db13e6ad72c818df30eb52b3941b7d042b9ebf5dd49e961f08bf9403118f2",
+        "25b02a6169e0a5da26f46b9c5c7d70967d3001852a49180a2087cd18c2755f2f",
+        "be16c1ebcc5d1ba7a81d23ff03b589e37bf1338e62efd24d2a2d4fe5a9be61d6",
+        "cdf9598b8759dabb4b69254ea8a3acaebe3eb8477b01751cd35376f13a5c8b9a",
+        "e77cb28c1b24484cd337e06afdf54b714edb185d87a7e6b03d602b1d1c916b7c",
+        "ca9a574f349d90d3c43292354e7ca8af9bc552075e99d7f7d94610984da48bf6",
+        "60532020e1f5281f69f26d8c9943e7475540813bd3f96313b1f341941c4ea2fb",
+        "0d02973da3549e5b6c24f105d522adbbfcd868a6ea15cabcfcf51a67d1c7496d",
+        "43158b085474d52276056cfed70c82d44cd4a3872bae540c09eae4dcd28c6ad6",
+        "e56c0fecabc005948ee239fb53f5543c58521524b198ca87f8aa5adde375a9d5",
+        "db795e6cb055a5023a73cc43bcdbd735246ed1e643254cc34f7ceb1b180b690c",
+        "12dd9b512226cc5a75f2071e68298002d79b1eaa747a131944aed3d19b116bef",
+        "436f0034737299b1076025a404c50d66ec2cc37baaa2fb7ac71c095010fab711",
+        "07db3c16514f0d6e74c7558a7892a7e8672b23ddf90b8c36e3a038ec0d4854f2",
+        "9027f66e831cee930bc7567988b2dbf174fb93633abd6f900177c927b7f6ad71",
+        "5ba52e45a784f07cc050211a13b4a8958a74cf414d401afa61edbb823741450c",
+        "14254675b6a64848b78b29e193f280e33283e21d46668a34ade9abac7c3eefdb",
+        "1bec347ceb0c1eb909a48d3b0e56461ccfe9ec48a29900e3b7ccf0f1bb82d0f5",
+        "12f8643951c721aa0e2cf96ab9493624247e66d1a66a864e07af68222f8e6f24",
+        "525c7da982dbad2c699568b7356a2f4fd930447f1228da62594b2c0f719d21c2",
+        "d84b98eba91c2565394586e1fe3e4ebb3505bcc5062dd7b2043a1e691a200495",
+        "5061c8f85715fe9d7c386fa2ae2e1428fddc54550d62f808456d58c6d98fe638",
+        "5d04b8d9d5aed0f61ddc97fd3defc97e0c981b2bf2267cc9ba366ea6207d8220",
+        "aa2bc12635ff2030f811332a7fffcbb2169d6d5658a24b1782d19a9e116e8f56",
+        "9a7400a0dd44a2b2febee02928f8746420daa0918b8ad919349fc7fd088d9c2d",
+        "da937a000a2ccc28612817aa53bb2b5d1c1f2960e6262942d035f6fbdba78a99",
+        "3960671a923fdcaa6c6e82e5e16b815c3f5357ef22fb4f9b72fbb348f1b462c0",
+        "70243fe5225f912cd382bb7a173bd92f403f49c1b967711c1d17e0c7cc51d140",
+        "f0f1a5bb6b53d013e473809d14377096b18e92f47e23ca5abd4c4dade053f97b",
+        "916f9a15a03b527cf2bd5632d9e8fe8a473f1740a7843b7304e976381ac07704",
+        "2cb2c81925bef0995c4c459e6dc1e4c336204acaca98a9e22dbb6073586bfc85",
+        "72039ea954243bb2fc4f69a9cafda2a03af8674787803fc34439f155554fb5ab",
+        "9283b1ae3f2778399144ea4e48c7ea2355ab7093f4484f304e9ce4cb4f0f363a",
+        "da391cef5376460655aca9aa00989ab197d2106006eebefbc16a8cf948d13011",
+        "f1643a20c887cba45cc769bcc5b6e1982aed29220535f6ba508784e4c82cfa05",
+        "8718f193e020bd64fd3155716473c2b1e9ea8560faf1a7a966fcc3989d5bdb0a",
+        "c2ad443833ce4a2cf50d4e6b4c9436e7404643a27de48d0dd9a970664742b76f",
+        "b125d005c2266f0ad1d20b17997b39ba41fa8a313f6a68e960357e2d2cf2616c",
+        "7b7dda9d30b71a05ff46e4cbbbeda32eed9eb25892655373ce25aa2f765018e8",
+        "c4219af4384f8ae35e0efabfbde91739b1cf8eedb523d413a4b675fc82baa70e",
+        "134f573ba03675cd8dee95818f91dd834db9a2a7c43467f865ef76ca7abd996a",
+        "8bd8d19938eed23e6b3e59182e264edd725e6dd79060cea0aa083b53e68f6766",
+        "37eb6943ed4da63375ed8848004b6761be919d68cd83ba61308de4157df624da",
+        "ae02fcc736790f38c7e78524bf571454289a75214b89e41127276a2c0518e262",
+        "9c26d0b9865cef69fd8ef8b01dae855b073c8c1c3b2e993a334f2678914551fb",
+        "c788c67b551d6b18ded521446349f1476a45be079915845fe1caaa999a7a6730",
+        "bfd6099a64347c0d94f16a91366c51a97e2e3a018182abfd8c4743a4a3047a29",
+        "72528255e2a2aa939307ed1e0eb5366657c17535291f57606b819945f1ba6de7",
+        "728c234281fae866c38210bec3f5df3fffec448cd90d0bf243615e8d64c9fb51",
+        "0012da61e7136aec3c410e758d8cdaf2bbcfca7dfd99a65f22e94a4862449548",
+        "168a5758dafcf562104f73b570261b6c0f3f5f35b6bf39195d3ec7b17e299662",
+        "a74f74524ae6fe24648f1e919516084bbdf10a53aafde9865c12963578d489a8"
+      ]
+    }
+  },
+  "b2_admission": {
+    "loader": "chapter3_bser.learning.train.load_for_evaluation",
+    "calibration_scenes": 8,
+    "minimum_successes": 2,
+    "minimum_nonzero_applied_steps": 1,
+    "requirements": "原生来源、配置与模型身份核验，正式可评估的普通 B2，已有优化更新，与训练场景隔离。校准时冻结并关闭探索，须实际下发过非零残差、在至少两个独立场景成功。只作名义分辨率准入。"
+  },
+  "stopping": {
+    "stage1": "四艇控制契约、分组物理指纹、逐步命令和回报、完整终止及零更新有一项失败，即停止。",
+    "b2_unavailable": "继续 D2 诊断，单列 B2 缺失或被拒绝的原因。",
+    "independent_unit": "physical_scene",
+    "minimum_mean_effect_steps": 5,
+    "paired_ci": "two-sided percentile 95% paired bootstrap of scene-level differences; equal weight per scene, 10000 draws, seed 4536000, lower bound > 0",
+    "D": "确认集上 D 的均值至少 5 步且区间下界大于 0 才做任务级恢复。名义与失配均贴近失败上限时标记分辨率不足。",
+    "G": "G_theta 和 G_pi 各自达到同一门槛，再核对碰撞与原团队回报。若仅局部跟踪改善，结论限于对应阶段。"
+  }
+}
