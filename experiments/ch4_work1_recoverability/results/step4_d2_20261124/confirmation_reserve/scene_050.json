@@ -1,0 +1,301 @@
+{
+  "lock_sha256": "7a98882f5bd3189b72671b04576f54044c4e6c2882d8bdce5c7b6784300e1c7a",
+  "row_sha256": "cb27afae86fe8b6a612cab9d430401d8c3bf156370f3528d17e1777250b5d47c",
+  "row": {
+    "group": "confirmation_reserve",
+    "index": 50,
+    "seed": 4436050,
+    "physical_fingerprint": "7b7dda9d30b71a05ff46e4cbbbeda32eed9eb25892655373ce25aa2f765018e8",
+    "case": 4,
+    "truth": {
+      "beta": 0.15,
+      "drag": [
+        0.85,
+        0.85,
+        1.2,
+        1.2
+      ],
+      "thrust": [
+        0.85,
+        1.1,
+        0.85,
+        1.1
+      ],
+      "law": "linear"
+    },
+    "initial_sha256": "2bf997a6ddd672b3c46438cb45eb3e9391c7609e43539ced9d074e47ae97e02d",
+    "nominal": {
+      "actual_steps": 400,
+      "completion_step": null,
+      "P": 500,
+      "termination": "timeout",
+      "success": false,
+      "collision": false,
+      "timeout": true,
+      "team_discounted_return": 0.16840753334872022,
+      "found_step": 57,
+      "handoff_step": 57,
+      "phase_counts": {
+        "search_before_discovery": {
+          "phase_boat_steps": 171,
+          "controllable_boat_steps": 171,
+          "controllable_task_steps": 57,
+          "qualifying_boat_steps": 76,
+          "window": {
+            "t": 5,
+            "vehicle": 1,
+            "assignment": "s1_03_0001",
+            "tracking_waypoint": [
+              11.0,
+              11.0,
+              1.5
+            ]
+          },
+          "velocity_errors_mps": [
+            [
+              0.41280032967267677,
+              0.0
+            ],
+            [
+              0.2314186786551919,
+              0.0
+            ],
+            [
+              0.08494339563608809,
+              0.0
+            ],
+            [
+              0.03459292910701171,
+              0.03178119809669011
+            ]
+          ],
+          "velocity_rmse_mps": 0.241024256152144,
+          "excess_closing_mps": 0.007945299524172528
+        },
+        "executor_after_handoff": {
+          "phase_boat_steps": 342,
+          "controllable_boat_steps": 20,
+          "controllable_task_steps": 20,
+          "qualifying_boat_steps": 9,
+          "window": {
+            "t": 62,
+            "vehicle": 3,
+            "assignment": "PUBLIC_HANDOFF_TARGET",
+            "tracking_waypoint": [
+              9.0,
+              11.0,
+              3.5
+            ]
+          },
+          "velocity_errors_mps": [
+            [
+              0.6643239017681434,
+              0.0
+            ],
+            [
+              0.47468107088005096,
+              0.0
+            ],
+            [
+              0.31551186048411634,
+              0.0
+            ],
+            [
+              0.18664673321573716,
+              0.0
+            ],
+            [
+              0.08467805846836758,
+              0.0
+            ],
+            [
+              0.006287062791978653,
+              0.0
+            ],
+            [
+              0.05368482196572803,
+              0.053657619159977354
+            ],
+            [
+              0.09674675461353394,
+              0.0967432309130305
+            ],
+            [
+              0.1264320983711656,
+              0.1264320938767165
+            ],
+            [
+              0.14526374917405505,
+              0.1452610767235349
+            ],
+            [
+              0.1554420347290099,
+              0.15543243602179013
+            ],
+            [
+              0.15885906998916213,
+              0.1588380375781937
+            ],
+            [
+              0.1571211412458566,
+              0.15708284259309935
+            ],
+            [
+              0.1515747203930612,
+              0.15151076758070517
+            ],
+            [
+              0.14333467237368874,
+              0.1432320558011366
+            ],
+            [
+              0.1333122150376266,
+              0.13314921862249243
+            ]
+          ],
+          "velocity_rmse_mps": 0.24911706390938276,
+          "excess_closing_mps": 0.08258371117941729
+        }
+      },
+      "trajectory_sha256": "0d9ed741ce468db284ae1d8155b8bca7ba3a15826794dc4a9f909be3ac7e575d"
+    },
+    "shift": {
+      "actual_steps": 400,
+      "completion_step": null,
+      "P": 500,
+      "termination": "timeout",
+      "success": false,
+      "collision": false,
+      "timeout": true,
+      "team_discounted_return": 0.16185112203602947,
+      "found_step": 53,
+      "handoff_step": 53,
+      "phase_counts": {
+        "search_before_discovery": {
+          "phase_boat_steps": 159,
+          "controllable_boat_steps": 159,
+          "controllable_task_steps": 53,
+          "qualifying_boat_steps": 61,
+          "window": {
+            "t": 5,
+            "vehicle": 1,
+            "assignment": "s1_03_0001",
+            "tracking_waypoint": [
+              11.0,
+              11.0,
+              1.5
+            ]
+          },
+          "velocity_errors_mps": [
+            [
+              0.3415573762887793,
+              0.0
+            ],
+            [
+              0.16151359646251423,
+              0.0
+            ],
+            [
+              0.024521994510346583,
+              0.0
+            ]
+          ],
+          "velocity_rmse_mps": 0.21859354317568191,
+          "excess_closing_mps": 0.0
+        },
+        "executor_after_handoff": {
+          "phase_boat_steps": 346,
+          "controllable_boat_steps": 20,
+          "controllable_task_steps": 20,
+          "qualifying_boat_steps": 9,
+          "window": {
+            "t": 58,
+            "vehicle": 3,
+            "assignment": "PUBLIC_HANDOFF_TARGET",
+            "tracking_waypoint": [
+              9.0,
+              11.0,
+              3.5
+            ]
+          },
+          "velocity_errors_mps": [
+            [
+              0.5991215482229918,
+              0.0
+            ],
+            [
+              0.41288708897881704,
+              0.0
+            ],
+            [
+              0.263201287585635,
+              0.0
+            ],
+            [
+              0.14656459977746913,
+              0.0
+            ],
+            [
+              0.05778858801241766,
+              0.0
+            ],
+            [
+              0.009244375082719197,
+              0.008490781231344946
+            ],
+            [
+              0.05603261177142634,
+              0.05600184884174797
+            ],
+            [
+              0.08873455011801652,
+              0.08873432533682712
+            ],
+            [
+              0.10982684160270836,
+              0.10981850424246375
+            ],
+            [
+              0.12190020312094749,
+              0.12186735218341677
+            ],
+            [
+              0.12711086955217088,
+              0.12703974337766255
+            ],
+            [
+              0.1272253784064379,
+              0.12710035476867282
+            ],
+            [
+              0.12367280742315788,
+              0.12347387069010757
+            ],
+            [
+              0.11759648731854999,
+              0.11729646765639648
+            ],
+            [
+              0.10989681017175183,
+              0.10945713085015041
+            ],
+            [
+              0.10127297387357656,
+              0.10063671859618384
+            ]
+          ],
+          "velocity_rmse_mps": 0.21583260539158752,
+          "excess_closing_mps": 0.06811981861093588
+        }
+      },
+      "trajectory_sha256": "ddd4c2d78f37e2ff242bca6c211ebcb2537caac89f834b9d3c6e9affbbd81c49"
+    },
+    "D": 0,
+    "shared_decision_steps": 400,
+    "common_target_sha256": "d7c6ef8b116b2be1e9bc9311a12599c920563eb2f9002b0ca2340cd0787fab31",
+    "common_rng_sha256": "4ecf43b3429fa5dd00aa7158f753422c477e9f9e57e4621f3f5dfdbf81ef928b",
+    "common_planner_events": 0,
+    "nominal_only_events": 0,
+    "shift_only_events": 0
+  }
+}

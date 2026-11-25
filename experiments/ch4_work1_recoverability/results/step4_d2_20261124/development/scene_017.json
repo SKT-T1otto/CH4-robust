@@ -1,0 +1,105 @@
+{
+  "lock_sha256": "6d92632d038c90ba414653afc2b1a892b63d8ab61446692153d0255ff9f23974",
+  "row_sha256": "6cc21487dd133ccdf4fc5e7e558fe08de419c19b276b974eaf2bf2363e4a928b",
+  "row": {
+    "group": "development",
+    "index": 17,
+    "seed": 4336017,
+    "physical_fingerprint": "3adfca8b290d155e89b528c25069fce7938bdb741d5fab4a192418eea4cd781a",
+    "case": 6,
+    "truth": {
+      "beta": 0.15,
+      "drag": [
+        1.2,
+        1.2,
+        0.85,
+        0.85
+      ],
+      "thrust": [
+        0.85,
+        1.1,
+        0.85,
+        1.1
+      ],
+      "law": "linear"
+    },
+    "initial_sha256": "b2c1bee010a46f3035c2b225381807393d430cdf84a24a4f0fe3e3a48776ad8c",
+    "nominal": {
+      "actual_steps": 400,
+      "completion_step": null,
+      "P": 500,
+      "termination": "timeout",
+      "success": false,
+      "collision": false,
+      "timeout": true,
+      "team_discounted_return": 0.28191127261564836,
+      "found_step": 1,
+      "handoff_step": 1,
+      "phase_counts": {
+        "search_before_discovery": {
+          "phase_boat_steps": 3,
+          "controllable_boat_steps": 3,
+          "controllable_task_steps": 1,
+          "qualifying_boat_steps": 0,
+          "window": null,
+          "velocity_errors_mps": [],
+          "velocity_rmse_mps": null,
+          "excess_closing_mps": null
+        },
+        "executor_after_handoff": {
+          "phase_boat_steps": 398,
+          "controllable_boat_steps": 20,
+          "controllable_task_steps": 20,
+          "qualifying_boat_steps": 0,
+          "window": null,
+          "velocity_errors_mps": [],
+          "velocity_rmse_mps": null,
+          "excess_closing_mps": null
+        }
+      },
+      "trajectory_sha256": "f555c733424e0209ac289f0143b7488ce5c3b1797a889cd7140bc8b8e758f63d"
+    },
+    "shift": {
+      "actual_steps": 400,
+      "completion_step": null,
+      "P": 500,
+      "termination": "timeout",
+      "success": false,
+      "collision": false,
+      "timeout": true,
+      "team_discounted_return": 0.28204446189733273,
+      "found_step": 1,
+      "handoff_step": 1,
+      "phase_counts": {
+        "search_before_discovery": {
+          "phase_boat_steps": 3,
+          "controllable_boat_steps": 3,
+          "controllable_task_steps": 1,
+          "qualifying_boat_steps": 0,
+          "window": null,
+          "velocity_errors_mps": [],
+          "velocity_rmse_mps": null,
+          "excess_closing_mps": null
+        },
+        "executor_after_handoff": {
+          "phase_boat_steps": 398,
+          "controllable_boat_steps": 20,
+          "controllable_task_steps": 20,
+          "qualifying_boat_steps": 0,
+          "window": null,
+          "velocity_errors_mps": [],
+          "velocity_rmse_mps": null,
+          "excess_closing_mps": null
+        }
+      },
+      "trajectory_sha256": "e320ca7084b337615ed66cf03fe5b874da44a41916fb332641a54c3481a86907"
+    },
+    "D": 0,
+    "shared_decision_steps": 400,
+    "common_target_sha256": "2189d7c40a4f6ba354ad8fe340836c262caaf50e8ed39b5ba9593960f4ef7bc1",
+    "common_rng_sha256": "191460694348f054b8642fa70906c06c793d734379a9e60b0cf941ae243be6ed",
+    "common_planner_events": 0,
+    "nominal_only_events": 0,
+    "shift_only_events": 0
+  }
+}

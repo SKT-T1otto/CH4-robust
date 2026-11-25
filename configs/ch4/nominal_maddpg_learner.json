@@ -1,0 +1,44 @@
+{
+  "schema": "auv.ch4.nominal_maddpg.learner_protocol.v1",
+  "stage": 4,
+  "task_training_enabled": false,
+  "new_task_episodes": 0,
+  "maximum_rounds_per_temporary_model": 4,
+  "temporary_models_discarded": true,
+  "training_checkpoints_written": 0,
+  "tolerance": {
+    "atol": 2e-06,
+    "rtol": 1e-05
+  },
+  "soft_update_tolerance": {
+    "atol": 2e-07,
+    "rtol": 2e-06
+  },
+  "replay_capacity": 2048,
+  "batch_size": 128,
+  "mechanism_seed": 81729,
+  "input_files": {
+    "configs/ch4/nominal_maddpg.json": "a6c527260f0da998129c3246dc1fd7fbe1d3b449330f80b7064ac5e51148d251",
+    "verification/nominal_maddpg_runtime_20261125/acceptance.json": "a0b944c6685ef6b7c0c49ab42eaa834f28bf66af8c9c64f79f38afaabed7cfa7",
+    "verification/nominal_maddpg_runtime_20261125/zero_timeout_a.json": "94e3ec83a20c3b1109132e52ab833b3089cc0bbcfbe2f41480c4a4b5479f3c5b",
+    "verification/nominal_maddpg_runtime_20261125/zero_timeout_a.jsonl.gz": "4910c0ef9f716512697e6b438f86eecdf37a5c7b2f8e9c02cd39878d4f60fc17",
+    "verification/nominal_maddpg_runtime_20261125/zero_collision.json": "c76197144170679a42ff2f50695561d9097d853118a1e0a3db25746a4db86ee5",
+    "verification/nominal_maddpg_runtime_20261125/zero_collision.jsonl.gz": "61b23f4ac44d3098f60123e1e3b7a2f2e3da9d7d518be5e39f250eb2f6d690f3",
+    "verification/nominal_maddpg_runtime_20261125/zero_success.json": "2da302e15c9599323d495bb56f33c6413c858a1d3b9b5473ad92a569d423d445",
+    "verification/nominal_maddpg_runtime_20261125/zero_success.jsonl.gz": "7954cb3fecbd29b18b18be6e7e34980c0556dddfadd2dbc5cfea91a46550cbce",
+    "verification/nominal_maddpg_runtime_20261125/frozen_calibration_a.json": "e4c1839b7b72d9687554d8ee05b2ad9c4a35559f696e5a45e1ee33c22b662ef4",
+    "verification/nominal_maddpg_runtime_20261125/frozen_calibration_a.jsonl.gz": "5cb5bb20efa2d6e7b671e1da2c9ca02b25578a234fac26ab45c3a3332e3abb22",
+    "verification/nominal_maddpg_runtime_20261125/frozen_validation_a.json": "ad148509f6b17d668a54c115a11d68715a670b564a2273a7533a18eac104512a",
+    "verification/nominal_maddpg_runtime_20261125/frozen_validation_a.jsonl.gz": "b1375b26a06f507fe31fa140b8d6d1461fc1343f169289e1eb675fae19e7aca3"
+  },
+  "cases": [
+    "zero_timeout_a",
+    "zero_collision",
+    "zero_success",
+    "frozen_calibration_a",
+    "frozen_validation_a"
+  ],
+  "source_role": "sealed step-3 actual transitions, mechanism testing only",
+  "nominal_admission_opened": false,
+  "mismatch_sets_opened": false
+}

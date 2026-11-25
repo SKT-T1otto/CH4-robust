@@ -1,0 +1,102 @@
+{
+  "step1_passed": true,
+  "files_sha256": {
+    "protocol.json": "2d83be8fbdf5a1e4fc96fbecf0acd6715ad00270e059fe2690f5f92b7243f369",
+    "run.py": "90394f414d448f5eafb7212edd4940b2e73c6971f86e63225d2b5a0a1b38850c",
+    "test_work1.py": "da62973c69fddcda8a321ee2d4860ebec5928dddf5168b93cd4f18ad7f72dfe3"
+  },
+  "frozen_source": {
+    "schema": "auv.ch4.source_identity.v1",
+    "sha256": "3717440d3ba78762e599b01e56fa6d4f5f4d34510d09b65bbbb44c6efa37d447",
+    "version": 9,
+    "frozen_parent_sha256": "8714ad799c4455221adf03f328ec7e39e3977759c3580c4cf6fa7b99d2efee3e",
+    "inherited_source_checks_passed": false,
+    "original_sirsa_reproduced": false,
+    "performance_passed": false
+  },
+  "scene_groups": {
+    "legacy_calibration": {
+      "count": 8,
+      "start_seed": 2239500,
+      "sha256": "0884019210b4a49b00bc1c54437311d8c8a7c4b54814fab35430e0d82e3b8564"
+    },
+    "legacy_regression": {
+      "count": 24,
+      "start_seed": 2739500,
+      "sha256": "5cf5847e1011229d38a6bc96a0698c69bcd08e3aa4c86a911198afdae60d5abf"
+    },
+    "calibration": {
+      "count": 8,
+      "start_seed": 4236000,
+      "sha256": "1e16d29f5eda01f5b0238735ead238720d89a12132c719c064616919dc8bedf1"
+    },
+    "development": {
+      "count": 24,
+      "start_seed": 4336000,
+      "sha256": "a4e788bd106329affb8c397a526b3f0ce588cd82a1c11d81c5174641c5434fca"
+    },
+    "confirmation_reserve": {
+      "count": 64,
+      "start_seed": 4436000,
+      "sha256": "a369a983422996bc165348b35f10cea97e4b009558fea98e787f5b63191b747e"
+    }
+  },
+  "fingerprints_regenerated_in_this_run": false,
+  "confirmation_rollouts": 0,
+  "relative_water_rollouts": 0,
+  "evaluation_updates": 0,
+  "d2": {
+    "steps": 400,
+    "termination_reason": "timeout",
+    "success": false,
+    "penalized_completion_steps": 500,
+    "team_discounted_return": 0.13686323210980147,
+    "nonzero_residual_steps": 0,
+    "nonzero_physical_command_steps": 400,
+    "trace_sha256": "125fe5ae6e5b3b30bf6ff895d457e304cc4de8375a8ce9d2a19badd9e61535ba",
+    "observed_trace_sha256": "125fe5ae6e5b3b30bf6ff895d457e304cc4de8375a8ce9d2a19badd9e61535ba",
+    "repeats": 2,
+    "per_step_exact": true,
+    "contract": {
+      "dt": 0.2,
+      "residual_scale_search": 0.2,
+      "residual_scale_executor": 0.15,
+      "use_residual_prior": true,
+      "agents": 4,
+      "role_order": [
+        "search_fast",
+        "search_balanced",
+        "search_precise",
+        "executor"
+      ],
+      "observation_dim": 28,
+      "action_dim": 3,
+      "critic_input_dim": 124,
+      "gamma": 0.95,
+      "repairs": {
+        "waypoint_arrival": true,
+        "inactive_actor": true,
+        "hold_residual": true
+      },
+      "per_vehicle_residual_scales": [
+        0.2,
+        0.2,
+        0.2,
+        0.15
+      ]
+    },
+    "evaluation_updates": 0,
+    "scenario_seed": 4236000,
+    "physical_fingerprint": "7ca81c743bd00fab63eca5961d1333c322f95f66d7b5fb13330f1c9a97d591e4",
+    "registered_active_reference": {
+      "project": "AUV-Thesis-Active",
+      "worktree_sha256": "b9563c0ff0bf6d5a214489a275f20428f14a046c5d14b198395f63a274ddc885",
+      "matches": true
+    }
+  },
+  "b2": {
+    "checkpoint_sha256": "32334b07f9688d44e1ac40102162ebfb33def5beabddcf4b4a7cac764b40a62b",
+    "status": "not_admitted",
+    "reason": "baseline preparation source inventory/identity mismatch"
+  }
+}

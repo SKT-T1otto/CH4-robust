@@ -1,0 +1,7 @@
+{
+  "passed": false,
+  "phase": "final imported source inventory check",
+  "error": "checks/__init__.py was not included in the source inventory; check package initializers will be added before a new source record and fresh audit",
+  "new_task_episodes": 0,
+  "training_checkpoints_written": 0
+}

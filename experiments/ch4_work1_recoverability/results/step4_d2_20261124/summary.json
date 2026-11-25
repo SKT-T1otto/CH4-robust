@@ -1,0 +1,281 @@
+{
+  "development": {
+    "D": {
+      "n": 24,
+      "mean": -22.75,
+      "ci95": [
+        -66.33333333333333,
+        8.75
+      ]
+    },
+    "sample_sd": 98.02761367838279,
+    "positive": 1,
+    "negative": 2,
+    "zero": 21,
+    "both_500": 21,
+    "success_pairs": {
+      "0->1": 2,
+      "0->0": 21,
+      "1->0": 1
+    },
+    "return_difference": {
+      "n": 24,
+      "mean": 0.0014904525782339258,
+      "ci95": [
+        -0.004974595701629163,
+        0.010177707375928647
+      ]
+    },
+    "arms": {
+      "nominal": {
+        "mean_P": 495.625,
+        "mean_team_discounted_return": 0.15663937826959545,
+        "outcomes": {
+          "obstacle_collision": 3,
+          "timeout": 20,
+          "success": 1
+        },
+        "failures_at_500": 23,
+        "phases": {
+          "search_before_discovery": {
+            "total_scenes": 24,
+            "entered_scenes": 24,
+            "controllable_boat_steps": 10833,
+            "controllable_task_steps": 4192,
+            "qualifying_boat_steps": 4152,
+            "window_scenes": 21,
+            "no_window_scenes": 3
+          },
+          "executor_after_handoff": {
+            "total_scenes": 24,
+            "entered_scenes": 16,
+            "controllable_boat_steps": 593,
+            "controllable_task_steps": 593,
+            "qualifying_boat_steps": 218,
+            "window_scenes": 12,
+            "no_window_scenes": 12
+          }
+        }
+      },
+      "shift": {
+        "mean_P": 472.875,
+        "mean_team_discounted_return": 0.15812983084782936,
+        "outcomes": {
+          "success": 2,
+          "timeout": 19,
+          "obstacle_collision": 3
+        },
+        "failures_at_500": 22,
+        "phases": {
+          "search_before_discovery": {
+            "total_scenes": 24,
+            "entered_scenes": 24,
+            "controllable_boat_steps": 10754,
+            "controllable_task_steps": 4131,
+            "qualifying_boat_steps": 4623,
+            "window_scenes": 21,
+            "no_window_scenes": 3
+          },
+          "executor_after_handoff": {
+            "total_scenes": 24,
+            "entered_scenes": 16,
+            "controllable_boat_steps": 389,
+            "controllable_task_steps": 389,
+            "qualifying_boat_steps": 140,
+            "window_scenes": 13,
+            "no_window_scenes": 11
+          }
+        }
+      }
+    },
+    "windows": {
+      "search_before_discovery": {
+        "velocity_rmse_mps": {
+          "n": 21,
+          "mean": -0.011290164286348037,
+          "ci95": [
+            -0.060905175416261725,
+            0.03184821032893701
+          ]
+        },
+        "excess_closing_mps": {
+          "n": 21,
+          "mean": 6.771235148533772e-05,
+          "ci95": [
+            -0.014344876681283564,
+            0.017257589536018088
+          ]
+        }
+      },
+      "executor_after_handoff": {
+        "velocity_rmse_mps": {
+          "n": 10,
+          "mean": 0.008768403115204335,
+          "ci95": [
+            -0.04417880451371382,
+            0.04912378754936984
+          ]
+        },
+        "excess_closing_mps": {
+          "n": 10,
+          "mean": 0.023428578857658835,
+          "ci95": [
+            0.004162888761228554,
+            0.04332120571243685
+          ]
+        }
+      }
+    },
+    "ceiling_limited": true
+  },
+  "confirmation": {
+    "D": {
+      "n": 64,
+      "mean": -13.046875,
+      "ci95": [
+        -42.89140625,
+        14.422265624999994
+      ]
+    },
+    "sample_sd": 118.09955844271849,
+    "positive": 7,
+    "negative": 8,
+    "zero": 49,
+    "both_500": 49,
+    "success_pairs": {
+      "0->0": 49,
+      "0->1": 8,
+      "1->1": 1,
+      "1->0": 6
+    },
+    "return_difference": {
+      "n": 64,
+      "mean": -0.005889094582294031,
+      "ci95": [
+        -0.026096878122519634,
+        0.008450461350377188
+      ]
+    },
+    "arms": {
+      "nominal": {
+        "mean_P": 475.046875,
+        "mean_team_discounted_return": 0.1513714790024683,
+        "outcomes": {
+          "timeout": 45,
+          "success": 7,
+          "obstacle_collision": 12
+        },
+        "failures_at_500": 57,
+        "phases": {
+          "search_before_discovery": {
+            "total_scenes": 64,
+            "entered_scenes": 64,
+            "controllable_boat_steps": 31752,
+            "controllable_task_steps": 12434,
+            "qualifying_boat_steps": 13181,
+            "window_scenes": 60,
+            "no_window_scenes": 4
+          },
+          "executor_after_handoff": {
+            "total_scenes": 64,
+            "entered_scenes": 34,
+            "controllable_boat_steps": 1315,
+            "controllable_task_steps": 1315,
+            "qualifying_boat_steps": 441,
+            "window_scenes": 30,
+            "no_window_scenes": 34
+          }
+        }
+      },
+      "shift": {
+        "mean_P": 462.0,
+        "mean_team_discounted_return": 0.14548238442017425,
+        "outcomes": {
+          "timeout": 46,
+          "success": 9,
+          "obstacle_collision": 9
+        },
+        "failures_at_500": 55,
+        "phases": {
+          "search_before_discovery": {
+            "total_scenes": 64,
+            "entered_scenes": 64,
+            "controllable_boat_steps": 33902,
+            "controllable_task_steps": 13519,
+            "qualifying_boat_steps": 13939,
+            "window_scenes": 60,
+            "no_window_scenes": 4
+          },
+          "executor_after_handoff": {
+            "total_scenes": 64,
+            "entered_scenes": 36,
+            "controllable_boat_steps": 1816,
+            "controllable_task_steps": 1816,
+            "qualifying_boat_steps": 467,
+            "window_scenes": 29,
+            "no_window_scenes": 35
+          }
+        }
+      }
+    },
+    "windows": {
+      "search_before_discovery": {
+        "velocity_rmse_mps": {
+          "n": 60,
+          "mean": 0.032560770465840896,
+          "ci95": [
+            -0.009095083836783348,
+            0.0778984915108582
+          ]
+        },
+        "excess_closing_mps": {
+          "n": 60,
+          "mean": 0.009808618925933434,
+          "ci95": [
+            0.0018316756234847383,
+            0.018875770898061143
+          ]
+        }
+      },
+      "executor_after_handoff": {
+        "velocity_rmse_mps": {
+          "n": 22,
+          "mean": 0.013953494855508912,
+          "ci95": [
+            -0.024981827280714044,
+            0.06372631047849876
+          ]
+        },
+        "excess_closing_mps": {
+          "n": 22,
+          "mean": -0.002614771714140157,
+          "ci95": [
+            -0.01688321028984201,
+            0.010732012733846235
+          ]
+        }
+      }
+    },
+    "ceiling_limited": false
+  },
+  "sample_size": {
+    "development_sha256": "099f7b68fd191524f4da642101db564451403d869a31094ae539bf2ac4724946",
+    "development_n": 24,
+    "development_sd": 98.02761367838279,
+    "required_n": 5907,
+    "locked_n": 64,
+    "precision_limited": true
+  },
+  "confirmation_mean_and_ci_gate": false,
+  "proceed_to_recovery": false,
+  "b2_admission": {
+    "checkpoint_sha256": "32334b07f9688d44e1ac40102162ebfb33def5beabddcf4b4a7cac764b40a62b",
+    "status": "not_admitted",
+    "reason": "baseline preparation source inventory/identity mismatch"
+  },
+  "training_updates": 0,
+  "recovery_rollouts": 0,
+  "development_lock": "6d92632d038c90ba414653afc2b1a892b63d8ab61446692153d0255ff9f23974",
+  "confirmation_lock": "7a98882f5bd3189b72671b04576f54044c4e6c2882d8bdce5c7b6784300e1c7a",
+  "confirmation_rows_sha256": "f408102dc01da811f0a3dfc941f018842d84c40bb424495d7509032bda095ced"
+}

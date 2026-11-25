@@ -1,0 +1,10 @@
+{
+  "index": 6,
+  "generator_seed": 2239506,
+  "scenario_seed": 2239506,
+  "steps": 32,
+  "moving": 95,
+  "free": 128,
+  "speed_median": 1.1036971807479858,
+  "max_free_prediction_error": 1.0533473648877134e-07
+}

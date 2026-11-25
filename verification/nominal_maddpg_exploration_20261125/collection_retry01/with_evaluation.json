@@ -1,0 +1,635 @@
+{
+  "initial_state_sha256": "79d794b01b566bc97564955a87fb64bb9a67347a0caef6236fb9a3f1b80b12b6",
+  "final_state_sha256": "4d0310f67c4f7396526fc99604b65c4c1fb841854ebfe9c9fba5db7ba3b02dfe",
+  "rows": 24,
+  "transition_sequence_sha256": "74e335c5e05aa3790f1a73b787f2aee10cb3ef992f7092076dae441fe480a370",
+  "replay_sha256": "e6ec5967cd57fdd167515c4ce7774af0c961794e878b98f5dd0fa69d0da7a187",
+  "replay_sources_sha256": "c7d6713493673011c8684a3d9f3f52b80bf3471f5f41dbca0941f718a463866a",
+  "next_samples": [
+    {
+      "indices": [
+        14,
+        0,
+        5,
+        9,
+        13,
+        10,
+        21,
+        23
+      ],
+      "sources": [
+        {
+          "catalog_sha256": "780bdf15b344ee4763903eea1544e58f858e46a7e618efcee9c01793207159e3",
+          "scenario_id": "ch4_nominal_maddpg_train_6100000",
+          "scenario_seed": 6100000,
+          "group": "train",
+          "scene_sha256": "545a9558f47b9320a20837f4d5c5654b4f6bd85b1d5397c5b648bf5d7b408283",
+          "physical_fingerprint": "ea231010edf39c5da3c05a36508f6824dc7fcc1f6d7ee940d6093ebf7e66320f",
+          "episode_id": 0,
+          "transition_step": 14,
+          "insertion": 14
+        },
+        {
+          "catalog_sha256": "780bdf15b344ee4763903eea1544e58f858e46a7e618efcee9c01793207159e3",
+          "scenario_id": "ch4_nominal_maddpg_train_6100000",
+          "scenario_seed": 6100000,
+          "group": "train",
+          "scene_sha256": "545a9558f47b9320a20837f4d5c5654b4f6bd85b1d5397c5b648bf5d7b408283",
+          "physical_fingerprint": "ea231010edf39c5da3c05a36508f6824dc7fcc1f6d7ee940d6093ebf7e66320f",
+          "episode_id": 0,
+          "transition_step": 0,
+          "insertion": 0
+        },
+        {
+          "catalog_sha256": "780bdf15b344ee4763903eea1544e58f858e46a7e618efcee9c01793207159e3",
+          "scenario_id": "ch4_nominal_maddpg_train_6100000",
+          "scenario_seed": 6100000,
+          "group": "train",
+          "scene_sha256": "545a9558f47b9320a20837f4d5c5654b4f6bd85b1d5397c5b648bf5d7b408283",
+          "physical_fingerprint": "ea231010edf39c5da3c05a36508f6824dc7fcc1f6d7ee940d6093ebf7e66320f",
+          "episode_id": 0,
+          "transition_step": 5,
+          "insertion": 5
+        },
+        {
+          "catalog_sha256": "780bdf15b344ee4763903eea1544e58f858e46a7e618efcee9c01793207159e3",
+          "scenario_id": "ch4_nominal_maddpg_train_6100000",
+          "scenario_seed": 6100000,
+          "group": "train",
+          "scene_sha256": "545a9558f47b9320a20837f4d5c5654b4f6bd85b1d5397c5b648bf5d7b408283",
+          "physical_fingerprint": "ea231010edf39c5da3c05a36508f6824dc7fcc1f6d7ee940d6093ebf7e66320f",
+          "episode_id": 0,
+          "transition_step": 9,
+          "insertion": 9
+        },
+        {
+          "catalog_sha256": "780bdf15b344ee4763903eea1544e58f858e46a7e618efcee9c01793207159e3",
+          "scenario_id": "ch4_nominal_maddpg_train_6100000",
+          "scenario_seed": 6100000,
+          "group": "train",
+          "scene_sha256": "545a9558f47b9320a20837f4d5c5654b4f6bd85b1d5397c5b648bf5d7b408283",
+          "physical_fingerprint": "ea231010edf39c5da3c05a36508f6824dc7fcc1f6d7ee940d6093ebf7e66320f",
+          "episode_id": 0,
+          "transition_step": 13,
+          "insertion": 13
+        },
+        {
+          "catalog_sha256": "780bdf15b344ee4763903eea1544e58f858e46a7e618efcee9c01793207159e3",
+          "scenario_id": "ch4_nominal_maddpg_train_6100000",
+          "scenario_seed": 6100000,
+          "group": "train",
+          "scene_sha256": "545a9558f47b9320a20837f4d5c5654b4f6bd85b1d5397c5b648bf5d7b408283",
+          "physical_fingerprint": "ea231010edf39c5da3c05a36508f6824dc7fcc1f6d7ee940d6093ebf7e66320f",
+          "episode_id": 0,
+          "transition_step": 10,
+          "insertion": 10
+        },
+        {
+          "catalog_sha256": "780bdf15b344ee4763903eea1544e58f858e46a7e618efcee9c01793207159e3",
+          "scenario_id": "ch4_nominal_maddpg_train_6100000",
+          "scenario_seed": 6100000,
+          "group": "train",
+          "scene_sha256": "545a9558f47b9320a20837f4d5c5654b4f6bd85b1d5397c5b648bf5d7b408283",
+          "physical_fingerprint": "ea231010edf39c5da3c05a36508f6824dc7fcc1f6d7ee940d6093ebf7e66320f",
+          "episode_id": 0,
+          "transition_step": 21,
+          "insertion": 21
+        },
+        {
+          "catalog_sha256": "780bdf15b344ee4763903eea1544e58f858e46a7e618efcee9c01793207159e3",
+          "scenario_id": "ch4_nominal_maddpg_train_6100000",
+          "scenario_seed": 6100000,
+          "group": "train",
+          "scene_sha256": "545a9558f47b9320a20837f4d5c5654b4f6bd85b1d5397c5b648bf5d7b408283",
+          "physical_fingerprint": "ea231010edf39c5da3c05a36508f6824dc7fcc1f6d7ee940d6093ebf7e66320f",
+          "episode_id": 0,
+          "transition_step": 23,
+          "insertion": 23
+        }
+      ]
+    },
+    {
+      "indices": [
+        8,
+        9,
+        12,
+        23,
+        21,
+        7,
+        1,
+        6
+      ],
+      "sources": [
+        {
+          "catalog_sha256": "780bdf15b344ee4763903eea1544e58f858e46a7e618efcee9c01793207159e3",
+          "scenario_id": "ch4_nominal_maddpg_train_6100000",
+          "scenario_seed": 6100000,
+          "group": "train",
+          "scene_sha256": "545a9558f47b9320a20837f4d5c5654b4f6bd85b1d5397c5b648bf5d7b408283",
+          "physical_fingerprint": "ea231010edf39c5da3c05a36508f6824dc7fcc1f6d7ee940d6093ebf7e66320f",
+          "episode_id": 0,
+          "transition_step": 8,
+          "insertion": 8
+        },
+        {
+          "catalog_sha256": "780bdf15b344ee4763903eea1544e58f858e46a7e618efcee9c01793207159e3",
+          "scenario_id": "ch4_nominal_maddpg_train_6100000",
+          "scenario_seed": 6100000,
+          "group": "train",
+          "scene_sha256": "545a9558f47b9320a20837f4d5c5654b4f6bd85b1d5397c5b648bf5d7b408283",
+          "physical_fingerprint": "ea231010edf39c5da3c05a36508f6824dc7fcc1f6d7ee940d6093ebf7e66320f",
+          "episode_id": 0,
+          "transition_step": 9,
+          "insertion": 9
+        },
+        {
+          "catalog_sha256": "780bdf15b344ee4763903eea1544e58f858e46a7e618efcee9c01793207159e3",
+          "scenario_id": "ch4_nominal_maddpg_train_6100000",
+          "scenario_seed": 6100000,
+          "group": "train",
+          "scene_sha256": "545a9558f47b9320a20837f4d5c5654b4f6bd85b1d5397c5b648bf5d7b408283",
+          "physical_fingerprint": "ea231010edf39c5da3c05a36508f6824dc7fcc1f6d7ee940d6093ebf7e66320f",
+          "episode_id": 0,
+          "transition_step": 12,
+          "insertion": 12
+        },
+        {
+          "catalog_sha256": "780bdf15b344ee4763903eea1544e58f858e46a7e618efcee9c01793207159e3",
+          "scenario_id": "ch4_nominal_maddpg_train_6100000",
+          "scenario_seed": 6100000,
+          "group": "train",
+          "scene_sha256": "545a9558f47b9320a20837f4d5c5654b4f6bd85b1d5397c5b648bf5d7b408283",
+          "physical_fingerprint": "ea231010edf39c5da3c05a36508f6824dc7fcc1f6d7ee940d6093ebf7e66320f",
+          "episode_id": 0,
+          "transition_step": 23,
+          "insertion": 23
+        },
+        {
+          "catalog_sha256": "780bdf15b344ee4763903eea1544e58f858e46a7e618efcee9c01793207159e3",
+          "scenario_id": "ch4_nominal_maddpg_train_6100000",
+          "scenario_seed": 6100000,
+          "group": "train",
+          "scene_sha256": "545a9558f47b9320a20837f4d5c5654b4f6bd85b1d5397c5b648bf5d7b408283",
+          "physical_fingerprint": "ea231010edf39c5da3c05a36508f6824dc7fcc1f6d7ee940d6093ebf7e66320f",
+          "episode_id": 0,
+          "transition_step": 21,
+          "insertion": 21
+        },
+        {
+          "catalog_sha256": "780bdf15b344ee4763903eea1544e58f858e46a7e618efcee9c01793207159e3",
+          "scenario_id": "ch4_nominal_maddpg_train_6100000",
+          "scenario_seed": 6100000,
+          "group": "train",
+          "scene_sha256": "545a9558f47b9320a20837f4d5c5654b4f6bd85b1d5397c5b648bf5d7b408283",
+          "physical_fingerprint": "ea231010edf39c5da3c05a36508f6824dc7fcc1f6d7ee940d6093ebf7e66320f",
+          "episode_id": 0,
+          "transition_step": 7,
+          "insertion": 7
+        },
+        {
+          "catalog_sha256": "780bdf15b344ee4763903eea1544e58f858e46a7e618efcee9c01793207159e3",
+          "scenario_id": "ch4_nominal_maddpg_train_6100000",
+          "scenario_seed": 6100000,
+          "group": "train",
+          "scene_sha256": "545a9558f47b9320a20837f4d5c5654b4f6bd85b1d5397c5b648bf5d7b408283",
+          "physical_fingerprint": "ea231010edf39c5da3c05a36508f6824dc7fcc1f6d7ee940d6093ebf7e66320f",
+          "episode_id": 0,
+          "transition_step": 1,
+          "insertion": 1
+        },
+        {
+          "catalog_sha256": "780bdf15b344ee4763903eea1544e58f858e46a7e618efcee9c01793207159e3",
+          "scenario_id": "ch4_nominal_maddpg_train_6100000",
+          "scenario_seed": 6100000,
+          "group": "train",
+          "scene_sha256": "545a9558f47b9320a20837f4d5c5654b4f6bd85b1d5397c5b648bf5d7b408283",
+          "physical_fingerprint": "ea231010edf39c5da3c05a36508f6824dc7fcc1f6d7ee940d6093ebf7e66320f",
+          "episode_id": 0,
+          "transition_step": 6,
+          "insertion": 6
+        }
+      ]
+    },
+    {
+      "indices": [
+        19,
+        4,
+        2,
+        18,
+        14,
+        11,
+        20,
+        12
+      ],
+      "sources": [
+        {
+          "catalog_sha256": "780bdf15b344ee4763903eea1544e58f858e46a7e618efcee9c01793207159e3",
+          "scenario_id": "ch4_nominal_maddpg_train_6100000",
+          "scenario_seed": 6100000,
+          "group": "train",
+          "scene_sha256": "545a9558f47b9320a20837f4d5c5654b4f6bd85b1d5397c5b648bf5d7b408283",
+          "physical_fingerprint": "ea231010edf39c5da3c05a36508f6824dc7fcc1f6d7ee940d6093ebf7e66320f",
+          "episode_id": 0,
+          "transition_step": 19,
+          "insertion": 19
+        },
+        {
+          "catalog_sha256": "780bdf15b344ee4763903eea1544e58f858e46a7e618efcee9c01793207159e3",
+          "scenario_id": "ch4_nominal_maddpg_train_6100000",
+          "scenario_seed": 6100000,
+          "group": "train",
+          "scene_sha256": "545a9558f47b9320a20837f4d5c5654b4f6bd85b1d5397c5b648bf5d7b408283",
+          "physical_fingerprint": "ea231010edf39c5da3c05a36508f6824dc7fcc1f6d7ee940d6093ebf7e66320f",
+          "episode_id": 0,
+          "transition_step": 4,
+          "insertion": 4
+        },
+        {
+          "catalog_sha256": "780bdf15b344ee4763903eea1544e58f858e46a7e618efcee9c01793207159e3",
+          "scenario_id": "ch4_nominal_maddpg_train_6100000",
+          "scenario_seed": 6100000,
+          "group": "train",
+          "scene_sha256": "545a9558f47b9320a20837f4d5c5654b4f6bd85b1d5397c5b648bf5d7b408283",
+          "physical_fingerprint": "ea231010edf39c5da3c05a36508f6824dc7fcc1f6d7ee940d6093ebf7e66320f",
+          "episode_id": 0,
+          "transition_step": 2,
+          "insertion": 2
+        },
+        {
+          "catalog_sha256": "780bdf15b344ee4763903eea1544e58f858e46a7e618efcee9c01793207159e3",
+          "scenario_id": "ch4_nominal_maddpg_train_6100000",
+          "scenario_seed": 6100000,
+          "group": "train",
+          "scene_sha256": "545a9558f47b9320a20837f4d5c5654b4f6bd85b1d5397c5b648bf5d7b408283",
+          "physical_fingerprint": "ea231010edf39c5da3c05a36508f6824dc7fcc1f6d7ee940d6093ebf7e66320f",
+          "episode_id": 0,
+          "transition_step": 18,
+          "insertion": 18
+        },
+        {
+          "catalog_sha256": "780bdf15b344ee4763903eea1544e58f858e46a7e618efcee9c01793207159e3",
+          "scenario_id": "ch4_nominal_maddpg_train_6100000",
+          "scenario_seed": 6100000,
+          "group": "train",
+          "scene_sha256": "545a9558f47b9320a20837f4d5c5654b4f6bd85b1d5397c5b648bf5d7b408283",
+          "physical_fingerprint": "ea231010edf39c5da3c05a36508f6824dc7fcc1f6d7ee940d6093ebf7e66320f",
+          "episode_id": 0,
+          "transition_step": 14,
+          "insertion": 14
+        },
+        {
+          "catalog_sha256": "780bdf15b344ee4763903eea1544e58f858e46a7e618efcee9c01793207159e3",
+          "scenario_id": "ch4_nominal_maddpg_train_6100000",
+          "scenario_seed": 6100000,
+          "group": "train",
+          "scene_sha256": "545a9558f47b9320a20837f4d5c5654b4f6bd85b1d5397c5b648bf5d7b408283",
+          "physical_fingerprint": "ea231010edf39c5da3c05a36508f6824dc7fcc1f6d7ee940d6093ebf7e66320f",
+          "episode_id": 0,
+          "transition_step": 11,
+          "insertion": 11
+        },
+        {
+          "catalog_sha256": "780bdf15b344ee4763903eea1544e58f858e46a7e618efcee9c01793207159e3",
+          "scenario_id": "ch4_nominal_maddpg_train_6100000",
+          "scenario_seed": 6100000,
+          "group": "train",
+          "scene_sha256": "545a9558f47b9320a20837f4d5c5654b4f6bd85b1d5397c5b648bf5d7b408283",
+          "physical_fingerprint": "ea231010edf39c5da3c05a36508f6824dc7fcc1f6d7ee940d6093ebf7e66320f",
+          "episode_id": 0,
+          "transition_step": 20,
+          "insertion": 20
+        },
+        {
+          "catalog_sha256": "780bdf15b344ee4763903eea1544e58f858e46a7e618efcee9c01793207159e3",
+          "scenario_id": "ch4_nominal_maddpg_train_6100000",
+          "scenario_seed": 6100000,
+          "group": "train",
+          "scene_sha256": "545a9558f47b9320a20837f4d5c5654b4f6bd85b1d5397c5b648bf5d7b408283",
+          "physical_fingerprint": "ea231010edf39c5da3c05a36508f6824dc7fcc1f6d7ee940d6093ebf7e66320f",
+          "episode_id": 0,
+          "transition_step": 12,
+          "insertion": 12
+        }
+      ]
+    }
+  ],
+  "next_scene_ids": [
+    "ch4_nominal_maddpg_train_6100135",
+    "ch4_nominal_maddpg_train_6100397",
+    "ch4_nominal_maddpg_train_6100011"
+  ],
+  "final_noise_sha256": "3fad22ca23d07d722624b2a6bff40367b4fefe83161f1db54a87d55ed323a99b",
+  "final_weights_sha256": "f5bb5d8dadb06994fe3855809a634bc5b5605145c8c1f9beaa145504c1776e0a",
+  "counters": {
+    "rounds": 1,
+    "target_updates": 1,
+    "actor_steps": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "critic_steps": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "actor_skips": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "suppressed_nonzero_boat_steps": 0,
+  "prefix": {
+    "completed": false,
+    "terminated": false,
+    "truncated": true,
+    "reason": "external_mechanism_limit",
+    "steps": 24,
+    "transitions": 24,
+    "success": null,
+    "penalized_completion_steps": null,
+    "eligible_for_task_statistics": false,
+    "team_discounted_return": 0.10716724025985937,
+    "team_undiscounted_return": 0.18559654767159373
+  },
+  "update_evidence": {
+    "update": {
+      "batch_size": 8,
+      "terminal_rows": 0,
+      "target_min": -0.056017305701971054,
+      "target_max": 0.0151137113571167,
+      "closed_target_actions_zero": true,
+      "critics": [
+        {
+          "loss": 0.00012699652870651335,
+          "gradient_norm": 0.09327011070328636,
+          "steps": 1
+        },
+        {
+          "loss": 8.189198524632957e-06,
+          "gradient_norm": 0.009878861904167643,
+          "steps": 1
+        },
+        {
+          "loss": 0.00011836957128252834,
+          "gradient_norm": 0.07171096881923886,
+          "steps": 1
+        },
+        {
+          "loss": 6.759473035344854e-05,
+          "gradient_norm": 0.06669301343406932,
+          "steps": 1
+        }
+      ],
+      "actors": [
+        {
+          "skipped": false,
+          "rows": 8,
+          "loss": -0.11658495664596558,
+          "gradient_norm": 0.009582254806059594,
+          "steps": 1
+        },
+        {
+          "skipped": false,
+          "rows": 8,
+          "loss": -0.1724766492843628,
+          "gradient_norm": 0.010252991310050096,
+          "steps": 1
+        },
+        {
+          "skipped": false,
+          "rows": 8,
+          "loss": -0.18912488222122192,
+          "gradient_norm": 0.011115871142740779,
+          "steps": 1
+        },
+        {
+          "skipped": false,
+          "rows": 8,
+          "loss": -0.14541824162006378,
+          "gradient_norm": 0.009265565853980664,
+          "steps": 1
+        }
+      ],
+      "counters": {
+        "rounds": 1,
+        "target_updates": 1,
+        "actor_steps": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "critic_steps": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "actor_skips": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "sample_indices": [
+      6,
+      5,
+      0,
+      2,
+      1,
+      3,
+      7,
+      4
+    ],
+    "sources": [
+      {
+        "catalog_sha256": "780bdf15b344ee4763903eea1544e58f858e46a7e618efcee9c01793207159e3",
+        "scenario_id": "ch4_nominal_maddpg_train_6100000",
+        "scenario_seed": 6100000,
+        "group": "train",
+        "scene_sha256": "545a9558f47b9320a20837f4d5c5654b4f6bd85b1d5397c5b648bf5d7b408283",
+        "physical_fingerprint": "ea231010edf39c5da3c05a36508f6824dc7fcc1f6d7ee940d6093ebf7e66320f",
+        "episode_id": 0,
+        "transition_step": 6,
+        "insertion": 6
+      },
+      {
+        "catalog_sha256": "780bdf15b344ee4763903eea1544e58f858e46a7e618efcee9c01793207159e3",
+        "scenario_id": "ch4_nominal_maddpg_train_6100000",
+        "scenario_seed": 6100000,
+        "group": "train",
+        "scene_sha256": "545a9558f47b9320a20837f4d5c5654b4f6bd85b1d5397c5b648bf5d7b408283",
+        "physical_fingerprint": "ea231010edf39c5da3c05a36508f6824dc7fcc1f6d7ee940d6093ebf7e66320f",
+        "episode_id": 0,
+        "transition_step": 5,
+        "insertion": 5
+      },
+      {
+        "catalog_sha256": "780bdf15b344ee4763903eea1544e58f858e46a7e618efcee9c01793207159e3",
+        "scenario_id": "ch4_nominal_maddpg_train_6100000",
+        "scenario_seed": 6100000,
+        "group": "train",
+        "scene_sha256": "545a9558f47b9320a20837f4d5c5654b4f6bd85b1d5397c5b648bf5d7b408283",
+        "physical_fingerprint": "ea231010edf39c5da3c05a36508f6824dc7fcc1f6d7ee940d6093ebf7e66320f",
+        "episode_id": 0,
+        "transition_step": 0,
+        "insertion": 0
+      },
+      {
+        "catalog_sha256": "780bdf15b344ee4763903eea1544e58f858e46a7e618efcee9c01793207159e3",
+        "scenario_id": "ch4_nominal_maddpg_train_6100000",
+        "scenario_seed": 6100000,
+        "group": "train",
+        "scene_sha256": "545a9558f47b9320a20837f4d5c5654b4f6bd85b1d5397c5b648bf5d7b408283",
+        "physical_fingerprint": "ea231010edf39c5da3c05a36508f6824dc7fcc1f6d7ee940d6093ebf7e66320f",
+        "episode_id": 0,
+        "transition_step": 2,
+        "insertion": 2
+      },
+      {
+        "catalog_sha256": "780bdf15b344ee4763903eea1544e58f858e46a7e618efcee9c01793207159e3",
+        "scenario_id": "ch4_nominal_maddpg_train_6100000",
+        "scenario_seed": 6100000,
+        "group": "train",
+        "scene_sha256": "545a9558f47b9320a20837f4d5c5654b4f6bd85b1d5397c5b648bf5d7b408283",
+        "physical_fingerprint": "ea231010edf39c5da3c05a36508f6824dc7fcc1f6d7ee940d6093ebf7e66320f",
+        "episode_id": 0,
+        "transition_step": 1,
+        "insertion": 1
+      },
+      {
+        "catalog_sha256": "780bdf15b344ee4763903eea1544e58f858e46a7e618efcee9c01793207159e3",
+        "scenario_id": "ch4_nominal_maddpg_train_6100000",
+        "scenario_seed": 6100000,
+        "group": "train",
+        "scene_sha256": "545a9558f47b9320a20837f4d5c5654b4f6bd85b1d5397c5b648bf5d7b408283",
+        "physical_fingerprint": "ea231010edf39c5da3c05a36508f6824dc7fcc1f6d7ee940d6093ebf7e66320f",
+        "episode_id": 0,
+        "transition_step": 3,
+        "insertion": 3
+      },
+      {
+        "catalog_sha256": "780bdf15b344ee4763903eea1544e58f858e46a7e618efcee9c01793207159e3",
+        "scenario_id": "ch4_nominal_maddpg_train_6100000",
+        "scenario_seed": 6100000,
+        "group": "train",
+        "scene_sha256": "545a9558f47b9320a20837f4d5c5654b4f6bd85b1d5397c5b648bf5d7b408283",
+        "physical_fingerprint": "ea231010edf39c5da3c05a36508f6824dc7fcc1f6d7ee940d6093ebf7e66320f",
+        "episode_id": 0,
+        "transition_step": 7,
+        "insertion": 7
+      },
+      {
+        "catalog_sha256": "780bdf15b344ee4763903eea1544e58f858e46a7e618efcee9c01793207159e3",
+        "scenario_id": "ch4_nominal_maddpg_train_6100000",
+        "scenario_seed": 6100000,
+        "group": "train",
+        "scene_sha256": "545a9558f47b9320a20837f4d5c5654b4f6bd85b1d5397c5b648bf5d7b408283",
+        "physical_fingerprint": "ea231010edf39c5da3c05a36508f6824dc7fcc1f6d7ee940d6093ebf7e66320f",
+        "episode_id": 0,
+        "transition_step": 4,
+        "insertion": 4
+      }
+    ],
+    "before_actor_sha256": "b80dc37dcebd1208a6c740ce3b2ca5645c9cec4f7c6542dc28c095279232d280",
+    "after_actor_sha256": "b7b862228f2fc5370f4053bd0f67794a078cf18ecc924ffbb251c28f44095f98",
+    "max_raw_actor_change": 0.01995103433728218,
+    "next_actor_exact": true,
+    "max_applied_action_change": 0.019951030611991882,
+    "actual_next_actor_sha256": "b7b862228f2fc5370f4053bd0f67794a078cf18ecc924ffbb251c28f44095f98"
+  },
+  "evaluation": {
+    "prefix": {
+      "completed": false,
+      "terminated": false,
+      "truncated": true,
+      "reason": "external_mechanism_limit",
+      "steps": 8,
+      "transitions": 8,
+      "success": null,
+      "penalized_completion_steps": null,
+      "eligible_for_task_statistics": false,
+      "team_discounted_return": 0.23427748064049575,
+      "team_undiscounted_return": 0.3108160257106647
+    },
+    "weights_sha256": "f5bb5d8dadb06994fe3855809a634bc5b5605145c8c1f9beaa145504c1776e0a",
+    "rows": 8,
+    "training_state_before": {
+      "networks": "f5bb5d8dadb06994fe3855809a634bc5b5605145c8c1f9beaa145504c1776e0a",
+      "optimizers": "a21f6efa4d73468506df8ce0e51e715503f7d1d8e75ff2f462cada3b431b35b5",
+      "counters": {
+        "rounds": 1,
+        "target_updates": 1,
+        "actor_steps": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "critic_steps": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "actor_skips": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "noise": "2e836c9349bf977592f1ef67ef47aaeeb726d2ae79cd2ccf7eff7fcd53e99cd2",
+      "replay_data": "dad07a9b55b3b1975fbd903295c48c9e4722b67abd3bc8ab13319fcb58bb4073",
+      "replay_rng": "0b65b6b48c53f49bf2600444910405729dfd61fb825d2d5f7122e8c023c04b3e",
+      "sources": "2d4fb4690d2c0ec74f11b828a68c4f6c6a94bcb55996e3c746f0f7aadd270fa3",
+      "sample_calls": 1,
+      "order": "cfbf1249616de1cbedbf9754f62edbf3e665e88661ff469e0bb6f295f9919aab",
+      "world": "c31f698eebecd00d089a61a49c6beea984c3d28242a59230b896d588c0b4465d",
+      "global_rng": "0dffb7090657d979a6fd5ee773e3a17d786837744c82f25ac84bc906f21c8b58"
+    },
+    "training_state_after": {
+      "networks": "f5bb5d8dadb06994fe3855809a634bc5b5605145c8c1f9beaa145504c1776e0a",
+      "optimizers": "a21f6efa4d73468506df8ce0e51e715503f7d1d8e75ff2f462cada3b431b35b5",
+      "counters": {
+        "rounds": 1,
+        "target_updates": 1,
+        "actor_steps": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "critic_steps": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "actor_skips": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "noise": "2e836c9349bf977592f1ef67ef47aaeeb726d2ae79cd2ccf7eff7fcd53e99cd2",
+      "replay_data": "dad07a9b55b3b1975fbd903295c48c9e4722b67abd3bc8ab13319fcb58bb4073",
+      "replay_rng": "0b65b6b48c53f49bf2600444910405729dfd61fb825d2d5f7122e8c023c04b3e",
+      "sources": "2d4fb4690d2c0ec74f11b828a68c4f6c6a94bcb55996e3c746f0f7aadd270fa3",
+      "sample_calls": 1,
+      "order": "cfbf1249616de1cbedbf9754f62edbf3e665e88661ff469e0bb6f295f9919aab",
+      "world": "c31f698eebecd00d089a61a49c6beea984c3d28242a59230b896d588c0b4465d",
+      "global_rng": "0dffb7090657d979a6fd5ee773e3a17d786837744c82f25ac84bc906f21c8b58"
+    }
+  },
+  "noise_steps": 24,
+  "noise_draws": 24
+}

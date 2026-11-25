@@ -1,0 +1,2334 @@
+{
+  "index": 20,
+  "generator_seed": 2739520,
+  "scenario_seed": 2739520,
+  "prefix_model": "L",
+  "prefix_steps": 400,
+  "counts": {
+    "all": 1600,
+    "other": 52,
+    "near": 21,
+    "closed": 1527
+  },
+  "role_exposure": {
+    "other|0|search": 6,
+    "other|1|search": 8,
+    "other|2|search": 13,
+    "other|3|executor_standby": 14,
+    "near|0|search": 7,
+    "near|1|search": 5,
+    "other|3|executor_execution": 11,
+    "near|3|executor_execution": 9
+  },
+  "prefix_outcome": {
+    "episode_terminated": true,
+    "episode_truncated": false,
+    "termination_reason": "timeout",
+    "terminal_step": 400,
+    "first_collision_step": null,
+    "first_collision_agent_ids": [],
+    "first_collision_phase": null,
+    "collision_records": [],
+    "success": false,
+    "mission_complete": false,
+    "task_protocol": "collision_terminal_v1",
+    "collision_detection_revision": "segment_closed_aabb_v1",
+    "terminal_reward_revision": "team_failure_override_v1",
+    "terminated": true,
+    "truncated": false,
+    "safe_success": false,
+    "collision_episode": false,
+    "remaining_task_steps": 0,
+    "bootstrap_mask": 0.0
+  },
+  "max_free_prediction_error": 1.109380092234602e-07,
+  "wall_seconds": 108.98500000000058,
+  "windows": [
+    {
+      "agent": 3,
+      "step": 18,
+      "direction": [
+        -0.7066073450355316,
+        -0.7076058648300176
+      ],
+      "target": [
+        13.0,
+        17.0,
+        3.5
+      ],
+      "distance_xy": 1.7735984958395534,
+      "near": true,
+      "kind": "executor_execution",
+      "final_target": [
+        13.0,
+        17.0,
+        3.5
+      ],
+      "assignment": "PUBLIC_HANDOFF_TARGET",
+      "post_found": true,
+      "stratum": "near",
+      "prefix_model": "L",
+      "state_sha256": "5621b3696f2195d323d966c6deb9af2955eb4706d1b7f9cfbb4b3d269a30df2b",
+      "rng_sha256": "7b1fb4c9405e7fa10c6b50ea7d557c6b445083ee4419c774296cfb12e3113f13",
+      "history": {
+        "valid_history_steps": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "grid_size": 1440,
+        "enough": true,
+        "surviving_grid": [
+          1,
+          0
+        ],
+        "min_error": [
+          3.233185807971495e-08,
+          0.0010771828031028163
+        ],
+        "tested_tuple_errors": [
+          3.233185807971495e-08,
+          0.002358675182683345
+        ],
+        "both_grid": false,
+        "both_tested_tuples": false,
+        "loose_grid_counts": [
+          106,
+          97
+        ],
+        "both_grid_at_0p01": true
+      },
+      "metrics12": {
+        "values_L": [
+          0.02041699998320119,
+          0.02050148176466173,
+          0.020585754424112507
+        ],
+        "values_Q": [
+          0.020503930660572624,
+          0.02058448751744867,
+          0.020664859372577966
+        ],
+        "distinct": 3,
+        "canonical_actions": [
+          0.0,
+          -0.5,
+          0.5
+        ],
+        "best_L": 0.5,
+        "best_Q": 0.5,
+        "reversal_margin": 0.0,
+        "conflict_cost": 0.0,
+        "headroom": 0.0,
+        "worst_regret_D2": 8.427265945077506e-05,
+        "worst_regret_brake": 0.000168754440911318,
+        "worst_regret_mean": 0.0,
+        "mean_action": 0.5,
+        "regret_action": 0.5,
+        "worst_regret_lambda1": 0.0,
+        "mean_tradeoff": 0.0
+      },
+      "requested_horizon": 12,
+      "metrics24": null,
+      "branch_count": 6,
+      "branch_steps": 72,
+      "traces": {
+        "L": [
+          {
+            "law": "L",
+            "amount": -0.5,
+            "first": {
+              "proposed": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.3533036708831787,
+                  0.3538029193878174,
+                  0.0
+                ]
+              ],
+              "gated": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.3533036708831787,
+                  0.3538029193878174,
+                  0.0
+                ]
+              ],
+              "sent": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  -0.34218525886535645,
+                  -0.28824543952941895,
+                  -0.18495111167430878
+                ]
+              ],
+              "actuated": [
+                [
+                  7.998733053682372e-06,
+                  5.530943599296734e-05,
+                  1.0957089216390159e-05
+                ],
+                [
+                  1.2766362488036975e-05,
+                  5.714118742616847e-05,
+                  4.070423528901301e-05
+                ],
+                [
+                  3.504547566990368e-05,
+                  1.9857588995364495e-05,
+                  3.8453486922662705e-05
+                ],
+                [
+                  -0.38614317774772644,
+                  -0.3308398723602295,
+                  -0.1860303282737732
+                ]
+              ]
+            },
+            "rewards": [
+              0.002664814470335841,
+              0.002765070181339979,
+              0.0027645565569400787,
+              0.0026842576917260885,
+              0.0025453290436416864,
+              0.0023660671431571245,
+              0.00216147443279624,
+              0.00194341700989753,
+              0.0017211578087881207,
+              0.0015015223762020469,
+              0.0012894005049020052,
+              0.001087724114768207
+            ],
+            "distances_to_initial_point": [
+              1.618285883421075,
+              1.4531070086083777,
+              1.2879671511315967,
+              1.1274231947687978,
+              0.9748206997531219,
+              0.8324619204774293,
+              0.7017933596272056,
+              0.5835845382869653,
+              0.47807592612641103,
+              0.3851180998205308,
+              0.3042822238059407,
+              0.2349717622415123
+            ],
+            "projected_overshoot": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "target_changed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "terminal": false,
+            "outcome": {
+              "episode_terminated": false,
+              "episode_truncated": false,
+              "termination_reason": "running",
+              "terminal_step": null,
+              "first_collision_step": null,
+              "first_collision_agent_ids": [],
+              "first_collision_phase": null,
+              "collision_records": [],
+              "success": false,
+              "mission_complete": false,
+              "task_protocol": "collision_terminal_v1",
+              "collision_detection_revision": "segment_closed_aabb_v1",
+              "terminal_reward_revision": "team_failure_override_v1",
+              "terminated": false,
+              "truncated": false,
+              "safe_success": false,
+              "collision_episode": false,
+              "remaining_task_steps": 370,
+              "bootstrap_mask": 1.0
+            },
+            "return12": 0.02041699998320119,
+            "return_total": 0.02041699998320119
+          },
+          {
+            "law": "L",
+            "amount": 0.0,
+            "first": {
+              "proposed": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  0.0
+                ]
+              ],
+              "gated": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  0.0
+                ]
+              ],
+              "sent": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  -0.3951807916164398,
+                  -0.341315895318985,
+                  -0.18495111167430878
+                ]
+              ],
+              "actuated": [
+                [
+                  7.998733053682372e-06,
+                  5.530943599296734e-05,
+                  1.0957089216390159e-05
+                ],
+                [
+                  1.2766362488036975e-05,
+                  5.714118742616847e-05,
+                  4.070423528901301e-05
+                ],
+                [
+                  3.504547566990368e-05,
+                  1.9857588995364495e-05,
+                  3.8453486922662705e-05
+                ],
+                [
+                  -0.4311893880367279,
+                  -0.37594977021217346,
+                  -0.1860303282737732
+                ]
+              ]
+            },
+            "rewards": [
+              0.0026994289364665747,
+              0.002796473912894726,
+              0.002787649864330888,
+              0.0026993118226528168,
+              0.002553696511313319,
+              0.0023691621609032154,
+              0.0021605188958346844,
+              0.0019394223345443606,
+              0.0017149616032838821,
+              0.0014938380336388946,
+              0.0012807352468371391,
+              0.0010784217156469822
+            ],
+            "distances_to_initial_point": [
+              1.6163131849408878,
+              1.4493304108876637,
+              1.2828699463355937,
+              1.1214655410301568,
+              0.9683846797976436,
+              0.8258486648540995,
+              0.6952344409607976,
+              0.5772534955577184,
+              0.47209868944524747,
+              0.37957975124557364,
+              0.2992388969242174,
+              0.23045991428074825
+            ],
+            "projected_overshoot": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "target_changed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "terminal": false,
+            "outcome": {
+              "episode_terminated": false,
+              "episode_truncated": false,
+              "termination_reason": "running",
+              "terminal_step": null,
+              "first_collision_step": null,
+              "first_collision_agent_ids": [],
+              "first_collision_phase": null,
+              "collision_records": [],
+              "success": false,
+              "mission_complete": false,
+              "task_protocol": "collision_terminal_v1",
+              "collision_detection_revision": "segment_closed_aabb_v1",
+              "terminal_reward_revision": "team_failure_override_v1",
+              "terminated": false,
+              "truncated": false,
+              "safe_success": false,
+              "collision_episode": false,
+              "remaining_task_steps": 370,
+              "bootstrap_mask": 1.0
+            },
+            "return12": 0.02050148176466173,
+            "return_total": 0.02050148176466173
+          },
+          {
+            "law": "L",
+            "amount": 0.5,
+            "first": {
+              "proposed": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  -0.3533036708831787,
+                  -0.3538029193878174,
+                  0.0
+                ]
+              ],
+              "gated": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  -0.3533036708831787,
+                  -0.3538029193878174,
+                  0.0
+                ]
+              ],
+              "sent": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  -0.4481763243675232,
+                  -0.394386351108551,
+                  -0.18495111167430878
+                ]
+              ],
+              "actuated": [
+                [
+                  7.998733053682372e-06,
+                  5.530943599296734e-05,
+                  1.0957089216390159e-05
+                ],
+                [
+                  1.2766362488036975e-05,
+                  5.714118742616847e-05,
+                  4.070423528901301e-05
+                ],
+                [
+                  3.504547566990368e-05,
+                  1.9857588995364495e-05,
+                  3.8453486922662705e-05
+                ],
+                [
+                  -0.47623559832572937,
+                  -0.42105966806411743,
+                  -0.1860303282737732
+                ]
+              ]
+            },
+            "rewards": [
+              0.0027339421212673187,
+              0.002827842254191637,
+              0.002810731530189514,
+              0.002714344533160329,
+              0.0025620872620493174,
+              0.0023722706828266382,
+              0.0021595472935587168,
+              0.001935428474098444,
+              0.0017087723826989532,
+              0.0014861468225717545,
+              0.001272021559998393,
+              0.0010690580820664763
+            ],
+            "distances_to_initial_point": [
+              1.614342512697113,
+              1.445554509626689,
+              1.2777741037638168,
+              1.1155105770786207,
+              0.9619500022101682,
+              0.8192360689038378,
+              0.6886768543150551,
+              0.5709238695160838,
+              0.4661224334005755,
+              0.3740427861969345,
+              0.29419972352093815,
+              0.22595571702421763
+            ],
+            "projected_overshoot": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "target_changed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "terminal": false,
+            "outcome": {
+              "episode_terminated": false,
+              "episode_truncated": false,
+              "termination_reason": "running",
+              "terminal_step": null,
+              "first_collision_step": null,
+              "first_collision_agent_ids": [],
+              "first_collision_phase": null,
+              "collision_records": [],
+              "success": false,
+              "mission_complete": false,
+              "task_protocol": "collision_terminal_v1",
+              "collision_detection_revision": "segment_closed_aabb_v1",
+              "terminal_reward_revision": "team_failure_override_v1",
+              "terminated": false,
+              "truncated": false,
+              "safe_success": false,
+              "collision_episode": false,
+              "remaining_task_steps": 370,
+              "bootstrap_mask": 1.0
+            },
+            "return12": 0.020585754424112507,
+            "return_total": 0.020585754424112507
+          }
+        ],
+        "Q": [
+          {
+            "law": "Q",
+            "amount": -0.5,
+            "first": {
+              "proposed": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.3533036708831787,
+                  0.3538029193878174,
+                  0.0
+                ]
+              ],
+              "gated": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.3533036708831787,
+                  0.3538029193878174,
+                  0.0
+                ]
+              ],
+              "sent": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  -0.34218525886535645,
+                  -0.28824543952941895,
+                  -0.18495111167430878
+                ]
+              ],
+              "actuated": [
+                [
+                  7.998733053682372e-06,
+                  5.530943599296734e-05,
+                  1.0957089216390159e-05
+                ],
+                [
+                  1.2766362488036975e-05,
+                  5.714118742616847e-05,
+                  4.070423528901301e-05
+                ],
+                [
+                  3.504547566990368e-05,
+                  1.9857588995364495e-05,
+                  3.8453486922662705e-05
+                ],
+                [
+                  -0.38614317774772644,
+                  -0.3308398723602295,
+                  -0.1860303282737732
+                ]
+              ]
+            },
+            "rewards": [
+              0.002666003769263625,
+              0.002765391021966934,
+              0.002764037810266018,
+              0.0026843396481126547,
+              0.0025478776078671217,
+              0.0023727547377347946,
+              0.0021732060704380274,
+              0.0019602891989052296,
+              0.0017423899844288826,
+              0.0015257387422025204,
+              0.0013146944111213088,
+              0.0011117835529148579
+            ],
+            "distances_to_initial_point": [
+              1.6182178861583805,
+              1.4530207899300065,
+              1.2879105551990688,
+              1.1273618739908915,
+              0.9746137301457831,
+              0.8318726534384004,
+              0.7005334886547426,
+              0.5813599853925376,
+              0.474637393431399,
+              0.3802948549868259,
+              0.29801256518043423,
+              0.22732611508557765
+            ],
+            "projected_overshoot": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "target_changed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "terminal": false,
+            "outcome": {
+              "episode_terminated": false,
+              "episode_truncated": false,
+              "termination_reason": "running",
+              "terminal_step": null,
+              "first_collision_step": null,
+              "first_collision_agent_ids": [],
+              "first_collision_phase": null,
+              "collision_records": [],
+              "success": false,
+              "mission_complete": false,
+              "task_protocol": "collision_terminal_v1",
+              "collision_detection_revision": "segment_closed_aabb_v1",
+              "terminal_reward_revision": "team_failure_override_v1",
+              "terminated": false,
+              "truncated": false,
+              "safe_success": false,
+              "collision_episode": false,
+              "remaining_task_steps": 370,
+              "bootstrap_mask": 1.0
+            },
+            "return12": 0.020503930660572624,
+            "return_total": 0.020503930660572624
+          },
+          {
+            "law": "Q",
+            "amount": 0.0,
+            "first": {
+              "proposed": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  0.0
+                ]
+              ],
+              "gated": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  -0.0,
+                  -0.0,
+                  0.0
+                ]
+              ],
+              "sent": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  -0.3951807916164398,
+                  -0.341315895318985,
+                  -0.18495111167430878
+                ]
+              ],
+              "actuated": [
+                [
+                  7.998733053682372e-06,
+                  5.530943599296734e-05,
+                  1.0957089216390159e-05
+                ],
+                [
+                  1.2766362488036975e-05,
+                  5.714118742616847e-05,
+                  4.070423528901301e-05
+                ],
+                [
+                  3.504547566990368e-05,
+                  1.9857588995364495e-05,
+                  3.8453486922662705e-05
+                ],
+                [
+                  -0.4311893880367279,
+                  -0.37594977021217346,
+                  -0.1860303282737732
+                ]
+              ]
+            },
+            "rewards": [
+              0.0027000652626156807,
+              0.002795860404148698,
+              0.002786035882309079,
+              0.0026983805000782013,
+              0.002555490005761385,
+              0.0023753552231937647,
+              0.002172003500163555,
+              0.001956264954060316,
+              0.0017363624647259712,
+              0.0015183060895651579,
+              0.0013062873622402549,
+              0.001102740759961307
+            ],
+            "distances_to_initial_point": [
+              1.6162768306175719,
+              1.4493290693223384,
+              1.2829609275230738,
+              1.121609802739786,
+              0.9684264708029011,
+              0.8255364472752798,
+              0.6942656636155583,
+              0.575321872534926,
+              0.4689434339970985,
+              0.37502540244297067,
+              0.2932233838907251,
+              0.2230535976256229
+            ],
+            "projected_overshoot": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "target_changed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "terminal": false,
+            "outcome": {
+              "episode_terminated": false,
+              "episode_truncated": false,
+              "termination_reason": "running",
+              "terminal_step": null,
+              "first_collision_step": null,
+              "first_collision_agent_ids": [],
+              "first_collision_phase": null,
+              "collision_records": [],
+              "success": false,
+              "mission_complete": false,
+              "task_protocol": "collision_terminal_v1",
+              "collision_detection_revision": "segment_closed_aabb_v1",
+              "terminal_reward_revision": "team_failure_override_v1",
+              "terminated": false,
+              "truncated": false,
+              "safe_success": false,
+              "collision_episode": false,
+              "remaining_task_steps": 370,
+              "bootstrap_mask": 1.0
+            },
+            "return12": 0.02058448751744867,
+            "return_total": 0.02058448751744867
+          },
+          {
+            "law": "Q",
+            "amount": 0.5,
+            "first": {
+              "proposed": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  -0.3533036708831787,
+                  -0.3538029193878174,
+                  0.0
+                ]
+              ],
+              "gated": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  -0.3533036708831787,
+                  -0.3538029193878174,
+                  0.0
+                ]
+              ],
+              "sent": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  -0.4481763243675232,
+                  -0.394386351108551,
+                  -0.18495111167430878
+                ]
+              ],
+              "actuated": [
+                [
+                  7.998733053682372e-06,
+                  5.530943599296734e-05,
+                  1.0957089216390159e-05
+                ],
+                [
+                  1.2766362488036975e-05,
+                  5.714118742616847e-05,
+                  4.070423528901301e-05
+                ],
+                [
+                  3.504547566990368e-05,
+                  1.9857588995364495e-05,
+                  3.8453486922662705e-05
+                ],
+                [
+                  -0.47623559832572937,
+                  -0.42105966806411743,
+                  -0.1860303282737732
+                ]
+              ]
+            },
+            "rewards": [
+              0.002734025474637747,
+              0.002826227806508541,
+              0.0028080192860215902,
+              0.0027124204207211733,
+              0.0025631024036556482,
+              0.0023779456969350576,
+              0.0021708218846470118,
+              0.0019522726070135832,
+              0.0017303319182246923,
+              0.001510867616161704,
+              0.001297901151701808,
+              0.0010936812032014132
+            ],
+            "distances_to_initial_point": [
+              1.614337801064702,
+              1.4456420804688548,
+              1.2780167132233284,
+              1.115863140130096,
+              0.9622446131090173,
+              0.8192063287592619,
+              0.6880026307072367,
+              0.5692866332806559,
+              0.4632525452598641,
+              0.36975941262850637,
+              0.2884364573915633,
+              0.21878426597283884
+            ],
+            "projected_overshoot": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "target_changed": [
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "terminal": false,
+            "outcome": {
+              "episode_terminated": false,
+              "episode_truncated": false,
+              "termination_reason": "running",
+              "terminal_step": null,
+              "first_collision_step": null,
+              "first_collision_agent_ids": [],
+              "first_collision_phase": null,
+              "collision_records": [],
+              "success": false,
+              "mission_complete": false,
+              "task_protocol": "collision_terminal_v1",
+              "collision_detection_revision": "segment_closed_aabb_v1",
+              "terminal_reward_revision": "team_failure_override_v1",
+              "terminated": false,
+              "truncated": false,
+              "safe_success": false,
+              "collision_episode": false,
+              "remaining_task_steps": 370,
+              "bootstrap_mask": 1.0
+            },
+            "return12": 0.020664859372577966,
+            "return_total": 0.020664859372577966
+          }
+        ]
+      }
+    },
+    {
+      "agent": 2,
+      "step": 6,
+      "direction": [
+        0.27009115458412575,
+        0.9628347564433961
+      ],
+      "target": [
+        9.0,
+        17.0,
+        4.5
+      ],
+      "distance_xy": 0.4618992646863079,
+      "near": false,
+      "kind": "search",
+      "final_target": [
+        1.0,
+        1.0,
+        1.5
+      ],
+      "assignment": "s2_03_0001",
+      "post_found": false,
+      "stratum": "other",
+      "prefix_model": "L",
+      "state_sha256": "bb309128d1f9bed7dfd9f8c82d607aebee0d60fe77046893799e902b9589a216",
+      "rng_sha256": "7a00be424e0ea7271b604656a28c04f0c0a2e73eb5d19774ae47ae27656466a2",
+      "history": {
+        "valid_history_steps": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "grid_size": 1440,
+        "enough": true,
+        "surviving_grid": [
+          1,
+          0
+        ],
+        "min_error": [
+          2.336257826085486e-08,
+          0.000848218443835369
+        ],
+        "tested_tuple_errors": [
+          2.336257826085486e-08,
+          0.002172740654145522
+        ],
+        "both_grid": false,
+        "both_tested_tuples": false,
+        "loose_grid_counts": [
+          527,
+          563
+        ],
+        "both_grid_at_0p01": true
+      },
+      "metrics12": {
+        "values_L": [
+          0.24958557177464138,
+          0.24957671421100688,
+          0.24956686614654458
+        ],
+        "values_Q": [
+          0.24907757030298291,
+          0.24906806460664038,
+          0.24905758030203737
+        ],
+        "distinct": 3,
+        "canonical_actions": [
+          0.0,
+          -0.5,
+          0.5
+        ],
+        "best_L": -0.5,
+        "best_Q": -0.5,
+        "reversal_margin": 0.0,
+        "conflict_cost": 0.0,
+        "headroom": 0.0,
+        "worst_regret_D2": 9.505696342532177e-06,
+        "worst_regret_brake": 0.0,
+        "worst_regret_mean": 0.0,
+        "mean_action": -0.5,
+        "regret_action": -0.5,
+        "worst_regret_lambda1": 0.0,
+        "mean_tradeoff": 0.0
+      },
+      "requested_horizon": 12,
+      "metrics24": null,
+      "branch_count": 6,
+      "branch_steps": 72,
+      "traces": {
+        "L": [
+          {
+            "law": "L",
+            "amount": -0.5,
+            "first": {
+              "proposed": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  -0.13504557311534882,
+                  -0.48141738772392273,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              ],
+              "gated": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  -0.13504557311534882,
+                  -0.48141738772392273,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              ],
+              "sent": [
+                [
+                  0.11408032476902008,
+                  -1.0,
+                  0.015618125908076763
+                ],
+                [
+                  0.04245062172412872,
+                  -1.0,
+                  -0.5791195034980774
+                ],
+                [
+                  -0.013726160861551762,
+                  -0.09031832963228226,
+                  -0.4097307026386261
+                ],
+                [
+                  0.04503052681684494,
+                  0.029996233060956,
+                  0.28690358996391296
+                ]
+              ],
+              "actuated": [
+                [
+                  0.10083599388599396,
+                  -0.9808349013328552,
+                  0.0032650232315063477
+                ],
+                [
+                  0.02748032659292221,
+                  -0.9994024038314819,
+                  -0.6194889545440674
+                ],
+                [
+                  -0.006554880179464817,
+                  -0.06347639858722687,
+                  -0.4457656741142273
+                ],
+                [
+                  0.053020261228084564,
+                  0.033008769154548645,
+                  0.31566157937049866
+                ]
+              ]
+            },
+            "rewards": [
+              0.006797711830586195,
+              0.008292476646602154,
+              0.008051499724388123,
+              0.007322187069803476,
+              0.00727985892444849,
+              0.007675603963434696,
+              0.2818920314311981,
+              -0.0011610316578298807,
+              -0.0007458583568222821,
+              0.0014949195319786668,
+              0.0020721349865198135,
+              0.002466893056407571
+            ],
+            "distances_to_initial_point": [
+              0.9274222422018689,
+              0.8138884789353998,
+              0.702728131151234,
+              0.6113229370061594,
+              0.550971115189791,
+              0.5425030422647426,
+              0.6074374065872307,
+              0.6074374065872307,
+              0.6074374065872307,
+              0.6074374065872307,
+              0.6074374065872307,
+              0.6074374065872307
+            ],
+            "projected_overshoot": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "target_changed": [
+              false,
+              false,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "terminal": false,
+            "outcome": {
+              "episode_terminated": false,
+              "episode_truncated": false,
+              "termination_reason": "running",
+              "terminal_step": null,
+              "first_collision_step": null,
+              "first_collision_agent_ids": [],
+              "first_collision_phase": null,
+              "collision_records": [],
+              "success": false,
+              "mission_complete": false,
+              "task_protocol": "collision_terminal_v1",
+              "collision_detection_revision": "segment_closed_aabb_v1",
+              "terminal_reward_revision": "team_failure_override_v1",
+              "terminated": false,
+              "truncated": false,
+              "safe_success": false,
+              "collision_episode": false,
+              "remaining_task_steps": 382,
+              "bootstrap_mask": 1.0
+            },
+            "return12": 0.24958557177464138,
+            "return_total": 0.24958557177464138
+          },
+          {
+            "law": "L",
+            "amount": 0.0,
+            "first": {
+              "proposed": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              ],
+              "gated": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              ],
+              "sent": [
+                [
+                  0.11408032476902008,
+                  -1.0,
+                  0.015618125908076763
+                ],
+                [
+                  0.04245062172412872,
+                  -1.0,
+                  -0.5791195034980774
+                ],
+                [
+                  0.013282954692840576,
+                  0.00596515042707324,
+                  -0.4097307026386261
+                ],
+                [
+                  0.04503052681684494,
+                  0.029996233060956,
+                  0.28690358996391296
+                ]
+              ],
+              "actuated": [
+                [
+                  0.10083599388599396,
+                  -0.9808349013328552,
+                  0.0032650232315063477
+                ],
+                [
+                  0.02748032659292221,
+                  -0.9994024038314819,
+                  -0.6194889545440674
+                ],
+                [
+                  0.016402868553996086,
+                  0.018364563584327698,
+                  -0.4457656741142273
+                ],
+                [
+                  0.053020261228084564,
+                  0.033008769154548645,
+                  0.31566157937049866
+                ]
+              ]
+            },
+            "rewards": [
+              0.0068106078542768955,
+              0.008303198032081127,
+              0.008058362640440464,
+              0.007306420709937811,
+              0.007264231331646442,
+              0.0076602427288889885,
+              0.2818920314311981,
+              -0.0011610316578298807,
+              -0.0007458583568222821,
+              0.0014949195319786668,
+              0.0020721349865198135,
+              0.002466893056407571
+            ],
+            "distances_to_initial_point": [
+              0.9261482904144793,
+              0.8115408424658557,
+              0.699692877049625,
+              0.6072901210727225,
+              0.5451585121549112,
+              0.5340808801371991,
+              0.5963199033439741,
+              0.5963199033439741,
+              0.5963199033439741,
+              0.5963199033439741,
+              0.5963199033439741,
+              0.5963199033439741
+            ],
+            "projected_overshoot": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "target_changed": [
+              false,
+              false,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "terminal": false,
+            "outcome": {
+              "episode_terminated": false,
+              "episode_truncated": false,
+              "termination_reason": "running",
+              "terminal_step": null,
+              "first_collision_step": null,
+              "first_collision_agent_ids": [],
+              "first_collision_phase": null,
+              "collision_records": [],
+              "success": false,
+              "mission_complete": false,
+              "task_protocol": "collision_terminal_v1",
+              "collision_detection_revision": "segment_closed_aabb_v1",
+              "terminal_reward_revision": "team_failure_override_v1",
+              "terminated": false,
+              "truncated": false,
+              "safe_success": false,
+              "collision_episode": false,
+              "remaining_task_steps": 382,
+              "bootstrap_mask": 1.0
+            },
+            "return12": 0.24957671421100688,
+            "return_total": 0.24957671421100688
+          },
+          {
+            "law": "L",
+            "amount": 0.5,
+            "first": {
+              "proposed": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.13504557311534882,
+                  0.48141738772392273,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              ],
+              "gated": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.13504557311534882,
+                  0.48141738772392273,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              ],
+              "sent": [
+                [
+                  0.11408032476902008,
+                  -1.0,
+                  0.015618125908076763
+                ],
+                [
+                  0.04245062172412872,
+                  -1.0,
+                  -0.5791195034980774
+                ],
+                [
+                  0.04029206931591034,
+                  0.10224863141775131,
+                  -0.4097307026386261
+                ],
+                [
+                  0.04503052681684494,
+                  0.029996233060956,
+                  0.28690358996391296
+                ]
+              ],
+              "actuated": [
+                [
+                  0.10083599388599396,
+                  -0.9808349013328552,
+                  0.0032650232315063477
+                ],
+                [
+                  0.02748032659292221,
+                  -0.9994024038314819,
+                  -0.6194889545440674
+                ],
+                [
+                  0.039360616356134415,
+                  0.10020552575588226,
+                  -0.4457656741142273
+                ],
+                [
+                  0.053020261228084564,
+                  0.033008769154548645,
+                  0.31566157937049866
+                ]
+              ]
+            },
+            "rewards": [
+              0.006823282223194838,
+              0.008313551545143127,
+              0.00806483719497919,
+              0.00729063106700778,
+              0.007248570676892996,
+              0.007644853089004755,
+              0.2818920314311981,
+              -0.0011610316578298807,
+              -0.0007458583568222821,
+              0.0014949195319786668,
+              0.0020721349865198135,
+              0.002466893056407571
+            ],
+            "distances_to_initial_point": [
+              0.9248821431308789,
+              0.809225628985863,
+              0.6967284530458899,
+              0.6033794274774563,
+              0.5395169820427346,
+              0.5258417280218624,
+              0.5853530957556718,
+              0.5853530957556718,
+              0.5853530957556718,
+              0.5853530957556718,
+              0.5853530957556718,
+              0.5853530957556718
+            ],
+            "projected_overshoot": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "target_changed": [
+              false,
+              false,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "terminal": false,
+            "outcome": {
+              "episode_terminated": false,
+              "episode_truncated": false,
+              "termination_reason": "running",
+              "terminal_step": null,
+              "first_collision_step": null,
+              "first_collision_agent_ids": [],
+              "first_collision_phase": null,
+              "collision_records": [],
+              "success": false,
+              "mission_complete": false,
+              "task_protocol": "collision_terminal_v1",
+              "collision_detection_revision": "segment_closed_aabb_v1",
+              "terminal_reward_revision": "team_failure_override_v1",
+              "terminated": false,
+              "truncated": false,
+              "safe_success": false,
+              "collision_episode": false,
+              "remaining_task_steps": 382,
+              "bootstrap_mask": 1.0
+            },
+            "return12": 0.24956686614654458,
+            "return_total": 0.24956686614654458
+          }
+        ],
+        "Q": [
+          {
+            "law": "Q",
+            "amount": -0.5,
+            "first": {
+              "proposed": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  -0.13504557311534882,
+                  -0.48141738772392273,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              ],
+              "gated": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  -0.13504557311534882,
+                  -0.48141738772392273,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              ],
+              "sent": [
+                [
+                  0.11408032476902008,
+                  -1.0,
+                  0.015618125908076763
+                ],
+                [
+                  0.04245062172412872,
+                  -1.0,
+                  -0.5791195034980774
+                ],
+                [
+                  -0.013726160861551762,
+                  -0.09031832963228226,
+                  -0.4097307026386261
+                ],
+                [
+                  0.04503052681684494,
+                  0.029996233060956,
+                  0.28690358996391296
+                ]
+              ],
+              "actuated": [
+                [
+                  0.10083599388599396,
+                  -0.9808349013328552,
+                  0.0032650232315063477
+                ],
+                [
+                  0.02748032659292221,
+                  -0.9994024038314819,
+                  -0.6194889545440674
+                ],
+                [
+                  -0.006554880179464817,
+                  -0.06347639858722687,
+                  -0.4457656741142273
+                ],
+                [
+                  0.053020261228084564,
+                  0.033008769154548645,
+                  0.31566157937049866
+                ]
+              ]
+            },
+            "rewards": [
+              0.0067740255035459995,
+              0.008228178136050701,
+              0.007948607206344604,
+              0.007165580987930298,
+              0.007120915222913027,
+              0.007542894221842289,
+              0.2818913161754608,
+              -0.0011611771769821644,
+              -0.0007583339465782046,
+              0.0015178292524069548,
+              0.0020990369375795126,
+              0.0024922199081629515
+            ],
+            "distances_to_initial_point": [
+              0.9272204692156436,
+              0.8133473840325045,
+              0.7017721080600325,
+              0.6096897317536073,
+              0.5483581733881094,
+              0.5388119926620294,
+              0.6028696226860041,
+              0.6028696226860041,
+              0.6028696226860041,
+              0.6028696226860041,
+              0.6028696226860041,
+              0.6028696226860041
+            ],
+            "projected_overshoot": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "target_changed": [
+              false,
+              false,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "terminal": false,
+            "outcome": {
+              "episode_terminated": false,
+              "episode_truncated": false,
+              "termination_reason": "running",
+              "terminal_step": null,
+              "first_collision_step": null,
+              "first_collision_agent_ids": [],
+              "first_collision_phase": null,
+              "collision_records": [],
+              "success": false,
+              "mission_complete": false,
+              "task_protocol": "collision_terminal_v1",
+              "collision_detection_revision": "segment_closed_aabb_v1",
+              "terminal_reward_revision": "team_failure_override_v1",
+              "terminated": false,
+              "truncated": false,
+              "safe_success": false,
+              "collision_episode": false,
+              "remaining_task_steps": 382,
+              "bootstrap_mask": 1.0
+            },
+            "return12": 0.24907757030298291,
+            "return_total": 0.24907757030298291
+          },
+          {
+            "law": "Q",
+            "amount": 0.0,
+            "first": {
+              "proposed": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              ],
+              "gated": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              ],
+              "sent": [
+                [
+                  0.11408032476902008,
+                  -1.0,
+                  0.015618125908076763
+                ],
+                [
+                  0.04245062172412872,
+                  -1.0,
+                  -0.5791195034980774
+                ],
+                [
+                  0.013282954692840576,
+                  0.00596515042707324,
+                  -0.4097307026386261
+                ],
+                [
+                  0.04503052681684494,
+                  0.029996233060956,
+                  0.28690358996391296
+                ]
+              ],
+              "actuated": [
+                [
+                  0.10083599388599396,
+                  -0.9808349013328552,
+                  0.0032650232315063477
+                ],
+                [
+                  0.02748032659292221,
+                  -0.9994024038314819,
+                  -0.6194889545440674
+                ],
+                [
+                  0.016402868553996086,
+                  0.018364563584327698,
+                  -0.4457656741142273
+                ],
+                [
+                  0.053020261228084564,
+                  0.033008769154548645,
+                  0.31566157937049866
+                ]
+              ]
+            },
+            "rewards": [
+              0.006786887533962727,
+              0.00823880173265934,
+              0.007955302484333515,
+              0.0071497648023068905,
+              0.007105082739144564,
+              0.007527325768023729,
+              0.2818913161754608,
+              -0.0011611771769821644,
+              -0.0007583339465782046,
+              0.0015178292524069548,
+              0.0020990369375795126,
+              0.0024922199081629515
+            ],
+            "distances_to_initial_point": [
+              0.9259498706419882,
+              0.811012575538193,
+              0.6987663424189311,
+              0.6057107340940014,
+              0.5426167342704499,
+              0.5304557357938288,
+              0.5918071142308494,
+              0.5918071142308494,
+              0.5918071142308494,
+              0.5918071142308494,
+              0.5918071142308494,
+              0.5918071142308494
+            ],
+            "projected_overshoot": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "target_changed": [
+              false,
+              false,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "terminal": false,
+            "outcome": {
+              "episode_terminated": false,
+              "episode_truncated": false,
+              "termination_reason": "running",
+              "terminal_step": null,
+              "first_collision_step": null,
+              "first_collision_agent_ids": [],
+              "first_collision_phase": null,
+              "collision_records": [],
+              "success": false,
+              "mission_complete": false,
+              "task_protocol": "collision_terminal_v1",
+              "collision_detection_revision": "segment_closed_aabb_v1",
+              "terminal_reward_revision": "team_failure_override_v1",
+              "terminated": false,
+              "truncated": false,
+              "safe_success": false,
+              "collision_episode": false,
+              "remaining_task_steps": 382,
+              "bootstrap_mask": 1.0
+            },
+            "return12": 0.24906806460664038,
+            "return_total": 0.24906806460664038
+          },
+          {
+            "law": "Q",
+            "amount": 0.5,
+            "first": {
+              "proposed": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.13504557311534882,
+                  0.48141738772392273,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              ],
+              "gated": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.13504557311534882,
+                  0.48141738772392273,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              ],
+              "sent": [
+                [
+                  0.11408032476902008,
+                  -1.0,
+                  0.015618125908076763
+                ],
+                [
+                  0.04245062172412872,
+                  -1.0,
+                  -0.5791195034980774
+                ],
+                [
+                  0.04029206931591034,
+                  0.10224863141775131,
+                  -0.4097307026386261
+                ],
+                [
+                  0.04503052681684494,
+                  0.029996233060956,
+                  0.28690358996391296
+                ]
+              ],
+              "actuated": [
+                [
+                  0.10083599388599396,
+                  -0.9808349013328552,
+                  0.0032650232315063477
+                ],
+                [
+                  0.02748032659292221,
+                  -0.9994024038314819,
+                  -0.6194889545440674
+                ],
+                [
+                  0.039360616356134415,
+                  0.10020552575588226,
+                  -0.4457656741142273
+                ],
+                [
+                  0.053020261228084564,
+                  0.033008769154548645,
+                  0.31566157937049866
+                ]
+              ]
+            },
+            "rewards": [
+              0.006799519527703524,
+              0.008249040693044662,
+              0.007961595430970192,
+              0.007133957929909229,
+              0.007089233957231045,
+              0.00751173822209239,
+              0.2818913161754608,
+              -0.0011611771769821644,
+              -0.0007583339465782046,
+              0.0015178292524069548,
+              0.0020990369375795126,
+              0.0024922199081629515
+            ],
+            "distances_to_initial_point": [
+              0.9246879444199017,
+              0.8087125354291896,
+              0.6958351190829881,
+              0.6018594957573273,
+              0.5370562732015195,
+              0.5222986569189664,
+              0.5809159469570202,
+              0.5809159469570202,
+              0.5809159469570202,
+              0.5809159469570202,
+              0.5809159469570202,
+              0.5809159469570202
+            ],
+            "projected_overshoot": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "target_changed": [
+              false,
+              false,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "terminal": false,
+            "outcome": {
+              "episode_terminated": false,
+              "episode_truncated": false,
+              "termination_reason": "running",
+              "terminal_step": null,
+              "first_collision_step": null,
+              "first_collision_agent_ids": [],
+              "first_collision_phase": null,
+              "collision_records": [],
+              "success": false,
+              "mission_complete": false,
+              "task_protocol": "collision_terminal_v1",
+              "collision_detection_revision": "segment_closed_aabb_v1",
+              "terminal_reward_revision": "team_failure_override_v1",
+              "terminated": false,
+              "truncated": false,
+              "safe_success": false,
+              "collision_episode": false,
+              "remaining_task_steps": 382,
+              "bootstrap_mask": 1.0
+            },
+            "return12": 0.24905758030203737,
+            "return_total": 0.24905758030203737
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "protocol_sha256": "9e373033ddb31bc0d0059ef2ab35cb06d04ce222862cf68f736871e3308f90b7",
+  "source_sha256": "788ba535c90c992dac450de09155f57de366c8c8b455f77f540ad023e6bcc75a",
+  "cases": [
+    {
+      "name": "zero_timeout_a",
+      "group": "calibration",
+      "index": 0,
+      "policy_seed": null,
+      "stress_sampling": true,
+      "reference_log": "experiments/ch4_work1_recoverability/results/step3_d2_20261124/calibration_00.jsonl.gz"
+    },
+    {
+      "name": "zero_timeout_b",
+      "group": "calibration",
+      "index": 0,
+      "policy_seed": null,
+      "stress_sampling": false,
+      "reference_log": "experiments/ch4_work1_recoverability/results/step3_d2_20261124/calibration_00.jsonl.gz"
+    },
+    {
+      "name": "zero_collision",
+      "group": "calibration",
+      "index": 3,
+      "policy_seed": null,
+      "stress_sampling": false,
+      "reference_log": "experiments/ch4_work1_recoverability/results/step3_d2_20261124/calibration_03.jsonl.gz"
+    },
+    {
+      "name": "zero_success",
+      "group": "calibration",
+      "index": 5,
+      "policy_seed": null,
+      "stress_sampling": false,
+      "reference_log": "experiments/ch4_work1_recoverability/results/step3_d2_20261124/calibration_05.jsonl.gz"
+    },
+    {
+      "name": "frozen_calibration_a",
+      "group": "calibration",
+      "index": 5,
+      "policy_seed": 2729,
+      "stress_sampling": true
+    },
+    {
+      "name": "frozen_calibration_b",
+      "group": "calibration",
+      "index": 5,
+      "policy_seed": 2729,
+      "stress_sampling": false
+    },
+    {
+      "name": "frozen_validation_a",
+      "group": "validation",
+      "index": 0,
+      "policy_seed": 3733,
+      "stress_sampling": true
+    },
+    {
+      "name": "frozen_validation_b",
+      "group": "validation",
+      "index": 0,
+      "policy_seed": 3733,
+      "stress_sampling": false
+    }
+  ],
+  "registered_utc": "2026-11-25T06:48:48.568901+00:00",
+  "maximum_complete_episodes": 8,
+  "maximum_task_steps": 3200,
+  "optimizer_updates_allowed": 0
+}

@@ -1,0 +1,5 @@
+{
+  "passed": false,
+  "error": "AssertionError('fixture did not exercise a nonzero proposal behind a closed gate')",
+  "source_sha256": "8e0f17c9268fe9ff42c186005400874a487b1cad0d8d28a9e260dae06efb0ab4"
+}

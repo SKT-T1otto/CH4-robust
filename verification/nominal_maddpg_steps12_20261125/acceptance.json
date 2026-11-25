@@ -1,0 +1,144 @@
+{
+  "schema": "auv.ch4.nominal_maddpg.steps12.acceptance.v1",
+  "created_utc": "2026-11-25T04:52:33.093686+00:00",
+  "passed": true,
+  "completed_steps": [
+    1,
+    2
+  ],
+  "backup": {
+    "directory": "E:\\gym\\code\\WORKSPACE\\backups\\CH4_before_nominal_maddpg_20261125_120216",
+    "archive": {
+      "path": "chapter4_worktree.zip",
+      "sha256": "ac8c1413292cb76fe4fc97b5d2fecbb102b7a9acf9c4860a73916f933b3ce6df",
+      "files": 3809,
+      "uncompressed_bytes": 488295432,
+      "byte_verified": true
+    },
+    "files": 3809,
+    "git_head": "3f0be86c65f43d7a2b5b061ed656b407baedc483"
+  },
+  "existing_ch4_files_checked": 3809,
+  "existing_ch4_changed": [],
+  "protected": {
+    "CH3": {
+      "files_checked": 369,
+      "bytes_unchanged": true,
+      "added_or_removed": 0
+    },
+    "CH4": {
+      "files_checked": 103,
+      "bytes_unchanged": true,
+      "added_or_removed": 0
+    },
+    "CH5": {
+      "files_checked": 318,
+      "bytes_unchanged": true,
+      "added_or_removed": 0
+    },
+    "AUV-Thesis-Active": {
+      "files_checked": 605,
+      "bytes_unchanged": true,
+      "added_or_removed": 0
+    }
+  },
+  "scene_groups": {
+    "train": {
+      "count": 1000,
+      "start_seed": 6100000,
+      "physical_fingerprints_sha256": "948c19fd8bd38d08a0dba37039d29ad47c1fc57311e4fde4e392ae07d49519f3"
+    },
+    "validation": {
+      "count": 32,
+      "start_seed": 6200000,
+      "physical_fingerprints_sha256": "10868738f24aa05933ee212974df302c29e78ba512333659394da6a112571968"
+    },
+    "nominal_admission": {
+      "count": 100,
+      "start_seed": 6300000,
+      "physical_fingerprints_sha256": "d27630512734f1a05330da017c89a02fa5aae0fa55a4a269c7a48e2b0cdf6bb7"
+    },
+    "mismatch_development": {
+      "count": 24,
+      "start_seed": 6400000,
+      "physical_fingerprints_sha256": "7965b7fa9b807192e9dc7af872bcfc802e0f8a028dd3624e80a6382fa05f9a5b"
+    },
+    "mismatch_confirmation_reserve": {
+      "count": 256,
+      "start_seed": 6500000,
+      "physical_fingerprints_sha256": "d3c9bb398deda88d4b8d926dda4e5238e2960e6d5e42af3325f4df301a78fee9"
+    }
+  },
+  "total_registered_scenes": 1412,
+  "all_stored_physical_fingerprints_recomputed": true,
+  "independently_regenerated_scenes": 15,
+  "regeneration": {
+    "count": 15,
+    "mode": "first_middle_last_per_group",
+    "scene_ids": [
+      "ch4_nominal_maddpg_train_6100000",
+      "ch4_nominal_maddpg_train_6100500",
+      "ch4_nominal_maddpg_train_6100999",
+      "ch4_nominal_maddpg_validation_6200000",
+      "ch4_nominal_maddpg_validation_6200016",
+      "ch4_nominal_maddpg_validation_6200031",
+      "ch4_nominal_maddpg_nominal_admission_6300000",
+      "ch4_nominal_maddpg_nominal_admission_6300050",
+      "ch4_nominal_maddpg_nominal_admission_6300099",
+      "ch4_nominal_maddpg_mismatch_development_6400000",
+      "ch4_nominal_maddpg_mismatch_development_6400012",
+      "ch4_nominal_maddpg_mismatch_development_6400023",
+      "ch4_nominal_maddpg_mismatch_confirmation_reserve_6500000",
+      "ch4_nominal_maddpg_mismatch_confirmation_reserve_6500128",
+      "ch4_nominal_maddpg_mismatch_confirmation_reserve_6500255"
+    ]
+  },
+  "excluded_historical_fingerprints": 132,
+  "source_sha256": "42443724332c4547c0eccd1efd1ec6c3e8d4455c043fc1790d0c43d123cc24bd",
+  "registered_source_files": 418,
+  "source_registration": "provenance/ch4/nominal_maddpg/source_v0001.json",
+  "registration_report": "verification/nominal_maddpg_steps12_20261125/registration.json",
+  "legacy_source_check": {
+    "passed": false,
+    "reason": "baseline preparation source inventory/identity mismatch"
+  },
+  "test_counts": {
+    "new_registration": 10,
+    "existing_work1_regression": 14
+  },
+  "test_receipts": {
+    "new_registration": {
+      "code": 0,
+      "out": "ok\r\ntest_registry_rejects_mislabeled_holdout_and_changed_config (test_nominal_maddpg.NominalRegistrationTests) ... ok\r\ntest_registry_rejects_physical_change (test_nominal_maddpg.NominalRegistrationTests) ... ok\r\ntest_source_rejects_modified_missing_and_added_files (test_nominal_maddpg.NominalRegistrationTests) ... ok\r\ntest_static_contract_does_not_construct_a_mission (test_nominal_maddpg.NominalRegistrationTests) ... ok\r\n\r\n----------------------------------------------------------------------\r\nRan 10 tests in 5.231s\r\n\r\nOK\r\n"
+    },
+    "existing_work1_regression": {
+      "code": 0,
+      "out": "----------------------------------------------------------------------\r\nRan 14 tests in 8.388s\r\n\r\nOK\r\n"
+    }
+  },
+  "created_files_sha256": {
+    "chapter4_interval_robust/nominal_maddpg/README.md": "cff28a054646174233502709254b19674fc6d7bf7b0404767b5c1f96af00423d",
+    "chapter4_interval_robust/nominal_maddpg/__init__.py": "814ae1f1d004dc8c1747285e5431b6813e7d4101b50d818fbb67b64f2bd5aa10",
+    "chapter4_interval_robust/nominal_maddpg/__main__.py": "4ad6a8f88b091f9d5627314c9b0e6905a730ad3cd38438f3f4607329d0e27168",
+    "chapter4_interval_robust/nominal_maddpg/config.py": "1dd0f6fa3563b6bcacff32f84a6b9b192781eae2cecc71fb697a66c46e57d2c2",
+    "chapter4_interval_robust/nominal_maddpg/learner.py": "56bd52bc8b9aafcf52e158d2f29909e79d4e6c86fe19c466d514c4555ddce941",
+    "chapter4_interval_robust/nominal_maddpg/provenance.py": "7de4b6fcd38a025b81f257be64ec8a3a6b7fee27213d8b99b8288b4e705fba85",
+    "chapter4_interval_robust/nominal_maddpg/scenarios.py": "8c697ce7e6329fab2c9cceb2b31783a69abc399d761c66ca21bb99a5bf6ddab0",
+    "chapter4_interval_robust/nominal_maddpg/verify.py": "e30d01c089a4a0daef4a7ccbe9640d200bcd5c652f201616d4c4b4d3d27c6e34",
+    "checks/chapter4/test_nominal_maddpg.py": "e0a9c080b3034e0b16bd4fed92fe6eb221491315d90ebf12ebd0e4474b1c7859",
+    "configs/ch4/nominal_maddpg.json": "a6c527260f0da998129c3246dc1fd7fbe1d3b449330f80b7064ac5e51148d251",
+    "configs/ch4/nominal_maddpg_scenes.json": "780bdf15b344ee4763903eea1544e58f858e46a7e618efcee9c01793207159e3",
+    "provenance/ch4/nominal_maddpg/source_v0001.json": "ecfb07b06504ae07dc73c930dee1a7971b9c4d7f4f9154776e7653d725626a69",
+    "provenance/ch4/source_v0010.json": "f36e244a502fa71e51af3d3079090ee31ee6a90c42efa85ffc7c07f1555f55db",
+    "verification/nominal_maddpg_steps12_20261125/registration.json": "93cd0097556486150a1bf905bb45d791314e3d101693ef3cc786c026c6396bb1"
+  },
+  "acceptance_file": "verification/nominal_maddpg_steps12_20261125/acceptance.json",
+  "training_enabled": false,
+  "task_rollouts": 0,
+  "optimizer_updates": 0,
+  "checkpoints_written": 0,
+  "runtime_validated": false,
+  "learner_update_validated": false,
+  "nominal_performance_verified": false,
+  "confirmation_sample_size_locked": false
+}

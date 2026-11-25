@@ -1,0 +1,117 @@
+{
+  "passed": true,
+  "anchor": {
+    "agent": 3,
+    "step": 6,
+    "direction": [
+      0.2975057493068843,
+      -0.9547200265676578
+    ],
+    "target": [
+      11.0,
+      17.0,
+      5.5
+    ],
+    "distance_xy": 0.6774771418573676,
+    "near": false,
+    "kind": "executor_execution",
+    "final_target": [
+      11.0,
+      17.0,
+      5.5
+    ],
+    "assignment": "PUBLIC_HANDOFF_TARGET",
+    "post_found": true
+  },
+  "anchor_digest": "c79fa1fa3792622a1f8f23270bfc54089d41226b2b22e39709eefbfe71349dfa",
+  "controls": {
+    "identical_law_action": {
+      "steps": 12,
+      "exact": true,
+      "trace": [
+        "7f97acb5bb65b318c2b8e7b7e1706e4ec6ac7f0fd5b26d30358e43fe3f410e5f",
+        "e0b88349234d33ba48fa08344732b13f561ff5afdfe761815640b40d2acbd148",
+        "f5830e29104d912b6b14e94abf50f6f487ee82f04b745993e42f2d211c12f3bc",
+        "5ccf00538c506e1eac1b63bc00e0e21f43484d63768a626aa88d77513dc64901",
+        "89f405a50ff904c6e14bf14951c2b598e766604030b976e68680be1a58a84ee9",
+        "a40a3c2b36febe0ffabfdff6524848e68df9198e7ea7d0310e8aed83b019cd52",
+        "14a766019a824ca7bf343c6351fa95692645fb48e3b25e00b79fd50203832992",
+        "937e9d0e6a74314b9ebaa62428af697b5e441c26380c238aa2f29eb7497dc927",
+        "0bcbc95375d675c8485ec8838cc889cc8a694ef66c2eaa28980a25ca9a2012fd",
+        "84a29871161e617bcce986f92142b6b92ddb269c3615fc17f9862cd9bc690dd4",
+        "4919d4156bc9a250ee0c176dd04d4e004fc0d15beedd1f67dd09372ad33f798d",
+        "e4c17fb1dc4db0dc5f626f32dec9c334111e73fc72e3377d61ca1dc92d02f346"
+      ],
+      "independent_replay": true
+    },
+    "identical_drag_curves": {
+      "steps": 12,
+      "actions": 3,
+      "false_flips": 0,
+      "exact": true,
+      "traces": {
+        "-0.5": [
+          "746b9f2c053701c933ca5ec2ac069191ac27f1066e5d0f554699cdf3ae2ce99a",
+          "41221862db383299ae7a225e2b4deb36faa1615c1e0f34826a3572e8614c6250",
+          "547714d37b3c6d23d72a341c14a514c313fb85a5612c783ea8037a1585936629",
+          "f512383e521ae548c363cba5cfbfc33bb723f3542dd660466e24de6c3f704d17",
+          "6e6ab05b68990010590322fc22eb9a2add0706ba23686b139504e224bf1b2797",
+          "284388dacf67804d69edc61b31ed11c8517b5af6971437b1fed95c202820f4a8",
+          "1869872d15e1d1e8fa249ca6191c1264cabc19a2840808d38c057ed1f8d1e022",
+          "9513720e14ab19116a66b038d1fe8e9243c54a63bbacdd79ddad8a5ea33fd467",
+          "2b72242564c89b7aa6fee20e07326bf63858c827f81c08cafd8744350f3fbcad",
+          "27fd4ad9ff37be06bac79329d59cf83f291e3ca377d4af171acd7bf51490d0a1",
+          "9f55c037633667b2506de64cacf6001bc84d8245cc12caec3605db2b0c396e70",
+          "9841300e7539744abc4555ea612433fd7f9372fc8aff7399d91c78a825b802a9"
+        ],
+        "0.0": [
+          "76d76b29fd6c6524ce1ac81b4feec0c0b8de7823719a0393c9a416c64da9a511",
+          "57bf9518678849174788c02bf2d213fe9623981c351051d7b99755011b29dd4e",
+          "b79016e6e881fb85bb3c20db454ad8676468d1835688c7d45b439d90d7ce33e2",
+          "676db618d2b581bcb9785454b4fcf48934a75ddb22df394a8bdcb7a74c8ff970",
+          "0b2cb3ea2d8e33dc740bebb1c53e5a53e4291a1b8015aac532e44da5a14109a3",
+          "2450396126d307743f0e88068bd9319101b011a8184ae05ce697271d182a5a8b",
+          "1aa4e927ea09de182394e1f17439bbf20859bd6d97968e3e57d9cc766911a207",
+          "55bbdee73904010dd1e636090d3f6a0f3d7229203bd0802a615a343cfb9a6345",
+          "c85fe0c5c9f4a95d61fd7eef8f4c5530364148fb342823a972025afb14254f43",
+          "4dce8fcd9c19602324c22f25d3a075b1d9fff1bdfed2d4de5058aeba23288c47",
+          "d7d7607c165a27d2a52db8880770bde94e32985ed6e776e01c7d3e69d0612eb2",
+          "1273f39fa6998fd1a815002ce97629a92ff0249ff2114f0991b3e1f3c82abe3e"
+        ],
+        "0.5": [
+          "7f97acb5bb65b318c2b8e7b7e1706e4ec6ac7f0fd5b26d30358e43fe3f410e5f",
+          "e0b88349234d33ba48fa08344732b13f561ff5afdfe761815640b40d2acbd148",
+          "f5830e29104d912b6b14e94abf50f6f487ee82f04b745993e42f2d211c12f3bc",
+          "5ccf00538c506e1eac1b63bc00e0e21f43484d63768a626aa88d77513dc64901",
+          "89f405a50ff904c6e14bf14951c2b598e766604030b976e68680be1a58a84ee9",
+          "a40a3c2b36febe0ffabfdff6524848e68df9198e7ea7d0310e8aed83b019cd52",
+          "14a766019a824ca7bf343c6351fa95692645fb48e3b25e00b79fd50203832992",
+          "937e9d0e6a74314b9ebaa62428af697b5e441c26380c238aa2f29eb7497dc927",
+          "0bcbc95375d675c8485ec8838cc889cc8a694ef66c2eaa28980a25ca9a2012fd",
+          "84a29871161e617bcce986f92142b6b92ddb269c3615fc17f9862cd9bc690dd4",
+          "4919d4156bc9a250ee0c176dd04d4e004fc0d15beedd1f67dd09372ad33f798d",
+          "e4c17fb1dc4db0dc5f626f32dec9c334111e73fc72e3377d61ca1dc92d02f346"
+        ]
+      }
+    }
+  },
+  "true_mixed_law_diverged": true,
+  "analytic_drag_per_unit_damping": [
+    {
+      "relative_speed": 0.0,
+      "linear": 0.0,
+      "mixed": 0.0
+    },
+    {
+      "relative_speed": 0.6925365924835205,
+      "linear": 0.6925365924835205,
+      "mixed": 0.6925365924835205
+    },
+    {
+      "relative_speed": 1.385073184967041,
+      "linear": 1.385073184967041,
+      "mixed": 2.0776097774505615
+    }
+  ],
+  "fork": "entire in-memory D2 graph; re-bound guidance closure; independent reset-and-prefix replay"
+}

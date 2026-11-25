@@ -1,0 +1,5 @@
+{
+  "checkpoint_sha256": "32334b07f9688d44e1ac40102162ebfb33def5beabddcf4b4a7cac764b40a62b",
+  "status": "not_admitted",
+  "reason": "baseline preparation source inventory/identity mismatch"
+}

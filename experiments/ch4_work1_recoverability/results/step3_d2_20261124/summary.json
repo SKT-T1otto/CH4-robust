@@ -1,0 +1,483 @@
+{
+  "passed": true,
+  "source": {
+    "schema": "auv.ch4.source_identity.v1",
+    "sha256": "3717440d3ba78762e599b01e56fa6d4f5f4d34510d09b65bbbb44c6efa37d447",
+    "version": 9,
+    "frozen_parent_sha256": "8714ad799c4455221adf03f328ec7e39e3977759c3580c4cf6fa7b99d2efee3e",
+    "inherited_source_checks_passed": false,
+    "original_sirsa_reproduced": false,
+    "performance_passed": false
+  },
+  "files_sha256": {
+    "calibration_00.jsonl.gz": "38e1d3eb0484a6a15202fcdbe5603ff7c8fae902df4402dae9638c46985c24b6",
+    "calibration_01.jsonl.gz": "974dc465af844b8adcc328d17bbce6d504cd70cd542895c0825d840c17cdce15",
+    "calibration_02.jsonl.gz": "78a7d3fd790831184c478b013fa50c28af26c95e72c4512be1ec746e90780c92",
+    "calibration_03.jsonl.gz": "877a386375737dad8e6cc515f3b363df06061f1640b099e27c3cd6d0e478ce9b",
+    "calibration_04.jsonl.gz": "b1a3e35cd7e4d9168975c32fa6d18419f12c5335664df1f50cb31e87b7e94c41",
+    "calibration_05.jsonl.gz": "d764a638e043b296d08522998ab20f516380933523b0f18346cfce8401d52823",
+    "calibration_06.jsonl.gz": "3f68c0a72f4067571fa6e1078f63f0d1a39cec48c34d5f00d00e4b07835d75fa",
+    "calibration_07.jsonl.gz": "7fd602976d289ae0e4fcb59403ed6e7acb49f0e65d320dc71827937002454f58",
+    "calibration_00_search_before_discovery_snapshot.json.gz": "1599cc8ee60812f23c59198e18c2410cbdd3c4f0fbf8897da2ff97a3f08d006a",
+    "calibration_01_search_before_discovery_snapshot.json.gz": "6ade0b461f4576bf1fe7e13cc688013b733ecaaa3761710c63e91e2185271e92",
+    "calibration_01_executor_after_handoff_snapshot.json.gz": "15a32903047529a916326e6a5c8d89f8e25f655a97651f20a37a71577b7f3454",
+    "calibration_02_search_before_discovery_snapshot.json.gz": "9f297078ccb1ac478357250ae05f8cdd0268f5be8e7e30caeb24a790539ebf32",
+    "calibration_02_executor_after_handoff_snapshot.json.gz": "b4097a6d08d40f88b88c62a5bdb00e626e557d9fd46f8f8797495d98a8ea89e4",
+    "calibration_03_search_before_discovery_snapshot.json.gz": "c77a26c129dd98f32be6895879213be5d0e1064a7b9ca3e40c3cbe9272b23c24",
+    "calibration_04_search_before_discovery_snapshot.json.gz": "ddd6bcead3e150c9c012bc4706f22cc79ba3ae9cabfd4162263b0c3b97f9e3e4",
+    "calibration_05_search_before_discovery_snapshot.json.gz": "16cd34b60bb10960c608f05aa8fcc090e19315f8a5cb734ef4af30a9ca9fe819",
+    "calibration_05_executor_after_handoff_snapshot.json.gz": "f0b01a026e7e0d2d08b5a9412b07c79233bdd529af724956a4db3c89b08358b4",
+    "calibration_06_search_before_discovery_snapshot.json.gz": "baff7c422962bd7f3ae9de8f60eb977a46a4cb84afb234ad12c243a384556aa4",
+    "calibration_07_search_before_discovery_snapshot.json.gz": "9407a138d868f91503a048290d650fa012dcf7a16244f0ecb838fd721a3a6a9a",
+    "calibration_07_executor_after_handoff_snapshot.json.gz": "5ef886a68c8ec1e2628c2d0d429b8be7b4f9d3cdfd1665e290ae2c18d14a515d"
+  },
+  "sources_sha256": {
+    "protocol.json": "2d83be8fbdf5a1e4fc96fbecf0acd6715ad00270e059fe2690f5f92b7243f369",
+    "run.py": "481c7c24b64fe29e34ce1eabc2fec49753914697a91499c3ba29cb968b305cbf",
+    "records.py": "1dc078f16ed14b12e4ad81c00790d34f58fce0dace5cf924be86f29b93a67917",
+    "plant_adapter.py": "5da1b37d6e99670467bb61261c7d73cac0fc87bed01a5681d6dcca9c8ae3eb5e",
+    "test_work1.py": "1bc1dfd8eeebe91367a39eea00569895ae38699006e1e54e8c17c4066f9e4699"
+  },
+  "training_updates": 0,
+  "confirmation_rollouts": 0,
+  "population": "all eight registered calibration scenes, nominal relative water",
+  "phase_summary": {
+    "search_before_discovery": {
+      "total_scenes": 8,
+      "entered_scenes": 8,
+      "controllable_boat_steps": 4207,
+      "controllable_task_steps": 1484,
+      "qualifying_boat_steps": 2019,
+      "window_scenes": 8,
+      "no_window_scenes": 0
+    },
+    "executor_after_handoff": {
+      "total_scenes": 8,
+      "entered_scenes": 5,
+      "controllable_boat_steps": 278,
+      "controllable_task_steps": 278,
+      "qualifying_boat_steps": 99,
+      "window_scenes": 4,
+      "no_window_scenes": 4
+    }
+  },
+  "total_steps": 2761,
+  "outcomes": {
+    "timeout": 6,
+    "obstacle_collision": 1,
+    "success": 1
+  },
+  "scenes": [
+    {
+      "group": "calibration",
+      "index": 0,
+      "seed": 4236000,
+      "log": "calibration_00.jsonl.gz",
+      "steps": 400,
+      "termination": "timeout",
+      "completion_cost": 500,
+      "team_discounted_return": 0.14633224343877418,
+      "phase_counts": {
+        "search_before_discovery": {
+          "phase_boat_steps": 1038,
+          "controllable_boat_steps": 1032,
+          "controllable_task_steps": 346,
+          "qualifying_boat_steps": 497,
+          "window": {
+            "group": "calibration",
+            "index": 0,
+            "seed": 4236000,
+            "t": 4,
+            "vehicle": 2,
+            "physical_fingerprint": "7ca81c743bd00fab63eca5961d1333c322f95f66d7b5fb13330f1c9a97d591e4",
+            "phase": "search_before_discovery",
+            "state_sha256": "bd97899e23d97a48a72925f0fc4b185f104cf3c16f4f6d1e597734bbe8bae132",
+            "prefix_sha256": "b6e46e3f6f65fede4caa802bb0c7e2f779062e64d1e959442c9e45c89321c7d6",
+            "snapshot": "calibration_00_search_before_discovery_snapshot.json.gz",
+            "snapshot_data_sha256": "2987c57b131fe1c8400455ada0257d4cf8dae3d203f6332367cc5e8312342b85"
+          }
+        },
+        "executor_after_handoff": {
+          "phase_boat_steps": 53,
+          "controllable_boat_steps": 20,
+          "controllable_task_steps": 20,
+          "qualifying_boat_steps": 0,
+          "window": null
+        }
+      }
+    },
+    {
+      "group": "calibration",
+      "index": 1,
+      "seed": 4236001,
+      "log": "calibration_01.jsonl.gz",
+      "steps": 400,
+      "termination": "timeout",
+      "completion_cost": 500,
+      "team_discounted_return": 0.1714920938321328,
+      "phase_counts": {
+        "search_before_discovery": {
+          "phase_boat_steps": 123,
+          "controllable_boat_steps": 123,
+          "controllable_task_steps": 41,
+          "qualifying_boat_steps": 59,
+          "window": {
+            "group": "calibration",
+            "index": 1,
+            "seed": 4236001,
+            "t": 5,
+            "vehicle": 0,
+            "physical_fingerprint": "74e4597612da57849e9386fd0a95b2019bb9a92ef3e6e1e372b93dae4489cdcf",
+            "phase": "search_before_discovery",
+            "state_sha256": "fa379d3e4df7fe079f995bea4af31448dccfb8a29dad802d1572e801b2007842",
+            "prefix_sha256": "88435f82637b669fc9309df81902d1ca87e2b7408ff9fa2200aa217ab529dab0",
+            "snapshot": "calibration_01_search_before_discovery_snapshot.json.gz",
+            "snapshot_data_sha256": "479eb2c9afb570d0ba76ad0ac1277a0ac83b79f67e39d9a12cb047027a3c1e1e"
+          }
+        },
+        "executor_after_handoff": {
+          "phase_boat_steps": 358,
+          "controllable_boat_steps": 20,
+          "controllable_task_steps": 20,
+          "qualifying_boat_steps": 10,
+          "window": {
+            "group": "calibration",
+            "index": 1,
+            "seed": 4236001,
+            "t": 45,
+            "vehicle": 3,
+            "physical_fingerprint": "74e4597612da57849e9386fd0a95b2019bb9a92ef3e6e1e372b93dae4489cdcf",
+            "phase": "executor_after_handoff",
+            "state_sha256": "8f8f22d501e8baf746a79b18a0747ebeb9b891ce007e10897f0da8d32d95f88c",
+            "prefix_sha256": "d76a3f68bf4231a2cdadd0c92dfec5d87c071c333183c99d4be97c3423fd717d",
+            "snapshot": "calibration_01_executor_after_handoff_snapshot.json.gz",
+            "snapshot_data_sha256": "f43bd5c5ee335ce57e85b96c7d3cde7cf41c4ab7ddc53c5ca221da62fa12de31"
+          }
+        }
+      }
+    },
+    {
+      "group": "calibration",
+      "index": 2,
+      "seed": 4236002,
+      "log": "calibration_02.jsonl.gz",
+      "steps": 400,
+      "termination": "timeout",
+      "completion_cost": 500,
+      "team_discounted_return": 0.15343313625738994,
+      "phase_counts": {
+        "search_before_discovery": {
+          "phase_boat_steps": 480,
+          "controllable_boat_steps": 480,
+          "controllable_task_steps": 160,
+          "qualifying_boat_steps": 252,
+          "window": {
+            "group": "calibration",
+            "index": 2,
+            "seed": 4236002,
+            "t": 9,
+            "vehicle": 0,
+            "physical_fingerprint": "d5859e38ad1615e23984436fdb1e0bc96c9c729028e38e4f44d9538fdccdd7ee",
+            "phase": "search_before_discovery",
+            "state_sha256": "75748beed5e640638e9ec041e4a2989b2f089f88c5b3520f8c7d5a454db0fda8",
+            "prefix_sha256": "4fd8dc0db147156d7beaf7cb1ca2830a0dd12a60bc5b83aed2033f9fbc373faf",
+            "snapshot": "calibration_02_search_before_discovery_snapshot.json.gz",
+            "snapshot_data_sha256": "dd686d599724d4c1172b0c08dbb5786db854d7ad0a278404a7fd6bfc4d8e3983"
+          }
+        },
+        "executor_after_handoff": {
+          "phase_boat_steps": 239,
+          "controllable_boat_steps": 80,
+          "controllable_task_steps": 80,
+          "qualifying_boat_steps": 27,
+          "window": {
+            "group": "calibration",
+            "index": 2,
+            "seed": 4236002,
+            "t": 165,
+            "vehicle": 3,
+            "physical_fingerprint": "d5859e38ad1615e23984436fdb1e0bc96c9c729028e38e4f44d9538fdccdd7ee",
+            "phase": "executor_after_handoff",
+            "state_sha256": "aaf19eadfd8e4d8577963e1f1df398c3fcda4ffcd0c621fc8988ce2bca9c54a1",
+            "prefix_sha256": "ab87a9ad30a5d11a5dc44fd3fd25f77231764322cdae2b5b8d5527054ad4a90c",
+            "snapshot": "calibration_02_executor_after_handoff_snapshot.json.gz",
+            "snapshot_data_sha256": "34aa8bb9f9569e75df68af3524f37adb89762d3087435c001ed13d31a325ccd1"
+          }
+        }
+      }
+    },
+    {
+      "group": "calibration",
+      "index": 3,
+      "seed": 4236003,
+      "log": "calibration_03.jsonl.gz",
+      "steps": 43,
+      "termination": "obstacle_collision",
+      "completion_cost": 500,
+      "team_discounted_return": -0.10837380683987619,
+      "phase_counts": {
+        "search_before_discovery": {
+          "phase_boat_steps": 129,
+          "controllable_boat_steps": 104,
+          "controllable_task_steps": 43,
+          "qualifying_boat_steps": 54,
+          "window": {
+            "group": "calibration",
+            "index": 3,
+            "seed": 4236003,
+            "t": 4,
+            "vehicle": 1,
+            "physical_fingerprint": "c223928e648def8479f76f4681fed0cf5dbcb53ffdf0250f25087109dbf68264",
+            "phase": "search_before_discovery",
+            "state_sha256": "f8f447fec544dca94e74cdc0d0fa73f9605f8d6fee32b33d879958ab61b54cd9",
+            "prefix_sha256": "911d826dad1d8570ecebae381cfeccd9a7c372f2458e422129637e930519ebc5",
+            "snapshot": "calibration_03_search_before_discovery_snapshot.json.gz",
+            "snapshot_data_sha256": "8bc41cd3db4e7a80ff7d1c3a8be748db6ae4c721283c92a81e077eaad5b6b390"
+          }
+        },
+        "executor_after_handoff": {
+          "phase_boat_steps": 0,
+          "controllable_boat_steps": 0,
+          "controllable_task_steps": 0,
+          "qualifying_boat_steps": 0,
+          "window": null
+        }
+      }
+    },
+    {
+      "group": "calibration",
+      "index": 4,
+      "seed": 4236004,
+      "log": "calibration_04.jsonl.gz",
+      "steps": 400,
+      "termination": "timeout",
+      "completion_cost": 500,
+      "team_discounted_return": 0.16353829403411552,
+      "phase_counts": {
+        "search_before_discovery": {
+          "phase_boat_steps": 1200,
+          "controllable_boat_steps": 1176,
+          "controllable_task_steps": 400,
+          "qualifying_boat_steps": 635,
+          "window": {
+            "group": "calibration",
+            "index": 4,
+            "seed": 4236004,
+            "t": 4,
+            "vehicle": 1,
+            "physical_fingerprint": "383ae122a352a68126f7eef12b36fe2c8bebc92710473e4f836574bac8e0eac3",
+            "phase": "search_before_discovery",
+            "state_sha256": "329094f9065dcd1e7d7f0e0e3b347ea122ff33ece662e7bcf90a55ad39a57f72",
+            "prefix_sha256": "ad9aab28f9060bec27a5f80021abfe0d07726205601fdefc864af1e17fa11794",
+            "snapshot": "calibration_04_search_before_discovery_snapshot.json.gz",
+            "snapshot_data_sha256": "854e8ecf94c71082d690342bac751d8fa551ed93a6db6c231089d70fde22baab"
+          }
+        },
+        "executor_after_handoff": {
+          "phase_boat_steps": 0,
+          "controllable_boat_steps": 0,
+          "controllable_task_steps": 0,
+          "qualifying_boat_steps": 0,
+          "window": null
+        }
+      }
+    },
+    {
+      "group": "calibration",
+      "index": 5,
+      "seed": 4236005,
+      "log": "calibration_05.jsonl.gz",
+      "steps": 318,
+      "termination": "success",
+      "completion_cost": 318,
+      "team_discounted_return": 0.16544296412458234,
+      "phase_counts": {
+        "search_before_discovery": {
+          "phase_boat_steps": 87,
+          "controllable_boat_steps": 68,
+          "controllable_task_steps": 29,
+          "qualifying_boat_steps": 29,
+          "window": {
+            "group": "calibration",
+            "index": 5,
+            "seed": 4236005,
+            "t": 4,
+            "vehicle": 2,
+            "physical_fingerprint": "aa513ad3008a84d7596d4131694f00194be82b4da9c101f8cc1e0e96bc0743de",
+            "phase": "search_before_discovery",
+            "state_sha256": "7a7e4766946c42ba4a909f10c721b2dfc3ec1e20c998bb678c985029d2dd40db",
+            "prefix_sha256": "bc1bd038433f0d7d8257380372f49a74bd847fcf49d4de55c3d987f6b72fe3e9",
+            "snapshot": "calibration_05_search_before_discovery_snapshot.json.gz",
+            "snapshot_data_sha256": "0c64eb52532bfc02a6492a52c2beb18b0a63ca807a9cf759813373b9c0ea23c7"
+          }
+        },
+        "executor_after_handoff": {
+          "phase_boat_steps": 288,
+          "controllable_boat_steps": 138,
+          "controllable_task_steps": 138,
+          "qualifying_boat_steps": 54,
+          "window": {
+            "group": "calibration",
+            "index": 5,
+            "seed": 4236005,
+            "t": 36,
+            "vehicle": 3,
+            "physical_fingerprint": "aa513ad3008a84d7596d4131694f00194be82b4da9c101f8cc1e0e96bc0743de",
+            "phase": "executor_after_handoff",
+            "state_sha256": "b168aa4ba644adfcc7166fe87496ad762de1bccc3d03f0ee70d72d1c9e62bf73",
+            "prefix_sha256": "287dfb5a0f26d493da5c5d5ddb64d6c30b58a317adf9948a4c41355dece2d40c",
+            "snapshot": "calibration_05_executor_after_handoff_snapshot.json.gz",
+            "snapshot_data_sha256": "853a5ceddf7149e29d6b8e8d617e6358426ba1a7bafe187f439357d622f3da9b"
+          }
+        }
+      }
+    },
+    {
+      "group": "calibration",
+      "index": 6,
+      "seed": 4236006,
+      "log": "calibration_06.jsonl.gz",
+      "steps": 400,
+      "termination": "timeout",
+      "completion_cost": 500,
+      "team_discounted_return": 0.13354698210800517,
+      "phase_counts": {
+        "search_before_discovery": {
+          "phase_boat_steps": 1200,
+          "controllable_boat_steps": 1029,
+          "controllable_task_steps": 400,
+          "qualifying_boat_steps": 386,
+          "window": {
+            "group": "calibration",
+            "index": 6,
+            "seed": 4236006,
+            "t": 5,
+            "vehicle": 0,
+            "physical_fingerprint": "584143e1d529100ce52e9e254af825b9ffa2464a00f70513ec54e49064b14255",
+            "phase": "search_before_discovery",
+            "state_sha256": "9fc93126cad2d346c83b42a68febfa4cb651a96e5caf70758c47f548c8d5b983",
+            "prefix_sha256": "7d1910bdefc0d5f414f6ddfef3d796a575022d54c71b50ebd437b2a57cc33eb4",
+            "snapshot": "calibration_06_search_before_discovery_snapshot.json.gz",
+            "snapshot_data_sha256": "ddab63a253c5a286ec8626307a4f11bf784317404045b953a48dc3c5cee1b988"
+          }
+        },
+        "executor_after_handoff": {
+          "phase_boat_steps": 0,
+          "controllable_boat_steps": 0,
+          "controllable_task_steps": 0,
+          "qualifying_boat_steps": 0,
+          "window": null
+        }
+      }
+    },
+    {
+      "group": "calibration",
+      "index": 7,
+      "seed": 4236007,
+      "log": "calibration_07.jsonl.gz",
+      "steps": 400,
+      "termination": "timeout",
+      "completion_cost": 500,
+      "team_discounted_return": 0.17538253832499176,
+      "phase_counts": {
+        "search_before_discovery": {
+          "phase_boat_steps": 195,
+          "controllable_boat_steps": 195,
+          "controllable_task_steps": 65,
+          "qualifying_boat_steps": 107,
+          "window": {
+            "group": "calibration",
+            "index": 7,
+            "seed": 4236007,
+            "t": 4,
+            "vehicle": 1,
+            "physical_fingerprint": "4cc0828c31a5e7d1e3c3e1c1fc312a2e2966233132543f0b23188870bc28cb6f",
+            "phase": "search_before_discovery",
+            "state_sha256": "db0fe466291f79cba8fb8a63e0f96f84deb7366aadd4a575d50e6429e4129134",
+            "prefix_sha256": "9f228ca25cf5fbd1678cddf3e0a05790c375308fc805b6995d14e015911f1706",
+            "snapshot": "calibration_07_search_before_discovery_snapshot.json.gz",
+            "snapshot_data_sha256": "09124ff327b82f3e3e6ec89a5218824b6c2e8ae9600452e05d2153ddcc8d5964"
+          }
+        },
+        "executor_after_handoff": {
+          "phase_boat_steps": 334,
+          "controllable_boat_steps": 20,
+          "controllable_task_steps": 20,
+          "qualifying_boat_steps": 8,
+          "window": {
+            "group": "calibration",
+            "index": 7,
+            "seed": 4236007,
+            "t": 72,
+            "vehicle": 3,
+            "physical_fingerprint": "4cc0828c31a5e7d1e3c3e1c1fc312a2e2966233132543f0b23188870bc28cb6f",
+            "phase": "executor_after_handoff",
+            "state_sha256": "2661dc4432ded954df5bea91b9cdd44227a848832582cbda83843dd5b86ebb6e",
+            "prefix_sha256": "f818699bfa759463d3bc39d886c79bd2e9152a77e5b00c52355709e357fd407b",
+            "snapshot": "calibration_07_executor_after_handoff_snapshot.json.gz",
+            "snapshot_data_sha256": "ef73161117c08ab08fb027403f3378e3babc41a3c44781bff3385af791b7926f"
+          }
+        }
+      }
+    }
+  ],
+  "regression_only_fixtures": [],
+  "terminal_controls": [
+    {
+      "window": {
+        "group": "calibration",
+        "index": 0,
+        "seed": 4236000,
+        "t": 4,
+        "vehicle": 2,
+        "physical_fingerprint": "7ca81c743bd00fab63eca5961d1333c322f95f66d7b5fb13330f1c9a97d591e4",
+        "phase": "search_before_discovery",
+        "state_sha256": "bd97899e23d97a48a72925f0fc4b185f104cf3c16f4f6d1e597734bbe8bae132",
+        "prefix_sha256": "b6e46e3f6f65fede4caa802bb0c7e2f779062e64d1e959442c9e45c89321c7d6",
+        "snapshot": "calibration_00_search_before_discovery_snapshot.json.gz",
+        "snapshot_data_sha256": "2987c57b131fe1c8400455ada0257d4cf8dae3d203f6332367cc5e8312342b85"
+      },
+      "tail_steps": 396,
+      "termination": "timeout",
+      "tail_team_reward_sum": 2.917430112378497,
+      "direct_reset_and_archived_trace_exact": true,
+      "identical_physics_and_controller_aliases_exact": true,
+      "fork_storage_isolated": true,
+      "positive_beta_from": 0.1,
+      "positive_beta_to": 0.15,
+      "first_effect": {
+        "step": 4,
+        "max_xy_velocity_difference_mps": 0.0016838997218140538
+      }
+    },
+    {
+      "window": {
+        "group": "calibration",
+        "index": 1,
+        "seed": 4236001,
+        "t": 45,
+        "vehicle": 3,
+        "physical_fingerprint": "74e4597612da57849e9386fd0a95b2019bb9a92ef3e6e1e372b93dae4489cdcf",
+        "phase": "executor_after_handoff",
+        "state_sha256": "8f8f22d501e8baf746a79b18a0747ebeb9b891ce007e10897f0da8d32d95f88c",
+        "prefix_sha256": "d76a3f68bf4231a2cdadd0c92dfec5d87c071c333183c99d4be97c3423fd717d",
+        "snapshot": "calibration_01_executor_after_handoff_snapshot.json.gz",
+        "snapshot_data_sha256": "f43bd5c5ee335ce57e85b96c7d3cde7cf41c4ab7ddc53c5ca221da62fa12de31"
+      },
+      "tail_steps": 355,
+      "termination": "timeout",
+      "tail_team_reward_sum": -0.03996420677867718,
+      "direct_reset_and_archived_trace_exact": true,
+      "identical_physics_and_controller_aliases_exact": true,
+      "fork_storage_isolated": true,
+      "positive_beta_from": 0.1,
+      "positive_beta_to": 0.15,
+      "first_effect": {
+        "step": 45,
+        "max_xy_velocity_difference_mps": 0.0019349742427237483
+      }
+    }
+  ],
+  "selection": "first decision per scene/phase, lowest eligible vessel ID on ties; controls use lowest scene index",
+  "evidence_contract": "Peer command/response is offline_only; the executor target receipt is a separate delivered payload."
+}

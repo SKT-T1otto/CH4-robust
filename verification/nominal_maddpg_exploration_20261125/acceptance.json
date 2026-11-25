@@ -1,0 +1,211 @@
+{
+  "schema": "auv.ch4.nominal_maddpg.step5.final_acceptance.v1",
+  "created_utc": "2026-11-25T09:47:39.585331+00:00",
+  "passed": true,
+  "completed_steps": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "source_record": "provenance/ch4/nominal_maddpg/source_v0006.json",
+  "source_sha256": "cef7d0499ed0e58f649b512783da1dd0b740438abc7dba7837e2c8e26f57aab8",
+  "registered_source_files": 434,
+  "parent_source": {
+    "schema": "auv.ch4.source_identity.v1",
+    "sha256": "1c30fff4b90aa874f80993978bd5a7a5c2e4b0b762b3ba3d0ad7824168f02827",
+    "version": 15,
+    "frozen_parent_sha256": "8714ad799c4455221adf03f328ec7e39e3977759c3580c4cf6fa7b99d2efee3e",
+    "inherited_source_checks_passed": false,
+    "original_sirsa_reproduced": false,
+    "performance_passed": false
+  },
+  "test_counts": {
+    "exploration": 14,
+    "registration": 10,
+    "runtime": 10,
+    "learner": 19,
+    "work1": 14
+  },
+  "distinct_tests_passed": 67,
+  "bounded_collection_report": "collection_retry01/collection_acceptance.json",
+  "independent_log_report": "independent_log_verification.json",
+  "prefix_episodes": 6,
+  "environment_steps": 76,
+  "maximum_prefix_length": 24,
+  "optimizer_rounds_per_training_fixture": [
+    1,
+    1
+  ],
+  "new_training_weights_saved": 0,
+  "repeat_and_evaluation_insertion_exact": true,
+  "zero_exploration_regression": true,
+  "updated_actor_effective_on_next_action": true,
+  "max_applied_action_change_after_update": 0.019951030611991882,
+  "natural_closed_gate_boat_steps": 0,
+  "explicit_gate_fixture_boat_steps": 8,
+  "replay_scene_identity_enforced": true,
+  "external_truncation_not_mission_terminal": true,
+  "initial_sigma": 0.2,
+  "minimum_sigma": 0.02,
+  "decay_per_team_environment_step": 2e-05,
+  "nominal_floor_step": 9000,
+  "task_training_started": false,
+  "nominal_performance_verified": false,
+  "nominal_admission_rollouts": 0,
+  "mismatch_rollouts": 0,
+  "first_attempt_retained": {
+    "folder": "collection",
+    "failure": "first 24-step natural fixture had no closed execution gates; add an explicitly labeled gate fixture without changing the natural task",
+    "attempted_prefix_steps": 24,
+    "temporary_optimizer_rounds": 1
+  },
+  "modified_existing_files": {
+    "chapter4_interval_robust/nominal_maddpg/README.md": {
+      "before": "55e54dd8ca7a4f4cce8d00bec13f699846d0f295e7ab4652b6013d323b8acc1d",
+      "after": "fca01c285ee782a5597ba63479f89718fe2240027edb503e9036f10568507837"
+    },
+    "chapter4_interval_robust/nominal_maddpg/replay.py": {
+      "before": "4b124404990ce259cb6d255184084da39bd15377faedfcfed0cd27c50bddace7",
+      "after": "00042281607d1f3ba7aa10e37e6ada1920db4d838bdae4a8b4805f4fd0f474d7"
+    },
+    "chapter4_interval_robust/nominal_maddpg/runtime.py": {
+      "before": "be85a7ba5bee9b62e275cd0402dd8454c27bbc1cdb825625185c1c44e532cd3d",
+      "after": "66bac63c3baf7c3ef9b9ca893d2b339123e89eda51bc7f2b79d80ffb4f176cbb"
+    }
+  },
+  "other_existing_ch4_files_byte_unchanged": 3865,
+  "protected": {
+    "CH3": {
+      "files_checked": 369,
+      "bytes_unchanged": true,
+      "changes": []
+    },
+    "CH4": {
+      "files_checked": 103,
+      "bytes_unchanged": true,
+      "changes": []
+    },
+    "CH5": {
+      "files_checked": 318,
+      "bytes_unchanged": true,
+      "changes": []
+    },
+    "AUV-Thesis-Active": {
+      "files_checked": 605,
+      "bytes_unchanged": true,
+      "changes": []
+    }
+  },
+  "created_files": {
+    "chapter4_interval_robust/nominal_maddpg/noise.py": {
+      "size": 3572,
+      "sha256": "5076a0fa16e0e4e62dacf2a2beeedb6163f456d2211d9f07ce88676f9a410690"
+    },
+    "chapter4_interval_robust/nominal_maddpg/policy.py": {
+      "size": 4082,
+      "sha256": "59b184dc64290ff91f50c6c58dd9d865d599dc01fd730dfda3509010b0a2bfe2"
+    },
+    "chapter4_interval_robust/nominal_maddpg/train_config.py": {
+      "size": 5190,
+      "sha256": "7f9d6f2248dab9eb292abe1aaa095cbc7df6411d5e47d7d709d18d9e83e8a4dd"
+    },
+    "chapter4_interval_robust/nominal_maddpg/validate_collection.py": {
+      "size": 13631,
+      "sha256": "54b4941692bc3d1ff0e65c44ab89c52ee4e148c141c033d76d0563242c38ed35"
+    },
+    "checks/chapter4/test_nominal_exploration.py": {
+      "size": 10254,
+      "sha256": "b861106df4205d53006c6516f33880780ef7f1d1c084547b1b89bc15e7608236"
+    },
+    "configs/ch4/nominal_maddpg_training.json": {
+      "size": 1335,
+      "sha256": "ec5d118f7b12c7d8a126666994007602c13c88190b665becdd27f29d2d31bb71"
+    },
+    "provenance/ch4/nominal_maddpg/source_v0005.json": {
+      "size": 57730,
+      "sha256": "c90e3d3bfe724be47de4571805b63996da92f1439690d29ece8193b91a249453"
+    },
+    "provenance/ch4/nominal_maddpg/source_v0006.json": {
+      "size": 57730,
+      "sha256": "175478ff5aaec3d72e8c1a22301ba6778ba46c1fbf9a094b11649f9a754f7692"
+    },
+    "provenance/ch4/source_v0014.json": {
+      "size": 38927,
+      "sha256": "a574fa61d7c223a1bbbee09ea8af042ca5d11ce0a8f43e8269802002fb054ab2"
+    },
+    "provenance/ch4/source_v0015.json": {
+      "size": 36634,
+      "sha256": "0d8c0a0daee35d7da9f54fd23c3b935ec7e301139a63f1d3bf307f8ba76c69e3"
+    },
+    "verification/nominal_maddpg_exploration_20261125/before.json": {
+      "size": 1123707,
+      "sha256": "2136b96e1da05d77d39141eefa53cdea7c4922cf9e603a415aff7b81daaa9314"
+    },
+    "verification/nominal_maddpg_exploration_20261125/collection/execution_registration.json": {
+      "size": 343,
+      "sha256": "599dc8a1bae49cc50bcdfe529f2823588ee8952d724315966281cfcc1847bef4"
+    },
+    "verification/nominal_maddpg_exploration_20261125/collection/failure.json": {
+      "size": 205,
+      "sha256": "1402fb55aeaddff2d433a470a849ce89f0147d4a9aeac09e4f6c20d5abb6e8cf"
+    },
+    "verification/nominal_maddpg_exploration_20261125/collection_retry01/closed_gate_fixture.jsonl.gz": {
+      "size": 9485,
+      "sha256": "452a683efbb1d93bfdd1989fa7093ee93fb1e7d65293274495e5e270e8b837e6"
+    },
+    "verification/nominal_maddpg_exploration_20261125/collection_retry01/collection_acceptance.json": {
+      "size": 11637,
+      "sha256": "3b29c170dd9254c1f2f27d0179b3dfae4274a4e9b1f55694d57705e6b04d145c"
+    },
+    "verification/nominal_maddpg_exploration_20261125/collection_retry01/evaluation_prefix.jsonl.gz": {
+      "size": 14583,
+      "sha256": "8b7ee927f819d45d989408168fbf8d80e4a85b1c1ce32bb66d77e9a228b0425e"
+    },
+    "verification/nominal_maddpg_exploration_20261125/collection_retry01/execution_registration.json": {
+      "size": 343,
+      "sha256": "b65cfee8539185ae9a7500515c1d8a071d2d5fee8c547384a9784ce9da0afbfb"
+    },
+    "verification/nominal_maddpg_exploration_20261125/collection_retry01/with_evaluation.json": {
+      "size": 23873,
+      "sha256": "5a70f88e6cf12209de036f0e9bc81a8795bd76f65ec019f597819d28d27de693"
+    },
+    "verification/nominal_maddpg_exploration_20261125/collection_retry01/with_evaluation.jsonl.gz": {
+      "size": 49255,
+      "sha256": "bb968bfdba1eae93b2061163749eeb3aff8211f1eac6b8b4ab8f140f286235ef"
+    },
+    "verification/nominal_maddpg_exploration_20261125/collection_retry01/without_evaluation.json": {
+      "size": 21016,
+      "sha256": "a056380cf64e2c3ad59d32695fb3658960edaafca3dca8c5874392ebe49808a9"
+    },
+    "verification/nominal_maddpg_exploration_20261125/collection_retry01/without_evaluation.jsonl.gz": {
+      "size": 49258,
+      "sha256": "29896dc3c7f8ba176d95a5850718d360a354e6ebf51a95c72bd1729e7dc874cf"
+    },
+    "verification/nominal_maddpg_exploration_20261125/collection_retry01/zero_exploration.json": {
+      "size": 145,
+      "sha256": "14fd6b09cb15bd757a350468c11cd2adfb1c87f9c189ed1b8192bcf5d1dea38d"
+    },
+    "verification/nominal_maddpg_exploration_20261125/independent_log_verification.json": {
+      "size": 318,
+      "sha256": "8d97074890bd66feb102a1189a3e75f3f7f1f0ff0bbf5b2e9c3c69f1a726cc7a"
+    },
+    "verification/nominal_maddpg_exploration_20261125/nominal_source_before.zip": {
+      "size": 32071,
+      "sha256": "057f6ac825de229dcf3e1f06458a8b4ad5ca7b84b559be905fb997704918c5c9"
+    },
+    "verification/nominal_maddpg_exploration_20261125/test_receipts.json": {
+      "size": 8101,
+      "sha256": "95d03ebf083f37cb87e4bad1594e93bf5405476f19ffcaba8e9060de1f684166"
+    }
+  },
+  "acceptance_file": "verification/nominal_maddpg_exploration_20261125/acceptance.json",
+  "publication_status": "validation complete; GitHub commit/push verification is recorded separately",
+  "known_limits": [
+    "No full task training or nominal performance claim.",
+    "No complete training scheduler/checkpoint resume yet.",
+    "Replay provenance is enforced by the registered runtime/TrainingReplay API; it is not a security boundary against arbitrary Python mutation.",
+    "OU parameters fixed for this stage, not selected by performance."
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "training_and_gate_rows": 52,
+  "explicit_closed_gate_boat_steps": 8,
+  "repeated_logs_exact": true,
+  "inserted_evaluation_state_exact": true,
+  "noise_schedule_checked": true,
+  "actions_checked_from_actor_noise_clip_and_gate": true,
+  "external_prefix_outcomes_not_relabelled": true
+}

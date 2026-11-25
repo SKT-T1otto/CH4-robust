@@ -1,0 +1,39 @@
+{
+  "learner": {
+    "passed": true,
+    "tests": 19,
+    "seconds": 14.304,
+    "exit_code": 0,
+    "command": "python -B -m unittest checks.chapter4.test_nominal_learner -v",
+    "initial_fixture_correction": "ExecutionSample tuple subclass does not support deepcopy; test now creates a separate synthetic sample. Initial run 15 passed, 1 fixture error; final run all 19 passed."
+  },
+  "registration": {
+    "chunk_id": "8ec65d",
+    "wall_time_seconds": 2.08e-05,
+    "exit_code": 0,
+    "original_token_count": 183,
+    "output": "test_config_rejects_overlapping_groups_and_wrong_counts (checks.chapter4.test_nominal_maddpg.NominalRegistrationTests) ... ok\r\ntest_contract_rejects_task_plant_algorithm_or_training_drift (checks.chapter4.test_nominal_maddpg.NominalRegistrationTests) ... ok\r\ntest_network_inference_is_finite_and_read_only (checks.chapter4.test_nominal_maddpg.NominalRegistrationTests) ... ok\r\ntest_networks_are_single_critic_independent_and_deterministic (checks.chapter4.test_nominal_maddpg.NominalRegistrationTests) ... ok\r\ntest_registry_matches_all_registered_groups (checks.chapter4.test_nominal_maddpg.NominalRegistrationTests) ... ok\r\ntest_registry_rejects_cross_group_duplicate_even_with_new_labels (checks.chapter4.test_nominal_maddpg.NominalRegistrationTests) ... ok\r\ntest_registry_rejects_mislabeled_holdout_and_changed_config (checks.chapter4.test_nominal_maddpg.NominalRegistrationTests) ... ok\r\ntest_registry_rejects_physical_change (checks.chapter4.test_nominal_maddpg.NominalRegistrationTests) ... ok\r\ntest_source_rejects_modified_missing_and_added_files (checks.chapter4.test_nominal_maddpg.NominalRegistrationTests) ... ok\r\ntest_static_contract_does_not_construct_a_mission (checks.chapter4.test_nominal_maddpg.NominalRegistrationTests) ... ok\r\n\r\n----------------------------------------------------------------------\r\nRan 10 tests in 7.339s\r\n\r\nOK\r\n",
+    "tests": 10
+  },
+  "runtime": {
+    "passed": true,
+    "tests": 10,
+    "seconds": 113.48,
+    "exit_code": 0,
+    "command": "python -B -m unittest checks.chapter4.test_nominal_runtime -v"
+  },
+  "work1": {
+    "chunk_id": "775d38",
+    "wall_time_seconds": 2.01e-05,
+    "exit_code": 0,
+    "original_token_count": 89,
+    "output": "test_command_lag_saturation_one_thrust_gain_and_detachment (experiments.ch4_work1_recoverability.test_work1.PlantAdapterTests) ... ok\r\ntest_joint_design_covers_private_factors_on_every_hull (experiments.ch4_work1_recoverability.test_work1.PlantAdapterTests) ... ok\r\ntest_truth_inputs_are_checked_and_copied (experiments.ch4_work1_recoverability.test_work1.PlantAdapterTests) ... ok\r\ntest_approach_uses_tracking_geometry_and_positive_closing_speed (experiments.ch4_work1_recoverability.test_work1.StageRecordsTests) ... ok\r\ntest_no_window_scenes_stay_in_denominator_and_ties_are_causal (experiments.ch4_work1_recoverability.test_work1.StageRecordsTests) ... ok\r\ntest_receiver_and_time_restrict_real_target_receipt (experiments.ch4_work1_recoverability.test_work1.StageRecordsTests) ... ok\r\ntest_b2_overlap_and_task_mismatch (experiments.ch4_work1_recoverability.test_work1.WorkOneTests) ... ok\r\ntest_b2_requires_measurable_performance_and_frozen_state (experiments.ch4_work1_recoverability.test_work1.WorkOneTests) ... ok\r\ntest_both_nominal_references (experiments.ch4_work1_recoverability.test_work1.WorkOneTests) ... ok\r\ntest_completion_cost_includes_failure_and_requires_terminal (experiments.ch4_work1_recoverability.test_work1.WorkOneTests) ... ok\r\ntest_disjoint_banks_and_reserved_confirmation (experiments.ch4_work1_recoverability.test_work1.WorkOneTests) ... ok\r\ntest_materialized_fingerprint_ignores_labels_but_detects_physical_drift (experiments.ch4_work1_recoverability.test_work1.WorkOneTests) ... ok\r\ntest_rejected_native_loader_never_runs_b2 (experiments.ch4_work1_recoverability.test_work1.WorkOneTests) ... ok\r\ntest_stepwise_audit_rejects_command_reward_and_terminal_drift (experiments.ch4_work1_recoverability.test_work1.WorkOneTests) ... ok\r\n\r\n----------------------------------------------------------------------\r\nRan 14 tests in 7.661s\r\n\r\nOK\r\n",
+    "tests": 14
+  },
+  "source_inventory_after_fix": {
+    "tests": 1,
+    "passed": true,
+    "seconds": 0.233,
+    "reason": "rerun the affected source-inventory check after adding package initializers"
+  }
+}

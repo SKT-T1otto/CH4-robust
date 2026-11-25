@@ -1,0 +1,22 @@
+{
+  "w0": 0.6925365924835205,
+  "beta": 0.1,
+  "rho": 0.15,
+  "dt": 0.2,
+  "history_eps": 2e-06,
+  "rule": "median of per-scene medians of free moving relative speeds at end of steps",
+  "speed_unit": "m/s",
+  "beta_unit": "m/s per component of declared spatial basis",
+  "counts": [
+    13,
+    15,
+    19,
+    55,
+    109,
+    118,
+    95,
+    97
+  ],
+  "free_steps": 670,
+  "law_calibration": "independent linear-law N0 prefixes up to 32 steps"
+}

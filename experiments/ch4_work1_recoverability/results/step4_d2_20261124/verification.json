@@ -1,0 +1,281 @@
+{
+  "scene_audit": {
+    "development": {
+      "scene_pairs": 24,
+      "paired_steps": 7941,
+      "phase_window_pairs": {
+        "search_before_discovery": {
+          "both": 21,
+          "nominal_only": 0,
+          "shift_only": 0,
+          "neither": 3,
+          "both_same_hull": 19,
+          "both_same_hull_waypoint": 17
+        },
+        "executor_after_handoff": {
+          "both": 10,
+          "nominal_only": 2,
+          "shift_only": 3,
+          "neither": 9,
+          "both_same_hull": 10,
+          "both_same_hull_waypoint": 3
+        }
+      },
+      "counts_by_case": {
+        "3": 4,
+        "0": 3,
+        "2": 4,
+        "6": 5,
+        "7": 4,
+        "5": 2,
+        "1": 2
+      },
+      "D_components": {
+        "0->1": {
+          "n": 2,
+          "sum": -651
+        },
+        "0->0": {
+          "n": 21,
+          "sum": 0
+        },
+        "1->0": {
+          "n": 1,
+          "sum": 105
+        }
+      },
+      "mean_actual_success_step": {
+        "nominal": 395.0,
+        "shift": 174.5
+      }
+    },
+    "confirmation_reserve": {
+      "scene_pairs": 64,
+      "paired_steps": 19163,
+      "phase_window_pairs": {
+        "search_before_discovery": {
+          "both": 60,
+          "nominal_only": 0,
+          "shift_only": 0,
+          "neither": 4,
+          "both_same_hull": 45,
+          "both_same_hull_waypoint": 45
+        },
+        "executor_after_handoff": {
+          "both": 22,
+          "nominal_only": 8,
+          "shift_only": 7,
+          "neither": 27,
+          "both_same_hull": 22,
+          "both_same_hull_waypoint": 10
+        }
+      },
+      "counts_by_case": {
+        "0": 7,
+        "4": 16,
+        "5": 5,
+        "7": 7,
+        "1": 8,
+        "2": 7,
+        "3": 6,
+        "6": 8
+      },
+      "D_components": {
+        "0->0": {
+          "n": 49,
+          "sum": 0
+        },
+        "0->1": {
+          "n": 8,
+          "sum": -2083
+        },
+        "1->1": {
+          "n": 1,
+          "sum": 1
+        },
+        "1->0": {
+          "n": 6,
+          "sum": 1247
+        }
+      },
+      "mean_actual_success_step": {
+        "nominal": 271.85714285714283,
+        "shift": 229.77777777777777
+      }
+    }
+  },
+  "third_chapter_active_native_admission": {
+    "project": "AUV-Thesis-Active",
+    "checkpoint": "NEW_B2_seed2729/checkpoint_final.pt",
+    "error": "baseline preparation source inventory/identity mismatch",
+    "check_precedes_checkpoint_load": true
+  },
+  "previous_tests_passed": 14,
+  "calibration_equal_physics": {
+    "seed": 4236000,
+    "matched_steps": 400,
+    "termination": "timeout",
+    "D": 0,
+    "all_arm_fields_including_trajectory_sha256_equal": true
+  },
+  "synthetic_checks": [
+    "eight unique shifts and per-hull factorial balance",
+    "synthetic zero sample SD",
+    "synthetic sample size over reserve",
+    "constant D bootstrap",
+    "publication is immutable and idempotent"
+  ],
+  "scene_checks": [
+    "preregistration, source hashes, reserve prefix, locked timestamps and receipt digests",
+    "independent unit and disjoint fingerprints",
+    "per-scene csv values and outcomes",
+    "penalized completion cost and D",
+    "target and random state common prefix length",
+    "phase counts and RMSE",
+    "independent bootstrap resampling and dev sample size"
+  ],
+  "protected_inventory_before": {
+    "CH3": [
+      369,
+      "2f23c00516177f1e02945efaadcb5157e380f999a98fda4cce80f475ab8010be"
+    ],
+    "CH4": [
+      103,
+      "9aa73d91e0392512e6d346cadfeed44837c59f6f5e9a682b8ba7fa5b658191c8"
+    ],
+    "CH5": [
+      318,
+      "aedc00bf2d4fb55afe5818c17f9748d8bf8f4946eb981248c57076c6cb2b37bc"
+    ],
+    "ppt": [
+      131,
+      "5945d8a2bc408780df109057fb05bf3818acfeff6c1ecef8ac6f8dfe1c3ca12d"
+    ],
+    "independent": [
+      3712,
+      "b4ccfcc6146a308e386a6f4ebe933b40a9731dc2c334861153969961f23d4bbb"
+    ]
+  },
+  "protected_inventory_after": {
+    "CH3": [
+      369,
+      "2f23c00516177f1e02945efaadcb5157e380f999a98fda4cce80f475ab8010be"
+    ],
+    "CH4": [
+      103,
+      "9aa73d91e0392512e6d346cadfeed44837c59f6f5e9a682b8ba7fa5b658191c8"
+    ],
+    "CH5": [
+      318,
+      "aedc00bf2d4fb55afe5818c17f9748d8bf8f4946eb981248c57076c6cb2b37bc"
+    ],
+    "ppt": [
+      131,
+      "5945d8a2bc408780df109057fb05bf3818acfeff6c1ecef8ac6f8dfe1c3ca12d"
+    ],
+    "independent": [
+      3712,
+      "b4ccfcc6146a308e386a6f4ebe933b40a9731dc2c334861153969961f23d4bbb"
+    ]
+  },
+  "protected_byte_comparison": true,
+  "changed_experiment_entry": "experiments/ch4_work1_recoverability/run.py",
+  "created_source": "experiments/ch4_work1_recoverability/report.py",
+  "created_result_files_sha256": {
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/b2_admission.json": "4103a9a96620ee098d59166ee80f437d21457be06e9947e82c02655ac6154538",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_lock.json": "51527f8a603c625ce2d60b0a84f4e51db39777b0e70098ec9eb64745d0414646",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_000.json": "302d1b67c094130de4bced6bbd06c2ab0540bf763a9b12ef67d1eba29a798bdb",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_001.json": "4425d0a30934c630e8e6a690c7715e36748b9215122ecff7745881feca9bf520",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_002.json": "4fec341aad18243d9a588d4271085d18963431733e046e5760bca92d9161658d",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_003.json": "d8ce2119bec3b7a228b37df3f5c5feb4f480b6f6bff99c6581d1be9d6bd419b0",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_004.json": "7a6fee8dbe0fed960007042c1554dc3644c8bffff2aa1643937bcf408c9bc4ec",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_005.json": "10589b2563542634dbc7f0925029a34a295c8c2588a07780f750e499b183ae65",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_006.json": "8ed2cd5b5aefc250455ff0b60f2ba92e1a67ca3dbe1eabe17c628759ed0ed214",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_007.json": "3a340c8877d22a1c474300ddf9052485e1acebe235b08b3079bee23905acaf0f",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_008.json": "84154e9ae616c6216e33809605c547960518ac8a7a99685915f1a6b55181f02e",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_009.json": "907b8f970408e5bbf52f13ca439ddb29e566e97782deaa3a8e47f882519b98fe",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_010.json": "8f227291bf7c470a9ddb7ca0146a2b42248b5dc7deec0b9dc773f06b5ff9fec1",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_011.json": "674b37c1741405ecc60e0a2d2c1fb4de7a9a0f21e51424e14c0f2363528c7f0c",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_012.json": "c50374613e6b74982adb29b933b0707b036400aa11c5708a28ab0bb97d9c0332",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_013.json": "46a354d29242f65cc4a65f8ba008d50bae735de1e885b256dc1b3c2381f6ab7c",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_014.json": "30f590916af2089ca46658188f335b8b0f408a604bf1e085e0aab4bb059881ff",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_015.json": "04a035de83b2fb1c8c0099d5115aeb91a8df42d377db0df869b9c803f44cb24e",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_016.json": "cfc5b8d7ec4b8d183de31b7470c20fee6cc537a06bf630e2a843a81b6d349a99",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_017.json": "f29d560221c900cbc687a784b5d5c31ceda0581fa69f81155599247c093eeab3",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_018.json": "5671d74c805253d435e9c1d124e2c30d769cafc7f0ffa0a796c3997f5cc1dbe6",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_019.json": "7f6b44b6b5a821f7454d02cfc962f16012a40262af7825ed260306f1574b50c0",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_020.json": "0ea2e0317cb085d4c677e6ffb06d893fb3214ff587c66a1886de8828e170be27",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_021.json": "2619b91c79f48387088533d2161b3e4805143fca8ecf51eec53949b4aa8200d0",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_022.json": "275b3e24dda0dfecb6249d72664c9797c6b1af15cd4be0120ca9e08f3ca159d8",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_023.json": "bb92e6092cbd3694e9f1a6b915ea0c8287a7bbc04b81c53f9371b80ea3230c82",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_024.json": "606bf866408fdec9d6a6d1d39b475c73462585fe3b386ceff89acfe9c062ca85",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_025.json": "71c78ccf921af5086dd88d7a36a4e18e5adcb23061992feac4d4b2000e89cd38",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_026.json": "c3e083d7e365d3b2bef302fc7023aafb232a51dc68ec4b8718b6f14ff81eff72",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_027.json": "17002355f7de84f8fb26ba8d0e4c8681660b0277968021f4014bcb3045effca7",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_028.json": "a7ea49b76b562be368b19533d627f2f5e55c28d9da2a42494a6c1aeee4ab6fa9",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_029.json": "8d364cd9e242664302c3e0d4e9820e7a2556f5596add925cc15f2be3ee89579e",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_030.json": "0a6c4aae7cbdb169453d89becd2fcc83373fcc01a7c9681f01899813a4027051",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_031.json": "ecaccbfb6abc65c547dc6b078bcc2c7678aa0b1501a49589c607fefcc241da97",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_032.json": "158e189d068fedb879e9070ea20f236e85ba10c8f3b550c3e83257348785fa0b",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_033.json": "e3fd17638970a394205acbc99b6d5777f36cf1cb6d22afefc47fe39fee359a26",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_034.json": "79fc0717f96a4ca48e195a99f7f5b4b690f859ff404830989a7f8bd690fcfd59",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_035.json": "555124601631c79c16a5f50916f25a5004543615f5d875209985942c409cb652",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_036.json": "c4da827574807394a1bc9044117be5f31449a92eed1232b4d346c5e3b7071eda",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_037.json": "c47b27aa461c5be618f336a4150b0fec31359dbb044ceb7b1d1e4d3bfd77a1c2",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_038.json": "af827a1b06162b1931e3f0be02ff10c08416aee70b45f6a0520848446e00786f",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_039.json": "b5b38e72c410b173010644c7015aca8f57c9de4669a9b33fccdac717d81a057c",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_040.json": "79323117511ea9165432ee58459ec48a6d428469eb13046684fccc794c0c596a",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_041.json": "1fec67d892e6969fe2a6cbc055a4c8d850584608ba09b417c84fb88947045e53",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_042.json": "628f82fe42a3cdc67b547904ebcd05a1ab8214c1476e8db3d44b4c9db7258ed2",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_043.json": "fadaee7fce15f0c01288d9c96f8272e7565c381b30bdf61f55159abaa3ed9f82",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_044.json": "adaf70195d0002d23c266445957c31420877e035df344a4d46ebfaced64f8d39",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_045.json": "a84f994006b4e7ddb7bf971b4b9a80b8f259b890b93d4ee5b87c131502a50c0d",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_046.json": "cbfa218f9b8202671675c71c4ed99958e08f16d95d3477c98272a76a149e816b",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_047.json": "6983203147a250655fa5a42a0f686ac35bf5073b5a2ab6d2375e58a087e0d004",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_048.json": "8ec3f42af866e548e44642bd01194c29b41dc1ebd03a04e3a3bc8c1b0243e55a",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_049.json": "ca20e6b9cfb413d800c51d046aee0e6431f3dd175a3ecdcd0e536720c6a3b35b",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_050.json": "276ea9b4c5c263058466d7ba8186f6c22e480e3e740f192059159f58dafe6486",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_051.json": "bd1181ea5128cf3754fd5fa9e7bf44017f60649f8b383e83cff930cea27beaa4",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_052.json": "eea4df4ee994920c510876bfbef49838dd80dc40ac15e104e89da223a7741ed6",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_053.json": "11972580904c2b8905db94bac173c7e0a19af65763e3b8496b5f130498ec2fa7",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_054.json": "c99713888fd9dc0c4a856dc9d5d6650fa12c89f454f7fccb85ca378727561f8a",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_055.json": "e950b296670df48b2bad8fe7362259efa82604d9443789750ec2e63b71be50b1",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_056.json": "ab04bb3e0db99c8caec012806cc676cb0d155437cf7f54d18aa76217d4159f35",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_057.json": "009c09603e74805c463987262b1ace0d0ea0251e4c04d5ceffad2b3aab1b4305",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_058.json": "f27eb4c7f378a297be58e82dc050018256bf47f63ec4a99d7b57e77ad4517936",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_059.json": "655ea7292ce28f725a28f37a377ab2c9394ee2c988d3a90120c644a86adaef34",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_060.json": "dc94bbfe1c92f4eec7440b66b0780ca6814de7016acae09f6120be2d32ad96a2",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_061.json": "5b5b1e4bb3d431535caf6d0d9c2502fcc832157bc6bb26079e1f8ea4a757d024",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_062.json": "1db3352da480bb8cd900e2c5986935a0fd96994638ad186bb4093a960024a5b4",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/confirmation_reserve/scene_063.json": "e17a58ae4a48191224282c8aaf2987d7d515f9d4cb865567877f2c94c236ab5a",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/development/scene_000.json": "59d8ea99962e652f69960a95d1617a9e5f569e34d9d12974ec972f7e50ad4208",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/development/scene_001.json": "983c5e2cbcb2e9a8488b28d7a10eccdd5415436b48f5c55489282e2b7e2f680e",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/development/scene_002.json": "4df186701d244ba72ad2059593fb2cbe8f5ab0efd871dc9d7589d315e35f9379",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/development/scene_003.json": "3e6da1cc4e5830034a2c38a98512b613a7f10b5a50a4fee7f2db4c98039bc09d",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/development/scene_004.json": "3c23dea672e0d061018d79c7349ff62dae476977eb265ac49fd8a5eb6c74bc7c",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/development/scene_005.json": "726261efc9fc1946accd7fedaf9f3737e7ca0cb133800400e2cc215c47ee6606",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/development/scene_006.json": "2c40549406c656ec8700b41ae5e5e116d0a4a800928decaaef414772721ea784",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/development/scene_007.json": "4f7d4ed2536ce099726dd74f14cea8937baed1ded99558cd92d5333d8b09badf",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/development/scene_008.json": "bcdcf88f21a544329c23c3ce3d3f879e8418f63d84e93c85048d93faeed12c0e",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/development/scene_009.json": "d4174e2dda219a1b9e1e9cdc02a3140b6bf04bd3cfe237e2939b8aa9d49a3c13",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/development/scene_010.json": "5981dbece837dce6a9c74dc2507f0b7ef1937bf316faf4c4c873176402408c85",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/development/scene_011.json": "6f64a39d87f16e25f8a8fc328208da440e0b4aff36f0b9eec00ada79370f29bb",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/development/scene_012.json": "686bd611dc2c757a7e82ec207ad386865113f6e8542ffc0db16b8adf4cbdefc5",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/development/scene_013.json": "60d3375f748001094f83101679bb892f17d18709e924b4dc9dee065dd6586ad5",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/development/scene_014.json": "c358b5680dd320bba3e2ff32970b8434ccdeb3326c09ee1b850f86adbba597f9",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/development/scene_015.json": "89bca3406d2f619ba8617e552af79335982cf78633b2b46db32a94f2e87775fb",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/development/scene_016.json": "b1ebd7935ab70814420faff29c5c2e8e66c2f55fa67f0b8be26c7f483a28db97",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/development/scene_017.json": "f7cc73187d9f83f6c510b50880d4eeccfb91d3ea687ea4dfaab1ad4b2d3f38f0",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/development/scene_018.json": "19362b117be69c151fe198387278cc80e80427d78e106ecac39da0bc17793e54",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/development/scene_019.json": "fbbb688e2479c4b5c0abcd3f3b42b367b73cd0a9625ff292825a534cdc02d126",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/development/scene_020.json": "d24cef518bfa024f7e1d8b1445300d5ede816deb560796009ca2b261b3fb7dc2",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/development/scene_021.json": "d32352c24b4162bfd4a00c2028ee09163f01d6914c4750ac5516d9c545dc3daa",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/development/scene_022.json": "ec6063693ad3b2f1303eca3724f6ba1fe144f6ffa5e45a98604a7dea4f88b80e",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/development/scene_023.json": "56e8dd548cf13a4dbb66252c8681e73c5d122f7a38546f991a2f473d3fa7ce70",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/development_summary.json": "25b51e931d4622859bb472b223c4b8586b89fddcf77f965aa639374b720ee550",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/paired_scenes.csv": "6bddfded14c46da022b0458fd0b2aec59c14585e6d4b38f7c7c6ad762ec351ce",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/preregistration.json": "48139120eaa3676885b7be5e40cc6cb79b4f99e46461f27f2821868c9be59e83",
+    "experiments/ch4_work1_recoverability/results/step4_d2_20261124/summary.json": "d6bbc41362a6f0dabc22e3f1ced71148e67f5011316767274629b2a1587509fe"
+  },
+  "verification_file": "experiments/ch4_work1_recoverability/results/step4_d2_20261124/verification.json"
+}

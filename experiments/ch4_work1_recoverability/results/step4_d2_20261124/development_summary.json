@@ -1,0 +1,129 @@
+{
+  "D": {
+    "n": 24,
+    "mean": -22.75,
+    "ci95": [
+      -66.33333333333333,
+      8.75
+    ]
+  },
+  "sample_sd": 98.02761367838279,
+  "positive": 1,
+  "negative": 2,
+  "zero": 21,
+  "both_500": 21,
+  "success_pairs": {
+    "0->1": 2,
+    "0->0": 21,
+    "1->0": 1
+  },
+  "return_difference": {
+    "n": 24,
+    "mean": 0.0014904525782339258,
+    "ci95": [
+      -0.004974595701629163,
+      0.010177707375928647
+    ]
+  },
+  "arms": {
+    "nominal": {
+      "mean_P": 495.625,
+      "mean_team_discounted_return": 0.15663937826959545,
+      "outcomes": {
+        "obstacle_collision": 3,
+        "timeout": 20,
+        "success": 1
+      },
+      "failures_at_500": 23,
+      "phases": {
+        "search_before_discovery": {
+          "total_scenes": 24,
+          "entered_scenes": 24,
+          "controllable_boat_steps": 10833,
+          "controllable_task_steps": 4192,
+          "qualifying_boat_steps": 4152,
+          "window_scenes": 21,
+          "no_window_scenes": 3
+        },
+        "executor_after_handoff": {
+          "total_scenes": 24,
+          "entered_scenes": 16,
+          "controllable_boat_steps": 593,
+          "controllable_task_steps": 593,
+          "qualifying_boat_steps": 218,
+          "window_scenes": 12,
+          "no_window_scenes": 12
+        }
+      }
+    },
+    "shift": {
+      "mean_P": 472.875,
+      "mean_team_discounted_return": 0.15812983084782936,
+      "outcomes": {
+        "success": 2,
+        "timeout": 19,
+        "obstacle_collision": 3
+      },
+      "failures_at_500": 22,
+      "phases": {
+        "search_before_discovery": {
+          "total_scenes": 24,
+          "entered_scenes": 24,
+          "controllable_boat_steps": 10754,
+          "controllable_task_steps": 4131,
+          "qualifying_boat_steps": 4623,
+          "window_scenes": 21,
+          "no_window_scenes": 3
+        },
+        "executor_after_handoff": {
+          "total_scenes": 24,
+          "entered_scenes": 16,
+          "controllable_boat_steps": 389,
+          "controllable_task_steps": 389,
+          "qualifying_boat_steps": 140,
+          "window_scenes": 13,
+          "no_window_scenes": 11
+        }
+      }
+    }
+  },
+  "windows": {
+    "search_before_discovery": {
+      "velocity_rmse_mps": {
+        "n": 21,
+        "mean": -0.011290164286348037,
+        "ci95": [
+          -0.060905175416261725,
+          0.03184821032893701
+        ]
+      },
+      "excess_closing_mps": {
+        "n": 21,
+        "mean": 6.771235148533772e-05,
+        "ci95": [
+          -0.014344876681283564,
+          0.017257589536018088
+        ]
+      }
+    },
+    "executor_after_handoff": {
+      "velocity_rmse_mps": {
+        "n": 10,
+        "mean": 0.008768403115204335,
+        "ci95": [
+          -0.04417880451371382,
+          0.04912378754936984
+        ]
+      },
+      "excess_closing_mps": {
+        "n": 10,
+        "mean": 0.023428578857658835,
+        "ci95": [
+          0.004162888761228554,
+          0.04332120571243685
+        ]
+      }
+    }
+  },
+  "ceiling_limited": true
+}

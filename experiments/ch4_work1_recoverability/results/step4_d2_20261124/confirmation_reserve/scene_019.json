@@ -1,0 +1,105 @@
+{
+  "lock_sha256": "7a98882f5bd3189b72671b04576f54044c4e6c2882d8bdce5c7b6784300e1c7a",
+  "row_sha256": "b092ba84782d8af90689bf42f055cb3b40574ff67f58e7f6ab0e675b1beb793d",
+  "row": {
+    "group": "confirmation_reserve",
+    "index": 19,
+    "seed": 4436019,
+    "physical_fingerprint": "0d02973da3549e5b6c24f105d522adbbfcd868a6ea15cabcfcf51a67d1c7496d",
+    "case": 2,
+    "truth": {
+      "beta": 0.05,
+      "drag": [
+        1.2,
+        1.2,
+        0.85,
+        0.85
+      ],
+      "thrust": [
+        0.85,
+        1.1,
+        0.85,
+        1.1
+      ],
+      "law": "linear"
+    },
+    "initial_sha256": "6c5682840f3ef139da23e60cafe1a5afa0018795521014acb0ce49a804978dfe",
+    "nominal": {
+      "actual_steps": 400,
+      "completion_step": null,
+      "P": 500,
+      "termination": "timeout",
+      "success": false,
+      "collision": false,
+      "timeout": true,
+      "team_discounted_return": 0.2711527166015618,
+      "found_step": 1,
+      "handoff_step": 1,
+      "phase_counts": {
+        "search_before_discovery": {
+          "phase_boat_steps": 3,
+          "controllable_boat_steps": 3,
+          "controllable_task_steps": 1,
+          "qualifying_boat_steps": 0,
+          "window": null,
+          "velocity_errors_mps": [],
+          "velocity_rmse_mps": null,
+          "excess_closing_mps": null
+        },
+        "executor_after_handoff": {
+          "phase_boat_steps": 398,
+          "controllable_boat_steps": 20,
+          "controllable_task_steps": 20,
+          "qualifying_boat_steps": 0,
+          "window": null,
+          "velocity_errors_mps": [],
+          "velocity_rmse_mps": null,
+          "excess_closing_mps": null
+        }
+      },
+      "trajectory_sha256": "5dd1d4cd62ad33dc203c1f9174432393fd6da1a8119bbcdfd2b1e2bdeede83f8"
+    },
+    "shift": {
+      "actual_steps": 400,
+      "completion_step": null,
+      "P": 500,
+      "termination": "timeout",
+      "success": false,
+      "collision": false,
+      "timeout": true,
+      "team_discounted_return": 0.2712933298001291,
+      "found_step": 1,
+      "handoff_step": 1,
+      "phase_counts": {
+        "search_before_discovery": {
+          "phase_boat_steps": 3,
+          "controllable_boat_steps": 3,
+          "controllable_task_steps": 1,
+          "qualifying_boat_steps": 0,
+          "window": null,
+          "velocity_errors_mps": [],
+          "velocity_rmse_mps": null,
+          "excess_closing_mps": null
+        },
+        "executor_after_handoff": {
+          "phase_boat_steps": 398,
+          "controllable_boat_steps": 20,
+          "controllable_task_steps": 20,
+          "qualifying_boat_steps": 0,
+          "window": null,
+          "velocity_errors_mps": [],
+          "velocity_rmse_mps": null,
+          "excess_closing_mps": null
+        }
+      },
+      "trajectory_sha256": "65ff26bb381ecb954553e8bf16259fd54499feafaefb276292e42273af671d09"
+    },
+    "D": 0,
+    "shared_decision_steps": 400,
+    "common_target_sha256": "c948bac5d5e9628ad4fd7fd9c2a34ad6e693fdaa8b7bd3a22800c1db1d590c2d",
+    "common_rng_sha256": "5310c6f2aeefe52576607f69a99c4129038954f22af36e582afc01c39c8f2ddc",
+    "common_planner_events": 0,
+    "nominal_only_events": 0,
+    "shift_only_events": 0
+  }
+}

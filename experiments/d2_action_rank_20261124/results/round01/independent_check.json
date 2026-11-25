@@ -1,0 +1,359 @@
+{
+  "passed": true,
+  "independently_rescored": 47,
+  "valid": 47,
+  "weighted": {
+    "raw_flip": {
+      "point": 0.008893280632411068,
+      "bootstrap_95": [
+        0.0,
+        0.03203741798297194
+      ]
+    },
+    "material_pair_flip": {
+      "point": 0.0,
+      "bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    "material_conflict": {
+      "point": 0.0,
+      "bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    "mean_headroom": {
+      "point": 0.0,
+      "bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    "worst_regret_D2": {
+      "point": 0.00045698814607044694,
+      "bootstrap_95": [
+        2.3206524066720122e-05,
+        0.0013223460801669565
+      ]
+    }
+  },
+  "bootstrap": "10,000 scene resamples stratified by prefix law; all-zero bootstrap has no upper-tail information",
+  "raw_flip_costs": {
+    "conflict_cost": {
+      "n": 1,
+      "mean": 2.7018715847981767e-08,
+      "median": 2.7018715847981767e-08,
+      "p95": 2.7018715847981767e-08,
+      "min": 2.7018715847981767e-08,
+      "max": 2.7018715847981767e-08
+    },
+    "headroom": {
+      "n": 1,
+      "mean": 0.0,
+      "median": 0.0,
+      "p95": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "reversal_margin": {
+      "n": 1,
+      "mean": 2.7018715847981767e-08,
+      "median": 2.7018715847981767e-08,
+      "p95": 2.7018715847981767e-08,
+      "min": 2.7018715847981767e-08,
+      "max": 2.7018715847981767e-08
+    }
+  },
+  "any_two_best_differ": 1,
+  "selecting_other_models_winner": {
+    "worst_at_state": {
+      "n": 47,
+      "mean": 2.984378084725077e-06,
+      "median": 0.0,
+      "p95": 0.0,
+      "min": 0.0,
+      "max": 0.00014026576998207863
+    },
+    "mean_across_models_at_state": {
+      "n": 47,
+      "mean": 1.4924764755098575e-06,
+      "median": 0.0,
+      "p95": 0.0,
+      "min": 0.0,
+      "max": 7.01463943489633e-05
+    },
+    "worst_when_winners_differ": {
+      "n": 1,
+      "mean": 0.00014026576998207863,
+      "median": 0.00014026576998207863,
+      "p95": 0.00014026576998207863,
+      "min": 0.00014026576998207863,
+      "max": 0.00014026576998207863
+    },
+    "per_open_step_weighted_worst": 1.2474228555718454e-06
+  },
+  "fixed_D2_return_shift": {
+    "distribution": {
+      "n": 47,
+      "mean": 0.002358592941140585,
+      "median": 0.0007419561807921055,
+      "p95": 0.0025522623356383518,
+      "min": 2.2048215785372958e-05,
+      "max": 0.07000665479382695
+    },
+    "above_threshold": 1,
+    "largest": {
+      "scene": 15,
+      "step": 51,
+      "agent": 2,
+      "best_L": 0.5,
+      "best_Q": 0.5
+    }
+  },
+  "above_numerical_margins": {
+    "1e-09": 1,
+    "1e-06": 0,
+    "0.0001": 0,
+    "0.001": 0,
+    "0.0125": 0,
+    "0.025": 0,
+    "0.05": 0
+  },
+  "worst_examples": {
+    "conflict_cost": {
+      "scene": 15,
+      "step": 5,
+      "agent": 2,
+      "stratum": "other",
+      "measured": {
+        "values_L": [
+          0.08189166788314531,
+          0.08198703618821308,
+          0.08212730195819516
+        ],
+        "values_Q": [
+          0.08056808674091114,
+          0.08064802589752992,
+          0.08064799887881408
+        ],
+        "distinct": 3,
+        "canonical_actions": [
+          0.0,
+          -0.5,
+          0.5
+        ],
+        "best_L": 0.5,
+        "best_Q": 0.0,
+        "reversal_margin": 2.7018715847981767e-08,
+        "conflict_cost": 2.7018715847981767e-08,
+        "headroom": 0.0,
+        "worst_regret_D2": 0.00014026576998207863,
+        "worst_regret_brake": 0.00023563407504985368,
+        "worst_regret_mean": 2.7018715847981767e-08,
+        "mean_action": 0.5,
+        "regret_action": 0.5,
+        "worst_regret_lambda1": 2.7018715847981767e-08,
+        "mean_tradeoff": 0.0
+      },
+      "support": {
+        "valid_history_steps": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "grid_size": 1440,
+        "enough": true,
+        "surviving_grid": [
+          0,
+          1
+        ],
+        "min_error": [
+          0.0011194241513332037,
+          1.9884742741282935e-08
+        ],
+        "tested_tuple_errors": [
+          0.0021061084073104586,
+          1.9884742741282935e-08
+        ],
+        "both_grid": false,
+        "both_tested_tuples": false,
+        "loose_grid_counts": [
+          192,
+          196
+        ],
+        "both_grid_at_0p01": true
+      }
+    },
+    "headroom": {
+      "scene": 0,
+      "step": 29,
+      "agent": 2,
+      "stratum": "near",
+      "measured": {
+        "values_L": [
+          0.08096060292827212,
+          0.08102877403970454,
+          0.09131431108769868
+        ],
+        "values_Q": [
+          0.07859443248346393,
+          0.07865825176156642,
+          0.08845689724306821
+        ],
+        "distinct": 3,
+        "canonical_actions": [
+          0.0,
+          -0.5,
+          0.5
+        ],
+        "best_L": 0.5,
+        "best_Q": 0.5,
+        "reversal_margin": 0.0,
+        "conflict_cost": 0.0,
+        "headroom": 0.0,
+        "worst_regret_D2": 0.010285537047994134,
+        "worst_regret_brake": 0.010353708159426558,
+        "worst_regret_mean": 0.0,
+        "mean_action": 0.5,
+        "regret_action": 0.5,
+        "worst_regret_lambda1": 0.0,
+        "mean_tradeoff": 0.0
+      },
+      "support": {
+        "valid_history_steps": [
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "grid_size": 1440,
+        "enough": true,
+        "surviving_grid": [
+          1,
+          0
+        ],
+        "min_error": [
+          4.720741897390468e-08,
+          0.0020957143297841707
+        ],
+        "tested_tuple_errors": [
+          4.720741897390468e-08,
+          0.0029150333813399154
+        ],
+        "both_grid": false,
+        "both_tested_tuples": false,
+        "loose_grid_counts": [
+          240,
+          207
+        ],
+        "both_grid_at_0p01": true
+      }
+    },
+    "worst_regret_D2": {
+      "scene": 0,
+      "step": 29,
+      "agent": 2,
+      "stratum": "near",
+      "measured": {
+        "values_L": [
+          0.08096060292827212,
+          0.08102877403970454,
+          0.09131431108769868
+        ],
+        "values_Q": [
+          0.07859443248346393,
+          0.07865825176156642,
+          0.08845689724306821
+        ],
+        "distinct": 3,
+        "canonical_actions": [
+          0.0,
+          -0.5,
+          0.5
+        ],
+        "best_L": 0.5,
+        "best_Q": 0.5,
+        "reversal_margin": 0.0,
+        "conflict_cost": 0.0,
+        "headroom": 0.0,
+        "worst_regret_D2": 0.010285537047994134,
+        "worst_regret_brake": 0.010353708159426558,
+        "worst_regret_mean": 0.0,
+        "mean_action": 0.5,
+        "regret_action": 0.5,
+        "worst_regret_lambda1": 0.0,
+        "mean_tradeoff": 0.0
+      },
+      "support": {
+        "valid_history_steps": [
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "grid_size": 1440,
+        "enough": true,
+        "surviving_grid": [
+          1,
+          0
+        ],
+        "min_error": [
+          4.720741897390468e-08,
+          0.0020957143297841707
+        ],
+        "tested_tuple_errors": [
+          4.720741897390468e-08,
+          0.0029150333813399154
+        ],
+        "both_grid": false,
+        "both_tested_tuples": false,
+        "loose_grid_counts": [
+          240,
+          207
+        ],
+        "both_grid_at_0p01": true
+      }
+    }
+  },
+  "free_prediction_error_max": 1.419856532347552e-07,
+  "terminal_before_12_windows": 3,
+  "balanced_replay": {
+    "scenes": [
+      0,
+      1,
+      6,
+      7,
+      12,
+      13,
+      18,
+      19
+    ],
+    "rows": 15,
+    "replayed_steps": 3087,
+    "material_pair_reversals": 0,
+    "material_conflicts": 0,
+    "max_headroom": 0.0,
+    "extra_branch_steps": 1152,
+    "speed_ratio": {
+      "n": 6233,
+      "mean": 1.3055759503732267,
+      "median": 1.3657827377319336,
+      "p95": 2.6326864719390866,
+      "min": 0.0037789570633322,
+      "max": 3.315747022628784
+    },
+    "fraction_above_2w0": 0.21658912241296327
+  }
+}

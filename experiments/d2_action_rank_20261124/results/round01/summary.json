@@ -1,0 +1,230 @@
+{
+  "scenes": 24,
+  "prefix_steps": 8517,
+  "exposures": {
+    "all": 34068,
+    "other": 11215,
+    "near": 5989,
+    "closed": 16864
+  },
+  "windows": 47,
+  "valid_windows": 47,
+  "distinct_action_counts": {
+    "3": 45,
+    "2": 2
+  },
+  "by_threshold": {
+    "0.0125": {
+      "all": {
+        "sampled": 47,
+        "distinct_two_or_more": 47,
+        "raw_reversals": 1,
+        "reversals": 0,
+        "conflicts": 0,
+        "supported_grid_conflicts": 0,
+        "tested_tuple_conflicts": 0,
+        "headroom_above_threshold": 0
+      },
+      "near": {
+        "sampled": 23,
+        "distinct_two_or_more": 23,
+        "raw_reversals": 0,
+        "reversals": 0,
+        "conflicts": 0,
+        "supported_grid_conflicts": 0,
+        "tested_tuple_conflicts": 0,
+        "headroom_above_threshold": 0
+      },
+      "other": {
+        "sampled": 24,
+        "distinct_two_or_more": 24,
+        "raw_reversals": 1,
+        "reversals": 0,
+        "conflicts": 0,
+        "supported_grid_conflicts": 0,
+        "tested_tuple_conflicts": 0,
+        "headroom_above_threshold": 0
+      }
+    },
+    "0.025": {
+      "all": {
+        "sampled": 47,
+        "distinct_two_or_more": 47,
+        "raw_reversals": 1,
+        "reversals": 0,
+        "conflicts": 0,
+        "supported_grid_conflicts": 0,
+        "tested_tuple_conflicts": 0,
+        "headroom_above_threshold": 0
+      },
+      "near": {
+        "sampled": 23,
+        "distinct_two_or_more": 23,
+        "raw_reversals": 0,
+        "reversals": 0,
+        "conflicts": 0,
+        "supported_grid_conflicts": 0,
+        "tested_tuple_conflicts": 0,
+        "headroom_above_threshold": 0
+      },
+      "other": {
+        "sampled": 24,
+        "distinct_two_or_more": 24,
+        "raw_reversals": 1,
+        "reversals": 0,
+        "conflicts": 0,
+        "supported_grid_conflicts": 0,
+        "tested_tuple_conflicts": 0,
+        "headroom_above_threshold": 0
+      }
+    },
+    "0.05": {
+      "all": {
+        "sampled": 47,
+        "distinct_two_or_more": 47,
+        "raw_reversals": 1,
+        "reversals": 0,
+        "conflicts": 0,
+        "supported_grid_conflicts": 0,
+        "tested_tuple_conflicts": 0,
+        "headroom_above_threshold": 0
+      },
+      "near": {
+        "sampled": 23,
+        "distinct_two_or_more": 23,
+        "raw_reversals": 0,
+        "reversals": 0,
+        "conflicts": 0,
+        "supported_grid_conflicts": 0,
+        "tested_tuple_conflicts": 0,
+        "headroom_above_threshold": 0
+      },
+      "other": {
+        "sampled": 24,
+        "distinct_two_or_more": 24,
+        "raw_reversals": 1,
+        "reversals": 0,
+        "conflicts": 0,
+        "supported_grid_conflicts": 0,
+        "tested_tuple_conflicts": 0,
+        "headroom_above_threshold": 0
+      }
+    }
+  },
+  "costs_in_discounted_team_reward": {
+    "reversal_margin": {
+      "mean": 5.748662946379099e-10,
+      "median": 0.0,
+      "max": 2.7018715847981767e-08,
+      "weighted_per_open_step": 2.402850223634742e-10
+    },
+    "conflict_cost": {
+      "mean": 5.748662946379099e-10,
+      "median": 0.0,
+      "max": 2.7018715847981767e-08,
+      "weighted_per_open_step": 2.402850223634742e-10
+    },
+    "headroom": {
+      "mean": 0.0,
+      "median": 0.0,
+      "max": 0.0,
+      "weighted_per_open_step": 0.0
+    },
+    "worst_regret_mean": {
+      "mean": 5.748662946379099e-10,
+      "median": 0.0,
+      "max": 2.7018715847981767e-08,
+      "weighted_per_open_step": 2.402850223634742e-10
+    },
+    "worst_regret_D2": {
+      "mean": 0.00026897618444389384,
+      "median": 3.3055945724252966e-05,
+      "max": 0.010285537047994134,
+      "weighted_per_open_step": 0.00045698814607044705
+    },
+    "worst_regret_brake": {
+      "mean": 0.00033740914198918034,
+      "median": 0.00011856592792956755,
+      "max": 0.010353708159426558,
+      "weighted_per_open_step": 0.0005067736337722854
+    },
+    "worst_regret_lambda1": {
+      "mean": 5.748662946379099e-10,
+      "median": 0.0,
+      "max": 2.7018715847981767e-08,
+      "weighted_per_open_step": 2.402850223634742e-10
+    }
+  },
+  "weighted_raw_rate": 0.008893280632411068,
+  "weighted_material_conflict_rate": 0.0,
+  "weighted_material_pair_reversal_rate": 0.0,
+  "weighted_dual_supported_conflict_rate": 0.0,
+  "independent_scene_zero_event_upper_95": {
+    "near": 0.12212338890652308,
+    "other": 0.11734615615494881
+  },
+  "by_agent": {
+    "0": {
+      "sampled": 10,
+      "distinct_two_or_more": 10,
+      "raw_reversals": 0,
+      "reversals": 0,
+      "conflicts": 0,
+      "supported_grid_conflicts": 0,
+      "tested_tuple_conflicts": 0,
+      "headroom_above_threshold": 0
+    },
+    "1": {
+      "sampled": 9,
+      "distinct_two_or_more": 9,
+      "raw_reversals": 0,
+      "reversals": 0,
+      "conflicts": 0,
+      "supported_grid_conflicts": 0,
+      "tested_tuple_conflicts": 0,
+      "headroom_above_threshold": 0
+    },
+    "2": {
+      "sampled": 11,
+      "distinct_two_or_more": 11,
+      "raw_reversals": 1,
+      "reversals": 0,
+      "conflicts": 0,
+      "supported_grid_conflicts": 0,
+      "tested_tuple_conflicts": 0,
+      "headroom_above_threshold": 0
+    },
+    "3": {
+      "sampled": 17,
+      "distinct_two_or_more": 17,
+      "raw_reversals": 0,
+      "reversals": 0,
+      "conflicts": 0,
+      "supported_grid_conflicts": 0,
+      "tested_tuple_conflicts": 0,
+      "headroom_above_threshold": 0
+    }
+  },
+  "history": {
+    "enough": 47,
+    "both_grid": 0,
+    "both_fixed_tuples": 0,
+    "both_grid_at_0p01": 43
+  },
+  "extra_horizon": {
+    "windows": 7,
+    "material_pair_reversals": 0,
+    "material_conflicts": 0
+  },
+  "branches": 282,
+  "branch_steps": 3723,
+  "prefix_models": {
+    "L": 12,
+    "Q": 12
+  },
+  "prefix_outcomes": {
+    "timeout": 19,
+    "obstacle_collision": 4,
+    "success": 1
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "scope": "All files in CH3, CH4, CH5. Independent CH4 excludes its .git and only this new experiment directory. SHA256 over relative path + NUL + file SHA256 bytes, in sorted filesystem Path order.",
+  "before": {
+    "CH3": {
+      "files": 369,
+      "bytes": 2133039295,
+      "sha256": "2f23c00516177f1e02945efaadcb5157e380f999a98fda4cce80f475ab8010be"
+    },
+    "CH4": {
+      "files": 103,
+      "bytes": 216010748,
+      "sha256": "9aa73d91e0392512e6d346cadfeed44837c59f6f5e9a682b8ba7fa5b658191c8"
+    },
+    "CH5": {
+      "files": 318,
+      "bytes": 488774083,
+      "sha256": "aedc00bf2d4fb55afe5818c17f9748d8bf8f4946eb981248c57076c6cb2b37bc"
+    },
+    "CH4_independent_original": {
+      "files": 3632,
+      "bytes": 483276432,
+      "sha256": "7f06b082dcb15d62bb5859cee448c149f5190ab2d8f9e40b43a027750c6499a3"
+    }
+  }
+}

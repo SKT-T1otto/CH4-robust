@@ -1,0 +1,97 @@
+{
+  "schema": "auv.ch4.nominal_maddpg.runtime_protocol.v1",
+  "stage": 3,
+  "training_enabled": false,
+  "optimizer_updates_allowed": 0,
+  "replay_capacity": 512,
+  "input_files": {
+    "configs/ch4/nominal_maddpg.json": "a6c527260f0da998129c3246dc1fd7fbe1d3b449330f80b7064ac5e51148d251",
+    "configs/ch4/nominal_maddpg_scenes.json": "780bdf15b344ee4763903eea1544e58f858e46a7e618efcee9c01793207159e3",
+    "experiments/ch4_work1_recoverability/protocol.json": "2d83be8fbdf5a1e4fc96fbecf0acd6715ad00270e059fe2690f5f92b7243f369",
+    "experiments/ch4_work1_recoverability/results/step3_d2_20261124/summary.json": "1adfeeb292e2a861cfbf18930774fe961b6348978de6a7116f754a43668e63f0",
+    "experiments/ch4_work1_recoverability/results/step3_d2_20261124/calibration_00.jsonl.gz": "38e1d3eb0484a6a15202fcdbe5603ff7c8fae902df4402dae9638c46985c24b6",
+    "experiments/ch4_work1_recoverability/results/step3_d2_20261124/calibration_03.jsonl.gz": "877a386375737dad8e6cc515f3b363df06061f1640b099e27c3cd6d0e478ce9b",
+    "experiments/ch4_work1_recoverability/results/step3_d2_20261124/calibration_05.jsonl.gz": "d764a638e043b296d08522998ab20f516380933523b0f18346cfce8401d52823"
+  },
+  "cases": [
+    {
+      "name": "zero_timeout_a",
+      "group": "calibration",
+      "index": 0,
+      "policy_seed": null,
+      "stress_sampling": true,
+      "reference_log": "experiments/ch4_work1_recoverability/results/step3_d2_20261124/calibration_00.jsonl.gz"
+    },
+    {
+      "name": "zero_timeout_b",
+      "group": "calibration",
+      "index": 0,
+      "policy_seed": null,
+      "stress_sampling": false,
+      "reference_log": "experiments/ch4_work1_recoverability/results/step3_d2_20261124/calibration_00.jsonl.gz"
+    },
+    {
+      "name": "zero_collision",
+      "group": "calibration",
+      "index": 3,
+      "policy_seed": null,
+      "stress_sampling": false,
+      "reference_log": "experiments/ch4_work1_recoverability/results/step3_d2_20261124/calibration_03.jsonl.gz"
+    },
+    {
+      "name": "zero_success",
+      "group": "calibration",
+      "index": 5,
+      "policy_seed": null,
+      "stress_sampling": false,
+      "reference_log": "experiments/ch4_work1_recoverability/results/step3_d2_20261124/calibration_05.jsonl.gz"
+    },
+    {
+      "name": "frozen_calibration_a",
+      "group": "calibration",
+      "index": 5,
+      "policy_seed": 2729,
+      "stress_sampling": true
+    },
+    {
+      "name": "frozen_calibration_b",
+      "group": "calibration",
+      "index": 5,
+      "policy_seed": 2729,
+      "stress_sampling": false
+    },
+    {
+      "name": "frozen_validation_a",
+      "group": "validation",
+      "index": 0,
+      "policy_seed": 3733,
+      "stress_sampling": true
+    },
+    {
+      "name": "frozen_validation_b",
+      "group": "validation",
+      "index": 0,
+      "policy_seed": 3733,
+      "stress_sampling": false
+    }
+  ],
+  "repeat_pairs": [
+    [
+      "zero_timeout_a",
+      "zero_timeout_b"
+    ],
+    [
+      "frozen_calibration_a",
+      "frozen_calibration_b"
+    ],
+    [
+      "frozen_validation_a",
+      "frozen_validation_b"
+    ]
+  ],
+  "selection": "terminal-type calibration fixtures and first validation scene, solely for runtime acceptance",
+  "nominal_admission_opened": false,
+  "mismatch_sets_opened": false,
+  "reference_configuration": "configs/ch4/nominal_maddpg.json",
+  "reference_stage_status": "steps 1-2 contract retained as originally registered, this stage admits frozen read-only episodes"
+}

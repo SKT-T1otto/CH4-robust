@@ -277,12 +277,38 @@ def execute(protocol, checkpoint=None, *, verify_fingerprints=False):
 def main():
     sys.stdout.reconfigure(encoding="utf-8")
     parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--stage", choices=("baseline", "records", "loss"), default="baseline")
+    parser.add_argument("--workers", type=int, choices=range(1, 9), default=4, help="parallel scene workers")
     parser.add_argument("--execute", action="store_true")
     parser.add_argument("--checkpoint", type=Path, help="optional existing frozen B2 candidate")
     parser.add_argument("--verify-fingerprints", action="store_true", help="also regenerate every registered geometry")
     parser.add_argument("--report-name", help="save results/NAME.json (create once)")
     args = parser.parse_args()
     protocol = read_json(HERE / "protocol.json")
+    if args.stage == "loss":
+        if args.verify_fingerprints:
+            parser.error("loss verifies each materialized physical scene")
+        if not args.execute:
+            print(json.dumps(dict(executed=False, stage=4, groups=audit_catalog(protocol))))
+            return
+        if not args.report_name or not re.fullmatch("step4_[A-Za-z0-9_-]+", args.report_name):
+            parser.error("loss requires --report-name step4_NAME")
+        from experiments.ch4_work1_recoverability.report import run_stage
+        result = run_stage(protocol, HERE / "results" / args.report_name, args.workers, args.checkpoint)
+        print(json.dumps(dict(D=result["confirmation"]["D"], proceed=result["proceed_to_recovery"])))
+        return
+    if args.stage == "records":
+        if args.checkpoint or args.verify_fingerprints:
+            parser.error("records uses only frozen D2 and materializes its registered scenes")
+        if not args.execute:
+            print(json.dumps(dict(executed=False, stage=3, calibration_scenes=audit_catalog(protocol)["calibration"]["count"])))
+            return
+        if not args.report_name or not re.fullmatch("step3_[A-Za-z0-9_-]+", args.report_name):
+            parser.error("records requires a fresh --report-name step3_NAME")
+        from experiments.ch4_work1_recoverability.records import run_stage
+        result = run_stage(protocol, HERE / "results" / args.report_name, args.workers)
+        print(json.dumps(dict(passed=result["passed"], phase_summary=result["phase_summary"]), indent=2))
+        return
     destination = None
     if args.report_name is not None:
         if not re.fullmatch("[A-Za-z0-9_-]+", args.report_name):

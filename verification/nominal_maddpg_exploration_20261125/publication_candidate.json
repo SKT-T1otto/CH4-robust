@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "candidate_directory": "E:\\gym\\code\\WORKSPACE\\backups\\CH4_publish_check_20261125",
+  "tested_index_tree": "307aa183e6c1b9dcbd657be57f85cfb4eb0be5ec",
+  "source_sha256": "cef7d0499ed0e58f649b512783da1dd0b740438abc7dba7837e2c8e26f57aab8",
+  "verified_source_files": 434,
+  "registered_scenes": 1412,
+  "sealed_real_transitions": 1561,
+  "new_unit_tests_repeated_in_clean_candidate": 14,
+  "new_unit_tests_passed": true,
+  "whitespace_check": "Passed with cr-at-eol and existing blank-at-eof allowed to preserve historical bytes.",
+  "publication_plan_sha256": "ca7edbc92a381f43607c1e9e243e5fe0ad18aa1c5736374396c6373cfd6697b5",
+  "no_changes_in_inherited_core_or_chapter3_bser": true,
+  "extra_files_after_plan": [
+    "verification/nominal_maddpg_exploration_20261125/publication_candidate.json"
+  ],
+  "local_only": [
+    "before.json",
+    "nominal_source_before.zip",
+    "publish_paths.nul",
+    "commit_message.txt"
+  ],
+  "workflow": "Exported the exact Git index, validated complete runtime source identities and fixture availability, reran all 14 exploration tests without importing sibling projects."
+}

@@ -1,0 +1,40 @@
+{
+  "schema": "auv.ch4.nominal_maddpg.collection.v1",
+  "stage": 5,
+  "task_training_enabled": false,
+  "maximum_prefix_episodes": 8,
+  "maximum_steps_per_prefix": 32,
+  "maximum_updates_per_model": 4,
+  "training_checkpoints_written": 0,
+  "allowed_evaluation_groups": [
+    "validation"
+  ],
+  "nominal_admission_opened": false,
+  "mismatch_sets_opened": false,
+  "input_files": {
+    "configs/ch4/nominal_maddpg.json": "a6c527260f0da998129c3246dc1fd7fbe1d3b449330f80b7064ac5e51148d251",
+    "configs/ch4/nominal_maddpg_scenes.json": "780bdf15b344ee4763903eea1544e58f858e46a7e618efcee9c01793207159e3",
+    "verification/nominal_maddpg_learner_20261125/acceptance.json": "f9ad81fda0fd5faf8c5a83bc22b2f90cbd8cd73c12371183d859730504ad41cc"
+  },
+  "exploration": {
+    "type": "OU",
+    "initial_sigma": 0.2,
+    "minimum_sigma": 0.02,
+    "decay_per_environment_step": 2e-05,
+    "theta": 0.15,
+    "dt": 1.0,
+    "mean": 0.0,
+    "reset": "memory_only_at_episode_start",
+    "clock": "one_tick_per_training_team_decision_including_closed_gates",
+    "disabled": "zero_noise_no_draw_no_memory_change_clock_advances"
+  },
+  "mechanism": {
+    "run_seed": 81729,
+    "train_scene_index": 0,
+    "evaluation_scene_index": 0,
+    "prefix_steps": 24,
+    "evaluation_steps": 8,
+    "update_after_steps": 8
+  },
+  "performance_claim": false
+}

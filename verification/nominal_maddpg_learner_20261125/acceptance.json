@@ -1,0 +1,183 @@
+{
+  "schema": "auv.ch4.nominal_maddpg.step4.final_acceptance.v1",
+  "created_utc": "2026-11-25T09:20:14.772295+00:00",
+  "passed": true,
+  "completed_steps": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "source_record": "provenance/ch4/nominal_maddpg/source_v0004.json",
+  "source_sha256": "99b3a843bdc180a02086f0d3ce29930565a71191b1887ab52b1acd6707a0f6e0",
+  "registered_source_files": 428,
+  "parent_source_version": 13,
+  "test_counts": {
+    "learner": 19,
+    "registration": 10,
+    "runtime": 10,
+    "work1": 14
+  },
+  "distinct_tests_passed": 53,
+  "additional_affected_source_test_rerun": true,
+  "independent_equations_report": "equations_retry01/learner_acceptance.json",
+  "real_replay_rows_checked": 1561,
+  "temporary_actual_model_rounds": 4,
+  "temporary_reference_model_rounds": 4,
+  "update_counters": {
+    "rounds": 4,
+    "target_updates": 4,
+    "actor_steps": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "critic_steps": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "actor_skips": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "maximum_rounds_per_temporary_model": 4,
+  "terminal_types": [
+    "success",
+    "obstacle_collision",
+    "timeout"
+  ],
+  "max_td_target_error": 1.2474099414516715e-07,
+  "max_target_action_error": 3.509652272797037e-09,
+  "max_critic_loss_error": 7.331965711648847e-10,
+  "max_actor_loss_error": 3.4624824396534137e-09,
+  "max_parameter_reference_error": 1.1920928955078125e-07,
+  "max_adam_state_reference_error": 4.6566128730773926e-09,
+  "max_soft_update_error": 8.642673487990749e-08,
+  "network_construction_ast_unchanged": true,
+  "task_training_started": false,
+  "training_checkpoints_written": 0,
+  "learner_update_validated": true,
+  "nominal_performance_verified": false,
+  "nominal_admission_rollouts": 0,
+  "mismatch_rollouts": 0,
+  "learner_equation_audit_new_task_episodes": 0,
+  "regression_runtime_scope": "Existing bounded prefix tests rerun; no new full-episode performance evaluation.",
+  "known_limits": [
+    "No exploration or training scheduler integrated in this step.",
+    "No training checkpoint/Replay resume.",
+    "Update failures abort the run; whole-round optimizer rollback is not implemented.",
+    "Inherited Chapter 3 source-gate failure is not bypassed or relabeled."
+  ],
+  "corrections_retained": [
+    "ExecutionSample tuple subclass does not support deepcopy; test now creates a separate synthetic sample. Initial run 15 passed, 1 fixture error; final run all 19 passed.",
+    "First independent audit rejected missing checks package initializer hashes after numerical checks; failure.json and source v0003 retained, inventory corrected and fresh source v0004 audit passed."
+  ],
+  "modified_existing_files": {
+    "chapter4_interval_robust/nominal_maddpg/learner.py": {
+      "before": "56bd52bc8b9aafcf52e158d2f29909e79d4e6c86fe19c466d514c4555ddce941",
+      "after": "37ec022fe9b13d766cf0a7b17e55ee3532eee86de9c2860cabc723b9e8b8de9a"
+    },
+    "chapter4_interval_robust/nominal_maddpg/provenance.py": {
+      "before": "b702b5c6e00909787ddb61d815152ff69b843b6ed64e3276e9570c58fce10176",
+      "after": "bebb3a7c63598e2d1cd53981f934c77b68fd1ca8ea26b05b5449f8f09894f549"
+    },
+    "chapter4_interval_robust/nominal_maddpg/README.md": {
+      "before": "00a9fa61798c196ca70a75479d6fd403f7bb30c4a7231a87cbfb25e15684edda",
+      "after": "55e54dd8ca7a4f4cce8d00bec13f699846d0f295e7ab4652b6013d323b8acc1d"
+    }
+  },
+  "other_existing_ch4_files_byte_unchanged": 3849,
+  "protected": {
+    "CH3": {
+      "files_checked": 369,
+      "bytes_unchanged": true,
+      "changes": []
+    },
+    "CH4": {
+      "files_checked": 103,
+      "bytes_unchanged": true,
+      "changes": []
+    },
+    "CH5": {
+      "files_checked": 318,
+      "bytes_unchanged": true,
+      "changes": []
+    },
+    "AUV-Thesis-Active": {
+      "files_checked": 605,
+      "bytes_unchanged": true,
+      "changes": []
+    }
+  },
+  "created_files": {
+    "chapter4_interval_robust/nominal_maddpg/validate_learner.py": {
+      "size": 12556,
+      "sha256": "77eec3aa3de44a6032eccda066e3fcdf1dc2f08ad434eb806537150252d38a33"
+    },
+    "checks/chapter4/test_nominal_learner.py": {
+      "size": 19920,
+      "sha256": "c62e8e98d6cf8ed88f247470df7d3eb082ab29132bddd615d123c6906390ea47"
+    },
+    "configs/ch4/nominal_maddpg_learner.json": {
+      "size": 2444,
+      "sha256": "6970419b48db960399daf660313c4c81382056f812676a5d5620ef662af02b7c"
+    },
+    "provenance/ch4/nominal_maddpg/source_v0003.json": {
+      "size": 56788,
+      "sha256": "702c0712dfda94c05075894b851c05105ec11363d4de65d9eb57b0eff96b6440"
+    },
+    "provenance/ch4/nominal_maddpg/source_v0004.json": {
+      "size": 56985,
+      "sha256": "8fecf35f1c05daf7fee721e9a539d96c933d1fcaf0fe94616f5fc50eb478f2a7"
+    },
+    "provenance/ch4/source_v0012.json": {
+      "size": 36879,
+      "sha256": "8aa966cc2210124b93517630e7966b2e6f23eecab94ba940de39f669576a8696"
+    },
+    "provenance/ch4/source_v0013.json": {
+      "size": 35887,
+      "sha256": "b965a6064cc5f30642cf97f41e5214649d88d175e36e092f88fe1fab58f4c281"
+    },
+    "verification/nominal_maddpg_learner_20261125/before.json": {
+      "size": 1120458,
+      "sha256": "e8ede41f079b6744f029f764459133e26b4a416b0c2475ba85f1dc9c4a3d6f27"
+    },
+    "verification/nominal_maddpg_learner_20261125/equations/execution_registration.json": {
+      "size": 2020,
+      "sha256": "3991164bdb90bbb4fbfa42e654309537811764ddeff3a2486828f7635ddd593d"
+    },
+    "verification/nominal_maddpg_learner_20261125/equations/failure.json": {
+      "size": 301,
+      "sha256": "bf7666a25e86675c85d337bb8ef3cc583980de9ed4b53f565fa8a6422c30285b"
+    },
+    "verification/nominal_maddpg_learner_20261125/equations_retry01/execution_registration.json": {
+      "size": 2020,
+      "sha256": "b4c29fe27789464dde7ba53c3c6c499f2dcf80c341cb8819911d99170f6f5e47"
+    },
+    "verification/nominal_maddpg_learner_20261125/equations_retry01/learner_acceptance.json": {
+      "size": 21788,
+      "sha256": "28960f377edbedb7dc83d812b58eeee84db3b46a80eccd598dc2c0d4751f3f22"
+    },
+    "verification/nominal_maddpg_learner_20261125/provenance_before.py.txt": {
+      "size": 5588,
+      "sha256": "b702b5c6e00909787ddb61d815152ff69b843b6ed64e3276e9570c58fce10176"
+    },
+    "verification/nominal_maddpg_learner_20261125/source_before.zip": {
+      "size": 3172,
+      "sha256": "ea17e6449cb4f756dd44cb1385281cf0ffa5d5b854274e27f3ff71b31a8ef3db"
+    },
+    "verification/nominal_maddpg_learner_20261125/test_receipts.json": {
+      "size": 4374,
+      "sha256": "0e81db485e50c61a74f646f35ded44a306d9e78cee884496437a3e072c520140"
+    }
+  },
+  "acceptance_file": "verification/nominal_maddpg_learner_20261125/acceptance.json",
+  "git_status_after": " M experiments/ch4_work1_recoverability/run.py\n M experiments/ch4_work1_recoverability/test_work1.py\n?? chapter4_interval_robust/nominal_maddpg/\n?? checks/chapter4/test_nominal_learner.py\n?? checks/chapter4/test_nominal_maddpg.py\n?? checks/chapter4/test_nominal_runtime.py\n?? configs/ch4/nominal_maddpg.json\n?? configs/ch4/nominal_maddpg_learner.json\n?? configs/ch4/nominal_maddpg_runtime.json\n?? configs/ch4/nominal_maddpg_scenes.json\n?? docs/chapter4/research_plan_maddpg_20261124/\n?? docs/chapter4/research_plan_peer_evidence_20261123/\n?? experiments/ch4_work1_recoverability/plant_adapter.py\n?? experiments/ch4_work1_recoverability/records.py\n?? experiments/ch4_work1_recoverability/report.py\n?? experiments/ch4_work1_recoverability/results/\n?? experiments/d2_action_rank_20261124/\n?? provenance/ch4/nominal_maddpg/\n?? provenance/ch4/source_v0010.json\n?? provenance/ch4/source_v0011.json\n?? provenance/ch4/source_v0012.json\n?? provenance/ch4/source_v0013.json\n?? verification/nominal_maddpg_learner_20261125/\n?? verification/nominal_maddpg_runtime_20261125/\n?? verification/nominal_maddpg_steps12_20261125/\n",
+  "git_commit_or_push_performed": false
+}

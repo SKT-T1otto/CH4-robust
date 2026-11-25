@@ -1,0 +1,9 @@
+{
+  "source_sha256": "cef7d0499ed0e58f649b512783da1dd0b740438abc7dba7837e2c8e26f57aab8",
+  "protocol_sha256": "ec5d118f7b12c7d8a126666994007602c13c88190b665becdd27f29d2d31bb71",
+  "utc": "2026-11-25T09:37:33.253347+00:00",
+  "prefix_episodes": 6,
+  "maximum_steps_per_prefix": 32,
+  "maximum_updates_per_model": 1,
+  "checkpoints_written": 0
+}
