@@ -1,0 +1,16 @@
+{
+  "command": [
+    "D:\\anaconda\\anaconda\\envs\\AUV\\python.exe",
+    "-B",
+    "-m",
+    "unittest",
+    "checks.chapter4.test_nominal_training_state",
+    "-v"
+  ],
+  "started_utc": "2026-11-25T10:20:39.518378+00:00",
+  "ended_utc": "2026-11-25T10:21:32.130627+00:00",
+  "exit_code": 0,
+  "tests": 15,
+  "source_sha256": "e0a63779ee4bf327e18e2c2be0ca2b73a60ff1a281f1b3c66030deb31f7e0d2f",
+  "log_sha256": "978518f22c2bc9661f0cc284fe444918e728ddafc428859afb7cbad98024405a"
+}

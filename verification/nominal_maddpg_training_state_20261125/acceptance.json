@@ -1,0 +1,167 @@
+{
+  "schema": "auv.ch4.nominal_maddpg.stage6.acceptance.v1",
+  "created_utc": "2026-11-25T10:24:46.907794+00:00",
+  "passed": true,
+  "scope": "bounded infrastructure mechanisms; not nominal-performance or long-training acceptance",
+  "source_record": "provenance/ch4/nominal_maddpg/source_v0008.json",
+  "source_sha256": "e0a63779ee4bf327e18e2c2be0ca2b73a60ff1a281f1b3c66030deb31f7e0d2f",
+  "registered_source_files": 442,
+  "new_unit_tests": 15,
+  "existing_regression_tests": 67,
+  "total_distinct_tests": 82,
+  "regression_scope_note": "67 existing checks passed before the final new-trainer-only commit-failure accounting fix; all 15 new checks and real integration passed after that fix",
+  "registered_schedule": {
+    "batch_size": 128,
+    "replay_capacity": 500000,
+    "warmup_steps": 256,
+    "update_frequency": 4,
+    "updates_per_train": 2,
+    "actor_lr": 0.001,
+    "critic_lr": 0.0005,
+    "optimizer": "Adam",
+    "gamma": 0.95,
+    "tau": 0.005
+  },
+  "update_round": "four critics once; eligible actors once; then one soft target update; actor skips counted separately",
+  "checkpoint_contents": [
+    "networks",
+    "target_networks",
+    "Adam_states",
+    "valid_Replay_contents_and_ring_pointer",
+    "execution_gates",
+    "ring_slot_scene_provenance",
+    "Replay_rng_and_sampling_counters",
+    "scene_permutation_cursor_epoch_rng",
+    "OU_memory_rng_steps_draws",
+    "Python_NumPy_Torch_CPU_rng",
+    "run_and_stream_seeds",
+    "completed_episode_history",
+    "team_steps_and_per_agent_update_counters",
+    "source_configuration_scene_algorithm_CPU_environment_fingerprints"
+  ],
+  "boundary_resume": {
+    "passed": true,
+    "fixture": "explicitly synthetic episode scheduler with real learner/Adam/Replay/OU",
+    "saved_team_steps": 256,
+    "saved_rounds": 2,
+    "compared_team_steps": 260,
+    "compared_rounds": 4,
+    "exact": [
+      "next_minibatch_indices",
+      "executed_actions",
+      "losses",
+      "network_parameters",
+      "optimizer_moments",
+      "all_serialized_training_state"
+    ],
+    "actor_steps_at_save": [
+      2,
+      2,
+      2,
+      0
+    ],
+    "critic_steps_at_save": [
+      2,
+      2,
+      2,
+      2
+    ],
+    "active_environment_saved": false
+  },
+  "evaluation_isolation": {
+    "passed": true,
+    "primed_replay_rows": 256,
+    "primed_rounds": 2,
+    "real_evaluation_steps": 2,
+    "unchanged": [
+      "weights",
+      "targets",
+      "optimizers",
+      "Replay_data_and_sources",
+      "Replay_rng",
+      "OU_state_rng",
+      "scene_order_rng",
+      "global_rng"
+    ],
+    "subsequent_replay_sample_equal": true,
+    "subsequent_noise_equal": true,
+    "evaluation_error_rng_restore": true
+  },
+  "source_rejection": [
+    "source_sha256",
+    "config_sha256",
+    "execution_sha256",
+    "scenes_sha256",
+    "algorithm",
+    "environment"
+  ],
+  "real_integration": {
+    "prefixes": 3,
+    "team_steps": 20,
+    "training_steps": 16,
+    "evaluation_steps": 4,
+    "optimizer_rounds": 0,
+    "native_completed_episodes": 0,
+    "initial_boundary_resume_exact": true
+  },
+  "failure_paths": [
+    "active_or_externally_truncated_checkpoint_rejected",
+    "missing_or_corrupt_commit_rejected",
+    "optimizer_error_rolls_back_to_last_boundary",
+    "native_terminal_but_commit_failure_remains_uncommitted",
+    "torn_journal_tail_is_interruption",
+    "incomplete_evaluation_not_used_for_checkpoint_selection"
+  ],
+  "immutability": {
+    "passed": true,
+    "changed_existing_files": [
+      "chapter4_interval_robust/nominal_maddpg/README.md",
+      "chapter4_interval_robust/nominal_maddpg/replay.py",
+      "chapter4_interval_robust/nominal_maddpg/train_config.py"
+    ],
+    "unchanged_existing_chapter4_files": 3896,
+    "protected": {
+      "CH3": {
+        "files": 369,
+        "differences": [],
+        "unchanged": true
+      },
+      "CH4": {
+        "files": 103,
+        "differences": [],
+        "unchanged": true
+      },
+      "CH5": {
+        "files": 318,
+        "differences": [],
+        "unchanged": true
+      }
+    },
+    "active_checked_files": 349,
+    "active_changed_files": [],
+    "historical_checkpoints_results_plans_and_presentations_unchanged": true
+  },
+  "evidence": {
+    "final_unit_tests.json": "ae6b3276c3fc329dbb4c79ba7c30f2f322b8cfc1db878d4527d7f5bc2479520e",
+    "final_unit_tests.log": "978518f22c2bc9661f0cc284fe444918e728ddafc428859afb7cbad98024405a",
+    "regression.json": "01bc9fd77abf9ae585b3588344ec2300b81e43636f4fff253230fa73cef80f9e",
+    "regression.log": "4fa807d3b16cae2c865c3e0972f815014eec13e13552aa747e4b7281d2181d34",
+    "real_environment_final/acceptance.json": "66fbcdedce02f130c481af78008c2407631718ae6b3d749ff0bbcd36ad5099a0",
+    "immutability.json": "384f631d4986f3f727bc126a3eb390ca3bcb8d4122321ad968efe3642384ac95",
+    "cli_checks.json": "142884044bd9f50e2b8db233bfec06097ba4e31e63020e56d98e464a7cd8c177"
+  },
+  "backup": {
+    "path": "verification/nominal_maddpg_training_state_20261125/nominal_source_before.zip",
+    "sha256": "25391aa8ddf71f0194131d0312f21bb8f2570cf9fbc9a69b118703e6ee0e6a25"
+  },
+  "formal_training_executed": false,
+  "nominal_performance_verified": false,
+  "native_multi_episode_learning_resume_verified": false,
+  "nominal_admission_opened": false,
+  "mismatch_sets_opened": false,
+  "publication": {
+    "commit_created": false,
+    "pushed": false,
+    "reason": "latest step-6 request does not request publication; repository requires explicit instruction"
+  }
+}

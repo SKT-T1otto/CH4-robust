@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "changed_existing_files": [
+    "chapter4_interval_robust/nominal_maddpg/README.md",
+    "chapter4_interval_robust/nominal_maddpg/replay.py",
+    "chapter4_interval_robust/nominal_maddpg/train_config.py"
+  ],
+  "unchanged_existing_chapter4_files": 3896,
+  "protected": {
+    "CH3": {
+      "files": 369,
+      "differences": [],
+      "unchanged": true
+    },
+    "CH4": {
+      "files": 103,
+      "differences": [],
+      "unchanged": true
+    },
+    "CH5": {
+      "files": 318,
+      "differences": [],
+      "unchanged": true
+    }
+  },
+  "active_checked_files": 349,
+  "active_changed_files": [],
+  "historical_checkpoints_results_plans_and_presentations_unchanged": true
+}

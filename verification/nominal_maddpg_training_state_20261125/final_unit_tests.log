@@ -1,0 +1,20 @@
+test_continuous_vs_boundary_restore_exact_actions_batches_losses_parameters (checks.chapter4.test_nominal_training_state.NominalTrainingStateTests) ... ok
+test_evaluation_exception_preserves_full_training_state (checks.chapter4.test_nominal_training_state.NominalTrainingStateTests) ... ok
+test_missing_commit_marker_and_corrupted_file_rejected (checks.chapter4.test_nominal_training_state.NominalTrainingStateTests) ... ok
+test_real_evaluation_preserves_nonempty_replay_adam_and_exploration (checks.chapter4.test_nominal_training_state.NominalTrainingStateTests) ... ok
+test_registered_schedule_first_256_then_260_and_exact_settings (checks.chapter4.test_nominal_training_state.NominalTrainingStateTests) ... ok
+test_replay_rejects_bad_source_gate_pointer_before_mutation (checks.chapter4.test_nominal_training_state.NominalTrainingStateTests) ... ok
+test_replay_valid_contents_ring_gates_sources_and_rng_roundtrip (checks.chapter4.test_nominal_training_state.NominalTrainingStateTests) ... ok
+test_reports_exclude_prefixes_and_selection_requires_complete_cohort (checks.chapter4.test_nominal_training_state.NominalTrainingStateTests) ... ok
+test_scene_order_rollover_restore_and_invalid_permutation (checks.chapter4.test_nominal_training_state.NominalTrainingStateTests) ... ok
+test_source_config_scenes_algorithm_and_execution_mismatch_rejected (checks.chapter4.test_nominal_training_state.NominalTrainingStateTests) ... ok
+test_terminal_before_failed_checkpoint_commit_still_rolls_back_current_episode (checks.chapter4.test_nominal_training_state.NominalTrainingStateTests) ... ok
+test_torn_last_event_is_interruption_not_completed_failure (checks.chapter4.test_nominal_training_state.NominalTrainingStateTests) ... ok
+test_truncation_cannot_be_checkpointed_or_counted_as_task_failure (checks.chapter4.test_nominal_training_state.NominalTrainingStateTests) ... ok
+test_unclosed_journal_episode_is_reported_as_process_interruption (checks.chapter4.test_nominal_training_state.NominalTrainingStateTests) ... ok
+test_update_error_requires_rollback_and_never_commits_partial_optimizer_round (checks.chapter4.test_nominal_training_state.NominalTrainingStateTests) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 44.985s
+
+OK

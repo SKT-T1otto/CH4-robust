@@ -1,0 +1,13 @@
+test_common_checkpoint_and_equal_seed_config_selection (checks.chapter4.test_nominal_development.DevelopmentTests) ... ok
+test_driver_orders_references_and_restarts_after_failed_validation (checks.chapter4.test_nominal_development.DevelopmentTests) ... ok
+test_linux_guard_dry_run_and_partial_commit (checks.chapter4.test_nominal_development.DevelopmentTests) ... usage: development [-h] [--execute] [--output OUTPUT] [{pilot,search}]
+development: error: full development execution requires Linux and --output STUDY_DIRECTORY
+ok
+test_paired_real_reference_prefixes_and_direct_physical_effect (checks.chapter4.test_nominal_development.DevelopmentTests) ... ok
+test_real_sample_q_and_stage_labels (checks.chapter4.test_nominal_development.DevelopmentTests) ... ok
+test_registered_search_settings_and_source_checked_resume (checks.chapter4.test_nominal_development.DevelopmentTests) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 77.689s
+
+OK

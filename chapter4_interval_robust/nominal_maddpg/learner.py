@@ -215,11 +215,15 @@ class SingleCriticLearner:
         """Return detached [B,4] targets and gated [B,4,3] target actions."""
         return self._targets(prepare_batch(sample))
 
-    def _critic_loss(self, batch, agent_i, targets):
+    def _critic_prediction(self, batch, agent_i):
         q = self.networks.critics[agent_i](self._joint(batch.observations, batch.actions))
         if q.shape != (batch.size, 1):
             raise ValueError("invalid online critic output")
-        return _finite((q[:, 0] - targets[:, agent_i]).square().mean(), "critic MSE")
+        return q[:, 0]
+
+    def _critic_loss(self, batch, agent_i, targets):
+        q = self._critic_prediction(batch, agent_i)
+        return _finite((q - targets[:, agent_i]).square().mean(), "critic MSE")
 
     def critic_loss(self, sample, agent_i):
         self._agent(agent_i)
@@ -231,14 +235,19 @@ class SingleCriticLearner:
         optimizer = self.critic_optimizers[agent_i]
         self._check_optimizer(optimizer)
         optimizer.zero_grad(set_to_none=True)
-        loss = self._critic_loss(batch, agent_i, targets)
+        q = self._critic_prediction(batch, agent_i)
+        target = targets[:, agent_i]
+        loss = _finite((q - target).square().mean(), "critic MSE")
         loss.backward()
         norm = self._gradient_norm(self.networks.critics[agent_i])
         optimizer.step()
         self._check_optimizer(optimizer)
         optimizer.zero_grad(set_to_none=True)
         self.critic_steps[agent_i] += 1
-        return dict(loss=float(loss.detach()), gradient_norm=norm, steps=self.critic_steps[agent_i])
+        prediction = q.detach()
+        return dict(loss=float(loss.detach()), gradient_norm=norm, steps=self.critic_steps[agent_i],
+                    q_min=float(prediction.min()), q_max=float(prediction.max()), q_mean=float(prediction.mean()),
+                    td_min=float(target.min()), td_max=float(target.max()), td_mean=float(target.mean()))
 
     def update_critic(self, sample, agent_i):
         self._require_grad()

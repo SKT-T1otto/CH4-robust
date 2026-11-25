@@ -1,0 +1,33 @@
+{
+  "schema": "auv.ch4.nominal_maddpg.execution.v1",
+  "stage": 6,
+  "purpose": "auditable_training_infrastructure",
+  "formal_training_authorized": false,
+  "algorithm": "ch4.maddpg.single_critic.v1",
+  "base_config": "configs/ch4/nominal_maddpg.json",
+  "base_config_sha256": "a6c527260f0da998129c3246dc1fd7fbe1d3b449330f80b7064ac5e51148d251",
+  "scene_manifest_sha256": "780bdf15b344ee4763903eea1544e58f858e46a7e618efcee9c01793207159e3",
+  "collection_protocol": "configs/ch4/nominal_maddpg_training.json",
+  "schedule": {
+    "batch_size": 128,
+    "replay_capacity": 500000,
+    "warmup_steps": 256,
+    "update_frequency": 4,
+    "updates_per_train": 2,
+    "actor_lr": 0.001,
+    "critic_lr": 0.0005,
+    "optimizer": "Adam",
+    "gamma": 0.95,
+    "tau": 0.005
+  },
+  "schedule_clock": "completed_training_team_transitions_including_closed_gates",
+  "first_trigger": 256,
+  "round": "four_critics_then_eligible_actors_then_one_joint_soft_target_update",
+  "checkpoint_boundary": "initial_boundary_or_after_native_terminal_and_all_due_updates",
+  "resume": "rollback_uncommitted_episode_never_restore_active_environment",
+  "evaluation_groups": ["validation"],
+  "selection": "all_32_complete_validation_scenes_minimum_mean_penalized_completion_steps_earlier_boundary_on_tie",
+  "mechanism_limits": {"episodes": 8, "steps_per_prefix": 32, "rounds_per_model": 4},
+  "nominal_admission_opened": false,
+  "mismatch_sets_opened": false
+}

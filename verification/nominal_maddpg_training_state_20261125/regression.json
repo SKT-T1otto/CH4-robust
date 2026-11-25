@@ -1,0 +1,18 @@
+{
+  "command": [
+    "D:\\anaconda\\anaconda\\envs\\AUV\\python.exe",
+    "-B",
+    "-m",
+    "unittest",
+    "checks.chapter4.test_nominal_maddpg",
+    "checks.chapter4.test_nominal_runtime",
+    "checks.chapter4.test_nominal_learner",
+    "checks.chapter4.test_nominal_exploration",
+    "experiments.ch4_work1_recoverability.test_work1",
+    "-v"
+  ],
+  "started_utc": "2026-11-25T10:17:16.465470+00:00",
+  "ended_utc": "2026-11-25T10:19:07.688499+00:00",
+  "exit_code": 0,
+  "log_sha256": "4fa807d3b16cae2c865c3e0972f815014eec13e13552aa747e4b7281d2181d34"
+}

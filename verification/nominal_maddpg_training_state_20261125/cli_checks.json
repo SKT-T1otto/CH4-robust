@@ -1,0 +1,48 @@
+{
+  "passed": true,
+  "commands": [
+    {
+      "command": [
+        "D:\\anaconda\\anaconda\\envs\\AUV\\python.exe",
+        "-B",
+        "-m",
+        "chapter4_interval_robust.nominal_maddpg.trainer"
+      ],
+      "exit_code": 0,
+      "executed": false,
+      "statistics": null
+    },
+    {
+      "command": [
+        "D:\\anaconda\\anaconda\\envs\\AUV\\python.exe",
+        "-B",
+        "-m",
+        "chapter4_interval_robust.nominal_maddpg.evaluate"
+      ],
+      "exit_code": 0,
+      "executed": false,
+      "statistics": null
+    },
+    {
+      "command": [
+        "D:\\anaconda\\anaconda\\envs\\AUV\\python.exe",
+        "-B",
+        "-m",
+        "chapter4_interval_robust.nominal_maddpg.report",
+        "verification\\nominal_maddpg_training_state_20261125\\real_environment_final\\continuous"
+      ],
+      "exit_code": 0,
+      "executed": null,
+      "statistics": {
+        "attempted": 1,
+        "completed": 0,
+        "incomplete": 1,
+        "success_rate": null,
+        "mean_penalized_completion_steps": null,
+        "denominator": "completed_native_missions_only",
+        "complete_results_are_not_nominal_admission": true
+      }
+    }
+  ],
+  "source_sha256": "e0a63779ee4bf327e18e2c2be0ca2b73a60ff1a281f1b3c66030deb31f7e0d2f"
+}

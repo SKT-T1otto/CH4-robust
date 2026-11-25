@@ -1,0 +1,22 @@
+{
+  "stage": 7,
+  "schema": "auv.ch4.nominal_maddpg.development.v1",
+  "collection_group": "train",
+  "evaluation_group": "validation",
+  "validation_indices": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31],
+  "references": ["D2", "frozen_initialization"],
+  "pilot": {"seed": 2729, "episodes": 64, "checkpoints": [16,32,48,64]},
+  "optional_search": {
+    "trigger": "manual decision after reviewing completed pilot diagnostics and validation",
+    "seeds": [17239, 29537],
+    "episodes": 200,
+    "checkpoints": [16,32,48,64,80,96,112,128,144,160,176,192,200],
+    "configurations_in_tie_order": [
+      {"id": "A", "actor_lr": 0.001, "decay_per_environment_step": 0.00002},
+      {"id": "B", "actor_lr": 0.001, "decay_per_environment_step": 0.000002},
+      {"id": "C", "actor_lr": 0.0003, "decay_per_environment_step": 0.00002},
+      {"id": "D", "actor_lr": 0.0003, "decay_per_environment_step": 0.000002}
+    ],
+    "selection": "minimize equal-weight mean penalized completion steps over both seeds on the same 32 validation scenes at a common checkpoint; ties by configuration order then earlier checkpoint"
+  }
+}

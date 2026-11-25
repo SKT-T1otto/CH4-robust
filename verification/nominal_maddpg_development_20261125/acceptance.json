@@ -1,0 +1,95 @@
+{
+  "stage": 7,
+  "source_sha256": "b9882bac8a94a917b2b14b9d85866fa132c8caea431bca93a6d70a90b01a272f",
+  "verified_source_files": 446,
+  "execution": "bounded Windows mechanism tests; Linux pilot and grid pending manual launch",
+  "protected_byte_inventories": {
+    "project": {
+      "name": "project",
+      "existing": 3988,
+      "unchanged": 3984,
+      "modified": [
+        "chapter4_interval_robust/nominal_maddpg/README.md",
+        "chapter4_interval_robust/nominal_maddpg/evaluate.py",
+        "chapter4_interval_robust/nominal_maddpg/learner.py",
+        "chapter4_interval_robust/nominal_maddpg/trainer.py"
+      ],
+      "added": [
+        "chapter4_interval_robust/nominal_maddpg/development.py",
+        "chapter4_interval_robust/nominal_maddpg/development_metrics.py",
+        "checks/chapter4/test_nominal_development.py",
+        "configs/ch4/nominal_maddpg_development.json",
+        "provenance/ch4/nominal_maddpg/source_v0009.json",
+        "provenance/ch4/nominal_maddpg/source_v0010.json",
+        "provenance/ch4/source_v0018.json",
+        "provenance/ch4/source_v0019.json"
+      ]
+    },
+    "CH3": {
+      "name": "CH3",
+      "existing": 369,
+      "unchanged": 369,
+      "modified": [],
+      "added": []
+    },
+    "CH4": {
+      "name": "CH4",
+      "existing": 103,
+      "unchanged": 103,
+      "modified": [],
+      "added": []
+    },
+    "CH5": {
+      "name": "CH5",
+      "existing": 318,
+      "unchanged": 318,
+      "modified": [],
+      "added": []
+    }
+  },
+  "registration": "configs/ch4/nominal_maddpg_development.json",
+  "regression_cases_passed": 82,
+  "initial_test_run": {
+    "total": 87,
+    "passed": 86,
+    "error": "temporary result hard link unavailable on Windows; changed to atomic rename under study lock"
+  },
+  "final_staged_checkout": {
+    "source_verified": true,
+    "stage7_tests": 6,
+    "passed": 6,
+    "log": "release_tests.log",
+    "sha256": "a808a3b3cf5e870d75beb4477f6a12fbca70c9d3bc7f45aa6e0c2ff57a9430bb"
+  },
+  "observed": {
+    "real_validation_prefixes": [
+      3,
+      3
+    ],
+    "real_training_prefix_steps": 4,
+    "temporary_learner_updates_in_stage7_specific_test": 1,
+    "synthetic_driver_test": "first 16-episode validation interrupted, resume, exactly 64 fixture episodes, tied selection at 16",
+    "d2_command_delta_zero": true,
+    "live_actor_command_delta_positive": true,
+    "true_preupdate_online_q_batch_mean_compared": true,
+    "optional_variants_configured": true
+  },
+  "pilot_episodes_run": 0,
+  "full_reference_evaluations_run": 0,
+  "grid_runs": 0,
+  "admission_or_mismatch_outcomes_opened": false,
+  "acceptance_scope": "implementation and bounded tests only; no Linux runtime or full trajectory performance measured",
+  "created_verification_files": [
+    "CH3_before.json",
+    "CH3_integrity.json",
+    "CH4_before.json",
+    "CH4_integrity.json",
+    "CH5_before.json",
+    "CH5_integrity.json",
+    "project_before.json",
+    "project_integrity.json",
+    "release_tests.log",
+    "tests.log",
+    "acceptance.json"
+  ]
+}

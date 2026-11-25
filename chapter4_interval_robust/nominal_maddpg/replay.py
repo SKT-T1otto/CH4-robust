@@ -2,6 +2,7 @@
 import numpy as np
 import torch
 import copy
+from core.replay.ch3_buffer import CH3ReplayBuffer
 
 from chapter3_bser.learning.replay import ExecutionReplay
 
@@ -14,6 +15,57 @@ class NominalReplay(ExecutionReplay):
         self.sampling_rng = torch.Generator().manual_seed(sampling_seed).get_state()
         self.sample_calls = 0
         self.sampled_rows = 0
+
+    def state_dict(self):
+        state = CH3ReplayBuffer.state_dict(self)
+        state.update(schema='auv.ch4.executed_replay.v1',
+            enabled=self.enabled[:len(self)].clone(), next_enabled=self.next_enabled[:len(self)].clone(),
+            gate_initialized=self.gate_initialized[:len(self)].clone(),
+            sampling_rng=self.sampling_rng.clone(), sample_calls=self.sample_calls, sampled_rows=self.sampled_rows)
+        return state
+
+    def load_state_dict(self, state):
+        """Validate extensions before the parent performs its own atomic validation."""
+        if state.get('schema') != 'auv.ch4.executed_replay.v1':
+            raise ValueError('independent executed Replay schema differs')
+        used = state.get('filled_i')
+        if type(used) is not int or not 0 <= used <= self.max_steps:
+            raise ValueError('invalid Replay valid length')
+        for key, shape in (('enabled', (used,4)), ('next_enabled', (used,4)), ('gate_initialized', (used,))):
+            value = state.get(key)
+            if not torch.is_tensor(value) or value.dtype != torch.bool or value.device.type != 'cpu' or value.shape != shape:
+                raise ValueError('invalid Replay '+key)
+        if not bool(state['gate_initialized'].all()):
+            raise ValueError('unwritten Replay gates')
+        for key in ('sample_calls', 'sampled_rows'):
+            if type(state.get(key)) is not int or state[key] < 0:
+                raise ValueError('invalid Replay '+key)
+        if (state['sampled_rows'] < state['sample_calls']
+                or state.get('frame') != 1.0+state['sample_calls']/4):
+            raise ValueError('Replay sampling counters disagree')
+        rng = torch.Generator()
+        rng.set_state(state['sampling_rng'])
+        for key, shape in (('ac_buffs',(used,3)), ('rew_buffs',(used,)), ('done_buffs',(used,))):
+            values = state.get(key)
+            if not isinstance(values,list) or len(values)!=4 or any(not torch.is_tensor(v) or v.shape!=shape for v in values):
+                raise ValueError('invalid Replay '+key)
+        actions = torch.stack(state['ac_buffs'],1)
+        if bool((actions.abs()>1).any()) or bool((actions[~state['enabled']]!=0).any()):
+            raise ValueError('Replay actions disagree with gates')
+        dones = state['done_buffs'][0].bool()
+        if (any(not torch.equal(state['done_buffs'][0],v) for v in state['done_buffs'])
+                or any(not torch.equal(state['rew_buffs'][0],v) for v in state['rew_buffs'])
+                or bool(state['next_enabled'][dones].any())
+                or not torch.is_tensor(state.get('success_buffs'))
+                or state['success_buffs'].shape != (used,)
+                or bool((state['success_buffs'].bool() & ~dones).any())):
+            raise ValueError('Replay team reward/terminal/success contract differs')
+        CH3ReplayBuffer.load_state_dict(self, state)
+        for key in ('enabled','next_enabled','gate_initialized'):
+            getattr(self,key).zero_()
+            getattr(self,key)[:used].copy_(state[key])
+        self.sampling_rng = rng.get_state().clone()
+        self.sample_calls, self.sampled_rows = state['sample_calls'], state['sampled_rows']
 
     def push_transition(self, transition):
         packed = dict(transition)
@@ -75,6 +127,33 @@ class TrainingReplay(NominalReplay):
         self.catalog = catalog
         self.slot_sources = [None]*capacity
         self.insertions = 0
+
+    def state_dict(self):
+        state = super().state_dict()
+        state.update(catalog_sha256=self.catalog.sha256, insertions=self.insertions,
+                     slot_sources=copy.deepcopy(self.slot_sources[:len(self)]))
+        return state
+
+    def load_state_dict(self, state):
+        from .train_config import SceneOrigin
+        used, count = state.get('filled_i'), state.get('insertions')
+        if (state.get('catalog_sha256') != self.catalog.sha256 or type(count) is not int or count < 0
+                or used != min(count,self.max_steps) or state.get('next_idx') != count%self.max_steps):
+            raise ValueError('training Replay catalog/count/pointer differs')
+        sources = state.get('slot_sources')
+        if not isinstance(sources,list) or len(sources)!=used:
+            raise ValueError('missing training Replay slot sources')
+        for index, record in enumerate(sources):
+            origin = SceneOrigin(**{key:record[key] for key in SceneOrigin.__dataclass_fields__})
+            self.catalog.validate_origin(origin, allowed_groups=('train',))
+            insertion = record.get('insertion')
+            if (type(insertion) is not int or not count-used <= insertion < count
+                    or insertion%self.max_steps!=index or type(record.get('transition_step')) is not int
+                    or not 0 <= record['transition_step'] < self.catalog.config['task']['max_steps']):
+                raise ValueError('invalid ring-slot insertion or task step')
+        super().load_state_dict(state)
+        self.slot_sources = copy.deepcopy(sources)+[None]*(self.max_steps-used)
+        self.insertions = count
 
     def bind_scene(self, scene, episode_id):
         return self.catalog.origin(scene, episode_id, allowed_groups=('train',))

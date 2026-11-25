@@ -113,3 +113,16 @@ class SceneOrder:
     def state_dict(self):
         return dict(catalog_sha256=self.catalog.sha256, order=self.order.copy(), cursor=self.cursor,
                     epoch=self.epoch, rng=copy.deepcopy(self.generator.bit_generator.state))
+
+    def load_state_dict(self, state):
+        n = len(self.catalog.registry['groups']['train'])
+        order = state.get('order')
+        if (state.get('catalog_sha256') != self.catalog.sha256 or not isinstance(order,list)
+                or len(order)!=n or any(type(i) is not int for i in order) or sorted(order)!=list(range(n))
+                or type(state.get('cursor')) is not int or not 0 <= state['cursor'] <= n
+                or type(state.get('epoch')) is not int or state['epoch']<0):
+            raise ValueError('scene order identity/permutation/cursor differs')
+        probe = np.random.default_rng()
+        probe.bit_generator.state = copy.deepcopy(state['rng'])
+        self.generator = probe
+        self.order, self.cursor, self.epoch = order.copy(), state['cursor'], state['epoch']
